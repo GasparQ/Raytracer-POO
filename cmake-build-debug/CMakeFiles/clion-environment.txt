@@ -1,0 +1,2 @@
+ToolSet: w64 5.0@C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32
+CMake: 3.6.2@C:\Program Files (x86)\JetBrains\CLion 2016.3\bin\cmake\bin\cmake.exe
