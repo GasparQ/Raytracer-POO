@@ -3,9 +3,9 @@
 //
 
 #include <iostream>
-#include "GraphicException.hpp"
-#include "RayTracer.hpp"
-#include "SDLGraphic.hpp"
+#include "Graphic/GraphicException.hpp"
+#include "Core/RayTracer.hpp"
+#include "SDL2/SDLGraphic.hpp"
 
 #undef main
 

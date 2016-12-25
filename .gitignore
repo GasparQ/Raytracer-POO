@@ -26,3 +26,8 @@
 *.exe
 *.out
 *.app
+
+.idea/
+.vs/Raytracer/v15/ipch/
+cmake-build-debug/CMakeFiles/CMakeTmp/
+cmake-build-debug/CMakeFiles/Raytracer.dir/sources/

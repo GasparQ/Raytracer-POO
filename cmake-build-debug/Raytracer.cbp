@@ -18,8 +18,8 @@
 				</MakeCommands>
 			</Target>
 			<Target title="Raytracer">
-				<Option output="C:/Users/gaspar/ClionProjects/Raytracer/cmake-build-debug/Raytracer.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/gaspar/ClionProjects/Raytracer/cmake-build-debug"/>
+				<Option output="C:/Users/gaspar/ClionProjects/Raytracer/Raytracer.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/gaspar/ClionProjects/Raytracer"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -40,8 +40,8 @@
 				</MakeCommands>
 			</Target>
 			<Target title="Raytracer/fast">
-				<Option output="C:/Users/gaspar/ClionProjects/Raytracer/cmake-build-debug/Raytracer.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/gaspar/ClionProjects/Raytracer/cmake-build-debug"/>
+				<Option output="C:/Users/gaspar/ClionProjects/Raytracer/Raytracer.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/gaspar/ClionProjects/Raytracer"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -61,16 +61,6 @@
 					<DistClean command="C:/Users/gaspar/mingw-w64/i686-5.3.0-posix-dwarf-rt_v4-rev0/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/gaspar/ClionProjects/Raytracer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="edit_cache">
-				<Option working_dir="C:/Users/gaspar/ClionProjects/Raytracer/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="C:/Users/gaspar/mingw-w64/i686-5.3.0-posix-dwarf-rt_v4-rev0/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/gaspar/ClionProjects/Raytracer/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="C:/Users/gaspar/mingw-w64/i686-5.3.0-posix-dwarf-rt_v4-rev0/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/gaspar/ClionProjects/Raytracer/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/Users/gaspar/mingw-w64/i686-5.3.0-posix-dwarf-rt_v4-rev0/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/gaspar/ClionProjects/Raytracer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/Users/gaspar/mingw-w64/i686-5.3.0-posix-dwarf-rt_v4-rev0/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/gaspar/ClionProjects/Raytracer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
 			<Target title="rebuild_cache">
 				<Option working_dir="C:/Users/gaspar/ClionProjects/Raytracer/cmake-build-debug"/>
 				<Option type="4"/>
@@ -81,141 +71,216 @@
 					<DistClean command="C:/Users/gaspar/mingw-w64/i686-5.3.0-posix-dwarf-rt_v4-rev0/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/gaspar/ClionProjects/Raytracer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="test_unit_vec">
+				<Option output="C:/Users/gaspar/ClionProjects/Raytracer/test_unit_vec.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/gaspar/ClionProjects/Raytracer"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/gaspar/ClionProjects/Raytracer/includes"/>
+					<Add directory="C:/Users/gaspar/mingw-w64/i686-5.3.0-posix-dwarf-rt_v4-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/5.3.0/include"/>
+					<Add directory="C:/Users/gaspar/mingw-w64/i686-5.3.0-posix-dwarf-rt_v4-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/5.3.0/include-fixed"/>
+					<Add directory="C:/Users/gaspar/mingw-w64/i686-5.3.0-posix-dwarf-rt_v4-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/5.3.0/../../../../i686-w64-mingw32/include"/>
+					<Add directory="C:/Users/gaspar/mingw-w64/i686-5.3.0-posix-dwarf-rt_v4-rev0/mingw32/lib/gcc/../../i686-w64-mingw32/include/c++"/>
+					<Add directory="C:/Users/gaspar/mingw-w64/i686-5.3.0-posix-dwarf-rt_v4-rev0/mingw32/lib/gcc/../../i686-w64-mingw32/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/Users/gaspar/mingw-w64/i686-5.3.0-posix-dwarf-rt_v4-rev0/mingw32/lib/gcc/../../i686-w64-mingw32/include/c++/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/Users/gaspar/mingw-w64/i686-5.3.0-posix-dwarf-rt_v4-rev0/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/gaspar/ClionProjects/Raytracer/cmake-build-debug/Makefile&quot;  VERBOSE=1 test_unit_vec"/>
+					<CompileFile command="C:/Users/gaspar/mingw-w64/i686-5.3.0-posix-dwarf-rt_v4-rev0/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/gaspar/ClionProjects/Raytracer/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/gaspar/mingw-w64/i686-5.3.0-posix-dwarf-rt_v4-rev0/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/gaspar/ClionProjects/Raytracer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/gaspar/mingw-w64/i686-5.3.0-posix-dwarf-rt_v4-rev0/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/gaspar/ClionProjects/Raytracer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test_unit_vec/fast">
+				<Option output="C:/Users/gaspar/ClionProjects/Raytracer/test_unit_vec.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/gaspar/ClionProjects/Raytracer"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/gaspar/ClionProjects/Raytracer/includes"/>
+					<Add directory="C:/Users/gaspar/mingw-w64/i686-5.3.0-posix-dwarf-rt_v4-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/5.3.0/include"/>
+					<Add directory="C:/Users/gaspar/mingw-w64/i686-5.3.0-posix-dwarf-rt_v4-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/5.3.0/include-fixed"/>
+					<Add directory="C:/Users/gaspar/mingw-w64/i686-5.3.0-posix-dwarf-rt_v4-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/5.3.0/../../../../i686-w64-mingw32/include"/>
+					<Add directory="C:/Users/gaspar/mingw-w64/i686-5.3.0-posix-dwarf-rt_v4-rev0/mingw32/lib/gcc/../../i686-w64-mingw32/include/c++"/>
+					<Add directory="C:/Users/gaspar/mingw-w64/i686-5.3.0-posix-dwarf-rt_v4-rev0/mingw32/lib/gcc/../../i686-w64-mingw32/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/Users/gaspar/mingw-w64/i686-5.3.0-posix-dwarf-rt_v4-rev0/mingw32/lib/gcc/../../i686-w64-mingw32/include/c++/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/Users/gaspar/mingw-w64/i686-5.3.0-posix-dwarf-rt_v4-rev0/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/gaspar/ClionProjects/Raytracer/cmake-build-debug/Makefile&quot;  VERBOSE=1 test_unit_vec/fast"/>
+					<CompileFile command="C:/Users/gaspar/mingw-w64/i686-5.3.0-posix-dwarf-rt_v4-rev0/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/gaspar/ClionProjects/Raytracer/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/gaspar/mingw-w64/i686-5.3.0-posix-dwarf-rt_v4-rev0/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/gaspar/ClionProjects/Raytracer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/gaspar/mingw-w64/i686-5.3.0-posix-dwarf-rt_v4-rev0/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/gaspar/ClionProjects/Raytracer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/Users/gaspar/ClionProjects/Raytracer/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/Users/gaspar/mingw-w64/i686-5.3.0-posix-dwarf-rt_v4-rev0/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/gaspar/ClionProjects/Raytracer/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/Users/gaspar/mingw-w64/i686-5.3.0-posix-dwarf-rt_v4-rev0/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/gaspar/ClionProjects/Raytracer/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/gaspar/mingw-w64/i686-5.3.0-posix-dwarf-rt_v4-rev0/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/gaspar/ClionProjects/Raytracer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/gaspar/mingw-w64/i686-5.3.0-posix-dwarf-rt_v4-rev0/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/gaspar/ClionProjects/Raytracer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 		</Build>
-		<Unit filename="C:/Users/gaspar/ClionProjects/Raytracer/includes/AImage.hpp">
+		<Unit filename="C:/Users/gaspar/ClionProjects/Raytracer/includes/Core/CalculUnit.hpp">
+			<Option target="Raytracer"/>
+			<Option target="test_unit_vec"/>
+		</Unit>
+		<Unit filename="C:/Users/gaspar/ClionProjects/Raytracer/includes/Core/Color.hpp">
+			<Option target="Raytracer"/>
+			<Option target="test_unit_vec"/>
+		</Unit>
+		<Unit filename="C:/Users/gaspar/ClionProjects/Raytracer/includes/Core/Eye.hpp">
+			<Option target="Raytracer"/>
+			<Option target="test_unit_vec"/>
+		</Unit>
+		<Unit filename="C:/Users/gaspar/ClionProjects/Raytracer/includes/Core/Ray.hpp">
+			<Option target="Raytracer"/>
+			<Option target="test_unit_vec"/>
+		</Unit>
+		<Unit filename="C:/Users/gaspar/ClionProjects/Raytracer/includes/Core/RayTracer.hpp">
+			<Option target="Raytracer"/>
+			<Option target="test_unit_vec"/>
+		</Unit>
+		<Unit filename="C:/Users/gaspar/ClionProjects/Raytracer/includes/Core/Scene.hpp">
+			<Option target="Raytracer"/>
+			<Option target="test_unit_vec"/>
+		</Unit>
+		<Unit filename="C:/Users/gaspar/ClionProjects/Raytracer/includes/Core/Spot.hpp">
+			<Option target="Raytracer"/>
+			<Option target="test_unit_vec"/>
+		</Unit>
+		<Unit filename="C:/Users/gaspar/ClionProjects/Raytracer/includes/Core/Vector2.hpp">
+			<Option target="Raytracer"/>
+			<Option target="test_unit_vec"/>
+		</Unit>
+		<Unit filename="C:/Users/gaspar/ClionProjects/Raytracer/includes/Core/Vector3.hpp">
+			<Option target="Raytracer"/>
+			<Option target="test_unit_vec"/>
+		</Unit>
+		<Unit filename="C:/Users/gaspar/ClionProjects/Raytracer/includes/Effect/IEffect.hpp">
 			<Option target="Raytracer"/>
 		</Unit>
-		<Unit filename="C:/Users/gaspar/ClionProjects/Raytracer/includes/AObject.hpp">
+		<Unit filename="C:/Users/gaspar/ClionProjects/Raytracer/includes/Effect/LightPhong.hpp">
 			<Option target="Raytracer"/>
 		</Unit>
-		<Unit filename="C:/Users/gaspar/ClionProjects/Raytracer/includes/AWindow.hpp">
+		<Unit filename="C:/Users/gaspar/ClionProjects/Raytracer/includes/Graphic/AImage.hpp">
 			<Option target="Raytracer"/>
 		</Unit>
-		<Unit filename="C:/Users/gaspar/ClionProjects/Raytracer/includes/CalculUnit.hpp">
+		<Unit filename="C:/Users/gaspar/ClionProjects/Raytracer/includes/Graphic/AWindow.hpp">
 			<Option target="Raytracer"/>
 		</Unit>
-		<Unit filename="C:/Users/gaspar/ClionProjects/Raytracer/includes/Color.hpp">
+		<Unit filename="C:/Users/gaspar/ClionProjects/Raytracer/includes/Graphic/GraphicException.hpp">
 			<Option target="Raytracer"/>
 		</Unit>
-		<Unit filename="C:/Users/gaspar/ClionProjects/Raytracer/includes/Cone.hpp">
+		<Unit filename="C:/Users/gaspar/ClionProjects/Raytracer/includes/Graphic/IGraphic.hpp">
 			<Option target="Raytracer"/>
 		</Unit>
-		<Unit filename="C:/Users/gaspar/ClionProjects/Raytracer/includes/Cylinder.hpp">
+		<Unit filename="C:/Users/gaspar/ClionProjects/Raytracer/includes/Object/AObject.hpp">
 			<Option target="Raytracer"/>
 		</Unit>
-		<Unit filename="C:/Users/gaspar/ClionProjects/Raytracer/includes/Eye.hpp">
+		<Unit filename="C:/Users/gaspar/ClionProjects/Raytracer/includes/Object/Cone.hpp">
 			<Option target="Raytracer"/>
 		</Unit>
-		<Unit filename="C:/Users/gaspar/ClionProjects/Raytracer/includes/GraphicException.hpp">
+		<Unit filename="C:/Users/gaspar/ClionProjects/Raytracer/includes/Object/Cylinder.hpp">
 			<Option target="Raytracer"/>
 		</Unit>
-		<Unit filename="C:/Users/gaspar/ClionProjects/Raytracer/includes/IEffect.hpp">
+		<Unit filename="C:/Users/gaspar/ClionProjects/Raytracer/includes/Object/Plan.hpp">
 			<Option target="Raytracer"/>
 		</Unit>
-		<Unit filename="C:/Users/gaspar/ClionProjects/Raytracer/includes/IGraphic.hpp">
+		<Unit filename="C:/Users/gaspar/ClionProjects/Raytracer/includes/Object/Sphere.hpp">
 			<Option target="Raytracer"/>
 		</Unit>
-		<Unit filename="C:/Users/gaspar/ClionProjects/Raytracer/includes/LightPhong.hpp">
+		<Unit filename="C:/Users/gaspar/ClionProjects/Raytracer/includes/SDL2/SDLGraphic.hpp">
 			<Option target="Raytracer"/>
 		</Unit>
-		<Unit filename="C:/Users/gaspar/ClionProjects/Raytracer/includes/Plan.hpp">
+		<Unit filename="C:/Users/gaspar/ClionProjects/Raytracer/includes/SDL2/SDLImage.hpp">
 			<Option target="Raytracer"/>
 		</Unit>
-		<Unit filename="C:/Users/gaspar/ClionProjects/Raytracer/includes/Ray.hpp">
+		<Unit filename="C:/Users/gaspar/ClionProjects/Raytracer/includes/SDL2/SDLWindow.hpp">
 			<Option target="Raytracer"/>
 		</Unit>
-		<Unit filename="C:/Users/gaspar/ClionProjects/Raytracer/includes/RayTracer.hpp">
+		<Unit filename="C:/Users/gaspar/ClionProjects/Raytracer/sources/Core/CalculUnit.cpp">
+			<Option target="Raytracer"/>
+			<Option target="test_unit_vec"/>
+		</Unit>
+		<Unit filename="C:/Users/gaspar/ClionProjects/Raytracer/sources/Core/Color.cpp">
+			<Option target="Raytracer"/>
+			<Option target="test_unit_vec"/>
+		</Unit>
+		<Unit filename="C:/Users/gaspar/ClionProjects/Raytracer/sources/Core/Eye.cpp">
+			<Option target="Raytracer"/>
+			<Option target="test_unit_vec"/>
+		</Unit>
+		<Unit filename="C:/Users/gaspar/ClionProjects/Raytracer/sources/Core/Ray.cpp">
+			<Option target="Raytracer"/>
+			<Option target="test_unit_vec"/>
+		</Unit>
+		<Unit filename="C:/Users/gaspar/ClionProjects/Raytracer/sources/Core/RayTracer.cpp">
+			<Option target="Raytracer"/>
+			<Option target="test_unit_vec"/>
+		</Unit>
+		<Unit filename="C:/Users/gaspar/ClionProjects/Raytracer/sources/Core/Scene.cpp">
+			<Option target="Raytracer"/>
+			<Option target="test_unit_vec"/>
+		</Unit>
+		<Unit filename="C:/Users/gaspar/ClionProjects/Raytracer/sources/Core/Spot.cpp">
+			<Option target="Raytracer"/>
+			<Option target="test_unit_vec"/>
+		</Unit>
+		<Unit filename="C:/Users/gaspar/ClionProjects/Raytracer/sources/Core/Vector2.cpp">
+			<Option target="Raytracer"/>
+			<Option target="test_unit_vec"/>
+		</Unit>
+		<Unit filename="C:/Users/gaspar/ClionProjects/Raytracer/sources/Core/Vector3.cpp">
+			<Option target="Raytracer"/>
+			<Option target="test_unit_vec"/>
+		</Unit>
+		<Unit filename="C:/Users/gaspar/ClionProjects/Raytracer/sources/Effect/LightPhong.cpp">
 			<Option target="Raytracer"/>
 		</Unit>
-		<Unit filename="C:/Users/gaspar/ClionProjects/Raytracer/includes/SDLGraphic.hpp">
+		<Unit filename="C:/Users/gaspar/ClionProjects/Raytracer/sources/Graphic/AImage.cpp">
 			<Option target="Raytracer"/>
 		</Unit>
-		<Unit filename="C:/Users/gaspar/ClionProjects/Raytracer/includes/SDLImage.hpp">
+		<Unit filename="C:/Users/gaspar/ClionProjects/Raytracer/sources/Graphic/AWindow.cpp">
 			<Option target="Raytracer"/>
 		</Unit>
-		<Unit filename="C:/Users/gaspar/ClionProjects/Raytracer/includes/SDLWindow.hpp">
+		<Unit filename="C:/Users/gaspar/ClionProjects/Raytracer/sources/Graphic/GraphicException.cpp">
 			<Option target="Raytracer"/>
 		</Unit>
-		<Unit filename="C:/Users/gaspar/ClionProjects/Raytracer/includes/Scene.hpp">
+		<Unit filename="C:/Users/gaspar/ClionProjects/Raytracer/sources/Object/AObject.cpp">
 			<Option target="Raytracer"/>
 		</Unit>
-		<Unit filename="C:/Users/gaspar/ClionProjects/Raytracer/includes/Sphere.hpp">
+		<Unit filename="C:/Users/gaspar/ClionProjects/Raytracer/sources/Object/Cone.cpp">
 			<Option target="Raytracer"/>
 		</Unit>
-		<Unit filename="C:/Users/gaspar/ClionProjects/Raytracer/includes/Spot.hpp">
+		<Unit filename="C:/Users/gaspar/ClionProjects/Raytracer/sources/Object/Cylinder.cpp">
 			<Option target="Raytracer"/>
 		</Unit>
-		<Unit filename="C:/Users/gaspar/ClionProjects/Raytracer/includes/Vector2.hpp">
+		<Unit filename="C:/Users/gaspar/ClionProjects/Raytracer/sources/Object/Plan.cpp">
 			<Option target="Raytracer"/>
 		</Unit>
-		<Unit filename="C:/Users/gaspar/ClionProjects/Raytracer/includes/Vector3.hpp">
+		<Unit filename="C:/Users/gaspar/ClionProjects/Raytracer/sources/Object/Sphere.cpp">
 			<Option target="Raytracer"/>
 		</Unit>
-		<Unit filename="C:/Users/gaspar/ClionProjects/Raytracer/sources/AImage.cpp">
+		<Unit filename="C:/Users/gaspar/ClionProjects/Raytracer/sources/SDL2/SDLGraphic.cpp">
 			<Option target="Raytracer"/>
 		</Unit>
-		<Unit filename="C:/Users/gaspar/ClionProjects/Raytracer/sources/AObject.cpp">
+		<Unit filename="C:/Users/gaspar/ClionProjects/Raytracer/sources/SDL2/SDLImage.cpp">
 			<Option target="Raytracer"/>
 		</Unit>
-		<Unit filename="C:/Users/gaspar/ClionProjects/Raytracer/sources/AWindow.cpp">
-			<Option target="Raytracer"/>
-		</Unit>
-		<Unit filename="C:/Users/gaspar/ClionProjects/Raytracer/sources/CalculUnit.cpp">
-			<Option target="Raytracer"/>
-		</Unit>
-		<Unit filename="C:/Users/gaspar/ClionProjects/Raytracer/sources/Color.cpp">
-			<Option target="Raytracer"/>
-		</Unit>
-		<Unit filename="C:/Users/gaspar/ClionProjects/Raytracer/sources/Cone.cpp">
-			<Option target="Raytracer"/>
-		</Unit>
-		<Unit filename="C:/Users/gaspar/ClionProjects/Raytracer/sources/Cylinder.cpp">
-			<Option target="Raytracer"/>
-		</Unit>
-		<Unit filename="C:/Users/gaspar/ClionProjects/Raytracer/sources/Eye.cpp">
-			<Option target="Raytracer"/>
-		</Unit>
-		<Unit filename="C:/Users/gaspar/ClionProjects/Raytracer/sources/GraphicException.cpp">
-			<Option target="Raytracer"/>
-		</Unit>
-		<Unit filename="C:/Users/gaspar/ClionProjects/Raytracer/sources/LightPhong.cpp">
-			<Option target="Raytracer"/>
-		</Unit>
-		<Unit filename="C:/Users/gaspar/ClionProjects/Raytracer/sources/Plan.cpp">
-			<Option target="Raytracer"/>
-		</Unit>
-		<Unit filename="C:/Users/gaspar/ClionProjects/Raytracer/sources/Ray.cpp">
-			<Option target="Raytracer"/>
-		</Unit>
-		<Unit filename="C:/Users/gaspar/ClionProjects/Raytracer/sources/RayTracer.cpp">
-			<Option target="Raytracer"/>
-		</Unit>
-		<Unit filename="C:/Users/gaspar/ClionProjects/Raytracer/sources/SDLGraphic.cpp">
-			<Option target="Raytracer"/>
-		</Unit>
-		<Unit filename="C:/Users/gaspar/ClionProjects/Raytracer/sources/SDLImage.cpp">
-			<Option target="Raytracer"/>
-		</Unit>
-		<Unit filename="C:/Users/gaspar/ClionProjects/Raytracer/sources/SDLWindow.cpp">
-			<Option target="Raytracer"/>
-		</Unit>
-		<Unit filename="C:/Users/gaspar/ClionProjects/Raytracer/sources/Scene.cpp">
-			<Option target="Raytracer"/>
-		</Unit>
-		<Unit filename="C:/Users/gaspar/ClionProjects/Raytracer/sources/Sphere.cpp">
-			<Option target="Raytracer"/>
-		</Unit>
-		<Unit filename="C:/Users/gaspar/ClionProjects/Raytracer/sources/Spot.cpp">
-			<Option target="Raytracer"/>
-		</Unit>
-		<Unit filename="C:/Users/gaspar/ClionProjects/Raytracer/sources/Vector2.cpp">
-			<Option target="Raytracer"/>
-		</Unit>
-		<Unit filename="C:/Users/gaspar/ClionProjects/Raytracer/sources/Vector3.cpp">
+		<Unit filename="C:/Users/gaspar/ClionProjects/Raytracer/sources/SDL2/SDLWindow.cpp">
 			<Option target="Raytracer"/>
 		</Unit>
 		<Unit filename="C:/Users/gaspar/ClionProjects/Raytracer/sources/main.cpp">
 			<Option target="Raytracer"/>
+		</Unit>
+		<Unit filename="C:/Users/gaspar/ClionProjects/Raytracer/test/test_unit_vector.cpp">
+			<Option target="test_unit_vec"/>
 		</Unit>
 		<Unit filename="C:/Users/gaspar/ClionProjects/Raytracer/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>

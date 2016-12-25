@@ -96,6 +96,43 @@ clean: CMakeFiles/Raytracer.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/test_unit_vec.dir
+
+# All Build rule for target.
+CMakeFiles/test_unit_vec.dir/all:
+	$(MAKE) -f CMakeFiles\test_unit_vec.dir\build.make CMakeFiles/test_unit_vec.dir/depend
+	$(MAKE) -f CMakeFiles\test_unit_vec.dir\build.make CMakeFiles/test_unit_vec.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\gaspar\ClionProjects\Raytracer\cmake-build-debug\CMakeFiles --progress-num=24,25,26,27,28,29,30,31,32,33,34 "Built target test_unit_vec"
+.PHONY : CMakeFiles/test_unit_vec.dir/all
+
+# Include target in all.
+all: CMakeFiles/test_unit_vec.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/test_unit_vec.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\gaspar\ClionProjects\Raytracer\cmake-build-debug\CMakeFiles 11
+	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/test_unit_vec.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\gaspar\ClionProjects\Raytracer\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles/test_unit_vec.dir/rule
+
+# Convenience name for target.
+test_unit_vec: CMakeFiles/test_unit_vec.dir/rule
+
+.PHONY : test_unit_vec
+
+# clean rule for target.
+CMakeFiles/test_unit_vec.dir/clean:
+	$(MAKE) -f CMakeFiles\test_unit_vec.dir\build.make CMakeFiles/test_unit_vec.dir/clean
+.PHONY : CMakeFiles/test_unit_vec.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/test_unit_vec.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Special targets to cleanup operation of make.
 
 # Special rule to run CMake to check the build system integrity.

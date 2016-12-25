@@ -56,529 +56,529 @@ include CMakeFiles/Raytracer.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Raytracer.dir/flags.make
 
-CMakeFiles/Raytracer.dir/sources/AImage.cpp.obj: CMakeFiles/Raytracer.dir/flags.make
-CMakeFiles/Raytracer.dir/sources/AImage.cpp.obj: CMakeFiles/Raytracer.dir/includes_CXX.rsp
-CMakeFiles/Raytracer.dir/sources/AImage.cpp.obj: ../sources/AImage.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\gaspar\ClionProjects\Raytracer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Raytracer.dir/sources/AImage.cpp.obj"
-	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Raytracer.dir\sources\AImage.cpp.obj -c C:\Users\gaspar\ClionProjects\Raytracer\sources\AImage.cpp
+CMakeFiles/Raytracer.dir/sources/Core/CalculUnit.cpp.obj: CMakeFiles/Raytracer.dir/flags.make
+CMakeFiles/Raytracer.dir/sources/Core/CalculUnit.cpp.obj: CMakeFiles/Raytracer.dir/includes_CXX.rsp
+CMakeFiles/Raytracer.dir/sources/Core/CalculUnit.cpp.obj: ../sources/Core/CalculUnit.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\gaspar\ClionProjects\Raytracer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Raytracer.dir/sources/Core/CalculUnit.cpp.obj"
+	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Raytracer.dir\sources\Core\CalculUnit.cpp.obj -c C:\Users\gaspar\ClionProjects\Raytracer\sources\Core\CalculUnit.cpp
 
-CMakeFiles/Raytracer.dir/sources/AImage.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Raytracer.dir/sources/AImage.cpp.i"
-	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\gaspar\ClionProjects\Raytracer\sources\AImage.cpp > CMakeFiles\Raytracer.dir\sources\AImage.cpp.i
+CMakeFiles/Raytracer.dir/sources/Core/CalculUnit.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Raytracer.dir/sources/Core/CalculUnit.cpp.i"
+	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\gaspar\ClionProjects\Raytracer\sources\Core\CalculUnit.cpp > CMakeFiles\Raytracer.dir\sources\Core\CalculUnit.cpp.i
 
-CMakeFiles/Raytracer.dir/sources/AImage.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Raytracer.dir/sources/AImage.cpp.s"
-	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\gaspar\ClionProjects\Raytracer\sources\AImage.cpp -o CMakeFiles\Raytracer.dir\sources\AImage.cpp.s
+CMakeFiles/Raytracer.dir/sources/Core/CalculUnit.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Raytracer.dir/sources/Core/CalculUnit.cpp.s"
+	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\gaspar\ClionProjects\Raytracer\sources\Core\CalculUnit.cpp -o CMakeFiles\Raytracer.dir\sources\Core\CalculUnit.cpp.s
 
-CMakeFiles/Raytracer.dir/sources/AImage.cpp.obj.requires:
+CMakeFiles/Raytracer.dir/sources/Core/CalculUnit.cpp.obj.requires:
 
-.PHONY : CMakeFiles/Raytracer.dir/sources/AImage.cpp.obj.requires
+.PHONY : CMakeFiles/Raytracer.dir/sources/Core/CalculUnit.cpp.obj.requires
 
-CMakeFiles/Raytracer.dir/sources/AImage.cpp.obj.provides: CMakeFiles/Raytracer.dir/sources/AImage.cpp.obj.requires
-	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/AImage.cpp.obj.provides.build
-.PHONY : CMakeFiles/Raytracer.dir/sources/AImage.cpp.obj.provides
+CMakeFiles/Raytracer.dir/sources/Core/CalculUnit.cpp.obj.provides: CMakeFiles/Raytracer.dir/sources/Core/CalculUnit.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Core/CalculUnit.cpp.obj.provides.build
+.PHONY : CMakeFiles/Raytracer.dir/sources/Core/CalculUnit.cpp.obj.provides
 
-CMakeFiles/Raytracer.dir/sources/AImage.cpp.obj.provides.build: CMakeFiles/Raytracer.dir/sources/AImage.cpp.obj
+CMakeFiles/Raytracer.dir/sources/Core/CalculUnit.cpp.obj.provides.build: CMakeFiles/Raytracer.dir/sources/Core/CalculUnit.cpp.obj
 
 
-CMakeFiles/Raytracer.dir/sources/AObject.cpp.obj: CMakeFiles/Raytracer.dir/flags.make
-CMakeFiles/Raytracer.dir/sources/AObject.cpp.obj: CMakeFiles/Raytracer.dir/includes_CXX.rsp
-CMakeFiles/Raytracer.dir/sources/AObject.cpp.obj: ../sources/AObject.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\gaspar\ClionProjects\Raytracer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Raytracer.dir/sources/AObject.cpp.obj"
-	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Raytracer.dir\sources\AObject.cpp.obj -c C:\Users\gaspar\ClionProjects\Raytracer\sources\AObject.cpp
+CMakeFiles/Raytracer.dir/sources/Core/Color.cpp.obj: CMakeFiles/Raytracer.dir/flags.make
+CMakeFiles/Raytracer.dir/sources/Core/Color.cpp.obj: CMakeFiles/Raytracer.dir/includes_CXX.rsp
+CMakeFiles/Raytracer.dir/sources/Core/Color.cpp.obj: ../sources/Core/Color.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\gaspar\ClionProjects\Raytracer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Raytracer.dir/sources/Core/Color.cpp.obj"
+	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Raytracer.dir\sources\Core\Color.cpp.obj -c C:\Users\gaspar\ClionProjects\Raytracer\sources\Core\Color.cpp
 
-CMakeFiles/Raytracer.dir/sources/AObject.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Raytracer.dir/sources/AObject.cpp.i"
-	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\gaspar\ClionProjects\Raytracer\sources\AObject.cpp > CMakeFiles\Raytracer.dir\sources\AObject.cpp.i
+CMakeFiles/Raytracer.dir/sources/Core/Color.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Raytracer.dir/sources/Core/Color.cpp.i"
+	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\gaspar\ClionProjects\Raytracer\sources\Core\Color.cpp > CMakeFiles\Raytracer.dir\sources\Core\Color.cpp.i
 
-CMakeFiles/Raytracer.dir/sources/AObject.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Raytracer.dir/sources/AObject.cpp.s"
-	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\gaspar\ClionProjects\Raytracer\sources\AObject.cpp -o CMakeFiles\Raytracer.dir\sources\AObject.cpp.s
+CMakeFiles/Raytracer.dir/sources/Core/Color.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Raytracer.dir/sources/Core/Color.cpp.s"
+	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\gaspar\ClionProjects\Raytracer\sources\Core\Color.cpp -o CMakeFiles\Raytracer.dir\sources\Core\Color.cpp.s
 
-CMakeFiles/Raytracer.dir/sources/AObject.cpp.obj.requires:
+CMakeFiles/Raytracer.dir/sources/Core/Color.cpp.obj.requires:
 
-.PHONY : CMakeFiles/Raytracer.dir/sources/AObject.cpp.obj.requires
+.PHONY : CMakeFiles/Raytracer.dir/sources/Core/Color.cpp.obj.requires
 
-CMakeFiles/Raytracer.dir/sources/AObject.cpp.obj.provides: CMakeFiles/Raytracer.dir/sources/AObject.cpp.obj.requires
-	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/AObject.cpp.obj.provides.build
-.PHONY : CMakeFiles/Raytracer.dir/sources/AObject.cpp.obj.provides
+CMakeFiles/Raytracer.dir/sources/Core/Color.cpp.obj.provides: CMakeFiles/Raytracer.dir/sources/Core/Color.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Core/Color.cpp.obj.provides.build
+.PHONY : CMakeFiles/Raytracer.dir/sources/Core/Color.cpp.obj.provides
 
-CMakeFiles/Raytracer.dir/sources/AObject.cpp.obj.provides.build: CMakeFiles/Raytracer.dir/sources/AObject.cpp.obj
+CMakeFiles/Raytracer.dir/sources/Core/Color.cpp.obj.provides.build: CMakeFiles/Raytracer.dir/sources/Core/Color.cpp.obj
 
 
-CMakeFiles/Raytracer.dir/sources/AWindow.cpp.obj: CMakeFiles/Raytracer.dir/flags.make
-CMakeFiles/Raytracer.dir/sources/AWindow.cpp.obj: CMakeFiles/Raytracer.dir/includes_CXX.rsp
-CMakeFiles/Raytracer.dir/sources/AWindow.cpp.obj: ../sources/AWindow.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\gaspar\ClionProjects\Raytracer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Raytracer.dir/sources/AWindow.cpp.obj"
-	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Raytracer.dir\sources\AWindow.cpp.obj -c C:\Users\gaspar\ClionProjects\Raytracer\sources\AWindow.cpp
+CMakeFiles/Raytracer.dir/sources/Core/Eye.cpp.obj: CMakeFiles/Raytracer.dir/flags.make
+CMakeFiles/Raytracer.dir/sources/Core/Eye.cpp.obj: CMakeFiles/Raytracer.dir/includes_CXX.rsp
+CMakeFiles/Raytracer.dir/sources/Core/Eye.cpp.obj: ../sources/Core/Eye.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\gaspar\ClionProjects\Raytracer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Raytracer.dir/sources/Core/Eye.cpp.obj"
+	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Raytracer.dir\sources\Core\Eye.cpp.obj -c C:\Users\gaspar\ClionProjects\Raytracer\sources\Core\Eye.cpp
 
-CMakeFiles/Raytracer.dir/sources/AWindow.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Raytracer.dir/sources/AWindow.cpp.i"
-	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\gaspar\ClionProjects\Raytracer\sources\AWindow.cpp > CMakeFiles\Raytracer.dir\sources\AWindow.cpp.i
+CMakeFiles/Raytracer.dir/sources/Core/Eye.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Raytracer.dir/sources/Core/Eye.cpp.i"
+	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\gaspar\ClionProjects\Raytracer\sources\Core\Eye.cpp > CMakeFiles\Raytracer.dir\sources\Core\Eye.cpp.i
 
-CMakeFiles/Raytracer.dir/sources/AWindow.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Raytracer.dir/sources/AWindow.cpp.s"
-	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\gaspar\ClionProjects\Raytracer\sources\AWindow.cpp -o CMakeFiles\Raytracer.dir\sources\AWindow.cpp.s
+CMakeFiles/Raytracer.dir/sources/Core/Eye.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Raytracer.dir/sources/Core/Eye.cpp.s"
+	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\gaspar\ClionProjects\Raytracer\sources\Core\Eye.cpp -o CMakeFiles\Raytracer.dir\sources\Core\Eye.cpp.s
 
-CMakeFiles/Raytracer.dir/sources/AWindow.cpp.obj.requires:
+CMakeFiles/Raytracer.dir/sources/Core/Eye.cpp.obj.requires:
 
-.PHONY : CMakeFiles/Raytracer.dir/sources/AWindow.cpp.obj.requires
+.PHONY : CMakeFiles/Raytracer.dir/sources/Core/Eye.cpp.obj.requires
 
-CMakeFiles/Raytracer.dir/sources/AWindow.cpp.obj.provides: CMakeFiles/Raytracer.dir/sources/AWindow.cpp.obj.requires
-	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/AWindow.cpp.obj.provides.build
-.PHONY : CMakeFiles/Raytracer.dir/sources/AWindow.cpp.obj.provides
+CMakeFiles/Raytracer.dir/sources/Core/Eye.cpp.obj.provides: CMakeFiles/Raytracer.dir/sources/Core/Eye.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Core/Eye.cpp.obj.provides.build
+.PHONY : CMakeFiles/Raytracer.dir/sources/Core/Eye.cpp.obj.provides
 
-CMakeFiles/Raytracer.dir/sources/AWindow.cpp.obj.provides.build: CMakeFiles/Raytracer.dir/sources/AWindow.cpp.obj
+CMakeFiles/Raytracer.dir/sources/Core/Eye.cpp.obj.provides.build: CMakeFiles/Raytracer.dir/sources/Core/Eye.cpp.obj
 
 
-CMakeFiles/Raytracer.dir/sources/CalculUnit.cpp.obj: CMakeFiles/Raytracer.dir/flags.make
-CMakeFiles/Raytracer.dir/sources/CalculUnit.cpp.obj: CMakeFiles/Raytracer.dir/includes_CXX.rsp
-CMakeFiles/Raytracer.dir/sources/CalculUnit.cpp.obj: ../sources/CalculUnit.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\gaspar\ClionProjects\Raytracer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Raytracer.dir/sources/CalculUnit.cpp.obj"
-	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Raytracer.dir\sources\CalculUnit.cpp.obj -c C:\Users\gaspar\ClionProjects\Raytracer\sources\CalculUnit.cpp
+CMakeFiles/Raytracer.dir/sources/Core/Ray.cpp.obj: CMakeFiles/Raytracer.dir/flags.make
+CMakeFiles/Raytracer.dir/sources/Core/Ray.cpp.obj: CMakeFiles/Raytracer.dir/includes_CXX.rsp
+CMakeFiles/Raytracer.dir/sources/Core/Ray.cpp.obj: ../sources/Core/Ray.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\gaspar\ClionProjects\Raytracer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Raytracer.dir/sources/Core/Ray.cpp.obj"
+	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Raytracer.dir\sources\Core\Ray.cpp.obj -c C:\Users\gaspar\ClionProjects\Raytracer\sources\Core\Ray.cpp
 
-CMakeFiles/Raytracer.dir/sources/CalculUnit.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Raytracer.dir/sources/CalculUnit.cpp.i"
-	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\gaspar\ClionProjects\Raytracer\sources\CalculUnit.cpp > CMakeFiles\Raytracer.dir\sources\CalculUnit.cpp.i
+CMakeFiles/Raytracer.dir/sources/Core/Ray.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Raytracer.dir/sources/Core/Ray.cpp.i"
+	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\gaspar\ClionProjects\Raytracer\sources\Core\Ray.cpp > CMakeFiles\Raytracer.dir\sources\Core\Ray.cpp.i
 
-CMakeFiles/Raytracer.dir/sources/CalculUnit.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Raytracer.dir/sources/CalculUnit.cpp.s"
-	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\gaspar\ClionProjects\Raytracer\sources\CalculUnit.cpp -o CMakeFiles\Raytracer.dir\sources\CalculUnit.cpp.s
+CMakeFiles/Raytracer.dir/sources/Core/Ray.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Raytracer.dir/sources/Core/Ray.cpp.s"
+	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\gaspar\ClionProjects\Raytracer\sources\Core\Ray.cpp -o CMakeFiles\Raytracer.dir\sources\Core\Ray.cpp.s
 
-CMakeFiles/Raytracer.dir/sources/CalculUnit.cpp.obj.requires:
+CMakeFiles/Raytracer.dir/sources/Core/Ray.cpp.obj.requires:
 
-.PHONY : CMakeFiles/Raytracer.dir/sources/CalculUnit.cpp.obj.requires
+.PHONY : CMakeFiles/Raytracer.dir/sources/Core/Ray.cpp.obj.requires
 
-CMakeFiles/Raytracer.dir/sources/CalculUnit.cpp.obj.provides: CMakeFiles/Raytracer.dir/sources/CalculUnit.cpp.obj.requires
-	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/CalculUnit.cpp.obj.provides.build
-.PHONY : CMakeFiles/Raytracer.dir/sources/CalculUnit.cpp.obj.provides
+CMakeFiles/Raytracer.dir/sources/Core/Ray.cpp.obj.provides: CMakeFiles/Raytracer.dir/sources/Core/Ray.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Core/Ray.cpp.obj.provides.build
+.PHONY : CMakeFiles/Raytracer.dir/sources/Core/Ray.cpp.obj.provides
 
-CMakeFiles/Raytracer.dir/sources/CalculUnit.cpp.obj.provides.build: CMakeFiles/Raytracer.dir/sources/CalculUnit.cpp.obj
+CMakeFiles/Raytracer.dir/sources/Core/Ray.cpp.obj.provides.build: CMakeFiles/Raytracer.dir/sources/Core/Ray.cpp.obj
 
 
-CMakeFiles/Raytracer.dir/sources/Color.cpp.obj: CMakeFiles/Raytracer.dir/flags.make
-CMakeFiles/Raytracer.dir/sources/Color.cpp.obj: CMakeFiles/Raytracer.dir/includes_CXX.rsp
-CMakeFiles/Raytracer.dir/sources/Color.cpp.obj: ../sources/Color.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\gaspar\ClionProjects\Raytracer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Raytracer.dir/sources/Color.cpp.obj"
-	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Raytracer.dir\sources\Color.cpp.obj -c C:\Users\gaspar\ClionProjects\Raytracer\sources\Color.cpp
+CMakeFiles/Raytracer.dir/sources/Core/RayTracer.cpp.obj: CMakeFiles/Raytracer.dir/flags.make
+CMakeFiles/Raytracer.dir/sources/Core/RayTracer.cpp.obj: CMakeFiles/Raytracer.dir/includes_CXX.rsp
+CMakeFiles/Raytracer.dir/sources/Core/RayTracer.cpp.obj: ../sources/Core/RayTracer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\gaspar\ClionProjects\Raytracer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Raytracer.dir/sources/Core/RayTracer.cpp.obj"
+	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Raytracer.dir\sources\Core\RayTracer.cpp.obj -c C:\Users\gaspar\ClionProjects\Raytracer\sources\Core\RayTracer.cpp
 
-CMakeFiles/Raytracer.dir/sources/Color.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Raytracer.dir/sources/Color.cpp.i"
-	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\gaspar\ClionProjects\Raytracer\sources\Color.cpp > CMakeFiles\Raytracer.dir\sources\Color.cpp.i
+CMakeFiles/Raytracer.dir/sources/Core/RayTracer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Raytracer.dir/sources/Core/RayTracer.cpp.i"
+	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\gaspar\ClionProjects\Raytracer\sources\Core\RayTracer.cpp > CMakeFiles\Raytracer.dir\sources\Core\RayTracer.cpp.i
 
-CMakeFiles/Raytracer.dir/sources/Color.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Raytracer.dir/sources/Color.cpp.s"
-	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\gaspar\ClionProjects\Raytracer\sources\Color.cpp -o CMakeFiles\Raytracer.dir\sources\Color.cpp.s
+CMakeFiles/Raytracer.dir/sources/Core/RayTracer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Raytracer.dir/sources/Core/RayTracer.cpp.s"
+	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\gaspar\ClionProjects\Raytracer\sources\Core\RayTracer.cpp -o CMakeFiles\Raytracer.dir\sources\Core\RayTracer.cpp.s
 
-CMakeFiles/Raytracer.dir/sources/Color.cpp.obj.requires:
+CMakeFiles/Raytracer.dir/sources/Core/RayTracer.cpp.obj.requires:
 
-.PHONY : CMakeFiles/Raytracer.dir/sources/Color.cpp.obj.requires
+.PHONY : CMakeFiles/Raytracer.dir/sources/Core/RayTracer.cpp.obj.requires
 
-CMakeFiles/Raytracer.dir/sources/Color.cpp.obj.provides: CMakeFiles/Raytracer.dir/sources/Color.cpp.obj.requires
-	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Color.cpp.obj.provides.build
-.PHONY : CMakeFiles/Raytracer.dir/sources/Color.cpp.obj.provides
+CMakeFiles/Raytracer.dir/sources/Core/RayTracer.cpp.obj.provides: CMakeFiles/Raytracer.dir/sources/Core/RayTracer.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Core/RayTracer.cpp.obj.provides.build
+.PHONY : CMakeFiles/Raytracer.dir/sources/Core/RayTracer.cpp.obj.provides
 
-CMakeFiles/Raytracer.dir/sources/Color.cpp.obj.provides.build: CMakeFiles/Raytracer.dir/sources/Color.cpp.obj
+CMakeFiles/Raytracer.dir/sources/Core/RayTracer.cpp.obj.provides.build: CMakeFiles/Raytracer.dir/sources/Core/RayTracer.cpp.obj
 
 
-CMakeFiles/Raytracer.dir/sources/Cone.cpp.obj: CMakeFiles/Raytracer.dir/flags.make
-CMakeFiles/Raytracer.dir/sources/Cone.cpp.obj: CMakeFiles/Raytracer.dir/includes_CXX.rsp
-CMakeFiles/Raytracer.dir/sources/Cone.cpp.obj: ../sources/Cone.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\gaspar\ClionProjects\Raytracer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Raytracer.dir/sources/Cone.cpp.obj"
-	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Raytracer.dir\sources\Cone.cpp.obj -c C:\Users\gaspar\ClionProjects\Raytracer\sources\Cone.cpp
+CMakeFiles/Raytracer.dir/sources/Core/Scene.cpp.obj: CMakeFiles/Raytracer.dir/flags.make
+CMakeFiles/Raytracer.dir/sources/Core/Scene.cpp.obj: CMakeFiles/Raytracer.dir/includes_CXX.rsp
+CMakeFiles/Raytracer.dir/sources/Core/Scene.cpp.obj: ../sources/Core/Scene.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\gaspar\ClionProjects\Raytracer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Raytracer.dir/sources/Core/Scene.cpp.obj"
+	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Raytracer.dir\sources\Core\Scene.cpp.obj -c C:\Users\gaspar\ClionProjects\Raytracer\sources\Core\Scene.cpp
 
-CMakeFiles/Raytracer.dir/sources/Cone.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Raytracer.dir/sources/Cone.cpp.i"
-	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\gaspar\ClionProjects\Raytracer\sources\Cone.cpp > CMakeFiles\Raytracer.dir\sources\Cone.cpp.i
+CMakeFiles/Raytracer.dir/sources/Core/Scene.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Raytracer.dir/sources/Core/Scene.cpp.i"
+	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\gaspar\ClionProjects\Raytracer\sources\Core\Scene.cpp > CMakeFiles\Raytracer.dir\sources\Core\Scene.cpp.i
 
-CMakeFiles/Raytracer.dir/sources/Cone.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Raytracer.dir/sources/Cone.cpp.s"
-	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\gaspar\ClionProjects\Raytracer\sources\Cone.cpp -o CMakeFiles\Raytracer.dir\sources\Cone.cpp.s
+CMakeFiles/Raytracer.dir/sources/Core/Scene.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Raytracer.dir/sources/Core/Scene.cpp.s"
+	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\gaspar\ClionProjects\Raytracer\sources\Core\Scene.cpp -o CMakeFiles\Raytracer.dir\sources\Core\Scene.cpp.s
 
-CMakeFiles/Raytracer.dir/sources/Cone.cpp.obj.requires:
+CMakeFiles/Raytracer.dir/sources/Core/Scene.cpp.obj.requires:
 
-.PHONY : CMakeFiles/Raytracer.dir/sources/Cone.cpp.obj.requires
+.PHONY : CMakeFiles/Raytracer.dir/sources/Core/Scene.cpp.obj.requires
 
-CMakeFiles/Raytracer.dir/sources/Cone.cpp.obj.provides: CMakeFiles/Raytracer.dir/sources/Cone.cpp.obj.requires
-	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Cone.cpp.obj.provides.build
-.PHONY : CMakeFiles/Raytracer.dir/sources/Cone.cpp.obj.provides
+CMakeFiles/Raytracer.dir/sources/Core/Scene.cpp.obj.provides: CMakeFiles/Raytracer.dir/sources/Core/Scene.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Core/Scene.cpp.obj.provides.build
+.PHONY : CMakeFiles/Raytracer.dir/sources/Core/Scene.cpp.obj.provides
 
-CMakeFiles/Raytracer.dir/sources/Cone.cpp.obj.provides.build: CMakeFiles/Raytracer.dir/sources/Cone.cpp.obj
+CMakeFiles/Raytracer.dir/sources/Core/Scene.cpp.obj.provides.build: CMakeFiles/Raytracer.dir/sources/Core/Scene.cpp.obj
 
 
-CMakeFiles/Raytracer.dir/sources/Cylinder.cpp.obj: CMakeFiles/Raytracer.dir/flags.make
-CMakeFiles/Raytracer.dir/sources/Cylinder.cpp.obj: CMakeFiles/Raytracer.dir/includes_CXX.rsp
-CMakeFiles/Raytracer.dir/sources/Cylinder.cpp.obj: ../sources/Cylinder.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\gaspar\ClionProjects\Raytracer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Raytracer.dir/sources/Cylinder.cpp.obj"
-	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Raytracer.dir\sources\Cylinder.cpp.obj -c C:\Users\gaspar\ClionProjects\Raytracer\sources\Cylinder.cpp
+CMakeFiles/Raytracer.dir/sources/Core/Spot.cpp.obj: CMakeFiles/Raytracer.dir/flags.make
+CMakeFiles/Raytracer.dir/sources/Core/Spot.cpp.obj: CMakeFiles/Raytracer.dir/includes_CXX.rsp
+CMakeFiles/Raytracer.dir/sources/Core/Spot.cpp.obj: ../sources/Core/Spot.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\gaspar\ClionProjects\Raytracer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Raytracer.dir/sources/Core/Spot.cpp.obj"
+	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Raytracer.dir\sources\Core\Spot.cpp.obj -c C:\Users\gaspar\ClionProjects\Raytracer\sources\Core\Spot.cpp
 
-CMakeFiles/Raytracer.dir/sources/Cylinder.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Raytracer.dir/sources/Cylinder.cpp.i"
-	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\gaspar\ClionProjects\Raytracer\sources\Cylinder.cpp > CMakeFiles\Raytracer.dir\sources\Cylinder.cpp.i
+CMakeFiles/Raytracer.dir/sources/Core/Spot.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Raytracer.dir/sources/Core/Spot.cpp.i"
+	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\gaspar\ClionProjects\Raytracer\sources\Core\Spot.cpp > CMakeFiles\Raytracer.dir\sources\Core\Spot.cpp.i
 
-CMakeFiles/Raytracer.dir/sources/Cylinder.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Raytracer.dir/sources/Cylinder.cpp.s"
-	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\gaspar\ClionProjects\Raytracer\sources\Cylinder.cpp -o CMakeFiles\Raytracer.dir\sources\Cylinder.cpp.s
+CMakeFiles/Raytracer.dir/sources/Core/Spot.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Raytracer.dir/sources/Core/Spot.cpp.s"
+	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\gaspar\ClionProjects\Raytracer\sources\Core\Spot.cpp -o CMakeFiles\Raytracer.dir\sources\Core\Spot.cpp.s
 
-CMakeFiles/Raytracer.dir/sources/Cylinder.cpp.obj.requires:
+CMakeFiles/Raytracer.dir/sources/Core/Spot.cpp.obj.requires:
 
-.PHONY : CMakeFiles/Raytracer.dir/sources/Cylinder.cpp.obj.requires
+.PHONY : CMakeFiles/Raytracer.dir/sources/Core/Spot.cpp.obj.requires
 
-CMakeFiles/Raytracer.dir/sources/Cylinder.cpp.obj.provides: CMakeFiles/Raytracer.dir/sources/Cylinder.cpp.obj.requires
-	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Cylinder.cpp.obj.provides.build
-.PHONY : CMakeFiles/Raytracer.dir/sources/Cylinder.cpp.obj.provides
+CMakeFiles/Raytracer.dir/sources/Core/Spot.cpp.obj.provides: CMakeFiles/Raytracer.dir/sources/Core/Spot.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Core/Spot.cpp.obj.provides.build
+.PHONY : CMakeFiles/Raytracer.dir/sources/Core/Spot.cpp.obj.provides
 
-CMakeFiles/Raytracer.dir/sources/Cylinder.cpp.obj.provides.build: CMakeFiles/Raytracer.dir/sources/Cylinder.cpp.obj
+CMakeFiles/Raytracer.dir/sources/Core/Spot.cpp.obj.provides.build: CMakeFiles/Raytracer.dir/sources/Core/Spot.cpp.obj
 
 
-CMakeFiles/Raytracer.dir/sources/Eye.cpp.obj: CMakeFiles/Raytracer.dir/flags.make
-CMakeFiles/Raytracer.dir/sources/Eye.cpp.obj: CMakeFiles/Raytracer.dir/includes_CXX.rsp
-CMakeFiles/Raytracer.dir/sources/Eye.cpp.obj: ../sources/Eye.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\gaspar\ClionProjects\Raytracer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Raytracer.dir/sources/Eye.cpp.obj"
-	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Raytracer.dir\sources\Eye.cpp.obj -c C:\Users\gaspar\ClionProjects\Raytracer\sources\Eye.cpp
+CMakeFiles/Raytracer.dir/sources/Core/Vector2.cpp.obj: CMakeFiles/Raytracer.dir/flags.make
+CMakeFiles/Raytracer.dir/sources/Core/Vector2.cpp.obj: CMakeFiles/Raytracer.dir/includes_CXX.rsp
+CMakeFiles/Raytracer.dir/sources/Core/Vector2.cpp.obj: ../sources/Core/Vector2.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\gaspar\ClionProjects\Raytracer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Raytracer.dir/sources/Core/Vector2.cpp.obj"
+	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Raytracer.dir\sources\Core\Vector2.cpp.obj -c C:\Users\gaspar\ClionProjects\Raytracer\sources\Core\Vector2.cpp
 
-CMakeFiles/Raytracer.dir/sources/Eye.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Raytracer.dir/sources/Eye.cpp.i"
-	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\gaspar\ClionProjects\Raytracer\sources\Eye.cpp > CMakeFiles\Raytracer.dir\sources\Eye.cpp.i
+CMakeFiles/Raytracer.dir/sources/Core/Vector2.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Raytracer.dir/sources/Core/Vector2.cpp.i"
+	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\gaspar\ClionProjects\Raytracer\sources\Core\Vector2.cpp > CMakeFiles\Raytracer.dir\sources\Core\Vector2.cpp.i
 
-CMakeFiles/Raytracer.dir/sources/Eye.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Raytracer.dir/sources/Eye.cpp.s"
-	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\gaspar\ClionProjects\Raytracer\sources\Eye.cpp -o CMakeFiles\Raytracer.dir\sources\Eye.cpp.s
+CMakeFiles/Raytracer.dir/sources/Core/Vector2.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Raytracer.dir/sources/Core/Vector2.cpp.s"
+	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\gaspar\ClionProjects\Raytracer\sources\Core\Vector2.cpp -o CMakeFiles\Raytracer.dir\sources\Core\Vector2.cpp.s
 
-CMakeFiles/Raytracer.dir/sources/Eye.cpp.obj.requires:
+CMakeFiles/Raytracer.dir/sources/Core/Vector2.cpp.obj.requires:
 
-.PHONY : CMakeFiles/Raytracer.dir/sources/Eye.cpp.obj.requires
+.PHONY : CMakeFiles/Raytracer.dir/sources/Core/Vector2.cpp.obj.requires
 
-CMakeFiles/Raytracer.dir/sources/Eye.cpp.obj.provides: CMakeFiles/Raytracer.dir/sources/Eye.cpp.obj.requires
-	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Eye.cpp.obj.provides.build
-.PHONY : CMakeFiles/Raytracer.dir/sources/Eye.cpp.obj.provides
+CMakeFiles/Raytracer.dir/sources/Core/Vector2.cpp.obj.provides: CMakeFiles/Raytracer.dir/sources/Core/Vector2.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Core/Vector2.cpp.obj.provides.build
+.PHONY : CMakeFiles/Raytracer.dir/sources/Core/Vector2.cpp.obj.provides
 
-CMakeFiles/Raytracer.dir/sources/Eye.cpp.obj.provides.build: CMakeFiles/Raytracer.dir/sources/Eye.cpp.obj
+CMakeFiles/Raytracer.dir/sources/Core/Vector2.cpp.obj.provides.build: CMakeFiles/Raytracer.dir/sources/Core/Vector2.cpp.obj
 
 
-CMakeFiles/Raytracer.dir/sources/GraphicException.cpp.obj: CMakeFiles/Raytracer.dir/flags.make
-CMakeFiles/Raytracer.dir/sources/GraphicException.cpp.obj: CMakeFiles/Raytracer.dir/includes_CXX.rsp
-CMakeFiles/Raytracer.dir/sources/GraphicException.cpp.obj: ../sources/GraphicException.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\gaspar\ClionProjects\Raytracer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Raytracer.dir/sources/GraphicException.cpp.obj"
-	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Raytracer.dir\sources\GraphicException.cpp.obj -c C:\Users\gaspar\ClionProjects\Raytracer\sources\GraphicException.cpp
+CMakeFiles/Raytracer.dir/sources/Core/Vector3.cpp.obj: CMakeFiles/Raytracer.dir/flags.make
+CMakeFiles/Raytracer.dir/sources/Core/Vector3.cpp.obj: CMakeFiles/Raytracer.dir/includes_CXX.rsp
+CMakeFiles/Raytracer.dir/sources/Core/Vector3.cpp.obj: ../sources/Core/Vector3.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\gaspar\ClionProjects\Raytracer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Raytracer.dir/sources/Core/Vector3.cpp.obj"
+	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Raytracer.dir\sources\Core\Vector3.cpp.obj -c C:\Users\gaspar\ClionProjects\Raytracer\sources\Core\Vector3.cpp
 
-CMakeFiles/Raytracer.dir/sources/GraphicException.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Raytracer.dir/sources/GraphicException.cpp.i"
-	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\gaspar\ClionProjects\Raytracer\sources\GraphicException.cpp > CMakeFiles\Raytracer.dir\sources\GraphicException.cpp.i
+CMakeFiles/Raytracer.dir/sources/Core/Vector3.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Raytracer.dir/sources/Core/Vector3.cpp.i"
+	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\gaspar\ClionProjects\Raytracer\sources\Core\Vector3.cpp > CMakeFiles\Raytracer.dir\sources\Core\Vector3.cpp.i
 
-CMakeFiles/Raytracer.dir/sources/GraphicException.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Raytracer.dir/sources/GraphicException.cpp.s"
-	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\gaspar\ClionProjects\Raytracer\sources\GraphicException.cpp -o CMakeFiles\Raytracer.dir\sources\GraphicException.cpp.s
+CMakeFiles/Raytracer.dir/sources/Core/Vector3.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Raytracer.dir/sources/Core/Vector3.cpp.s"
+	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\gaspar\ClionProjects\Raytracer\sources\Core\Vector3.cpp -o CMakeFiles\Raytracer.dir\sources\Core\Vector3.cpp.s
 
-CMakeFiles/Raytracer.dir/sources/GraphicException.cpp.obj.requires:
+CMakeFiles/Raytracer.dir/sources/Core/Vector3.cpp.obj.requires:
 
-.PHONY : CMakeFiles/Raytracer.dir/sources/GraphicException.cpp.obj.requires
+.PHONY : CMakeFiles/Raytracer.dir/sources/Core/Vector3.cpp.obj.requires
 
-CMakeFiles/Raytracer.dir/sources/GraphicException.cpp.obj.provides: CMakeFiles/Raytracer.dir/sources/GraphicException.cpp.obj.requires
-	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/GraphicException.cpp.obj.provides.build
-.PHONY : CMakeFiles/Raytracer.dir/sources/GraphicException.cpp.obj.provides
+CMakeFiles/Raytracer.dir/sources/Core/Vector3.cpp.obj.provides: CMakeFiles/Raytracer.dir/sources/Core/Vector3.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Core/Vector3.cpp.obj.provides.build
+.PHONY : CMakeFiles/Raytracer.dir/sources/Core/Vector3.cpp.obj.provides
 
-CMakeFiles/Raytracer.dir/sources/GraphicException.cpp.obj.provides.build: CMakeFiles/Raytracer.dir/sources/GraphicException.cpp.obj
+CMakeFiles/Raytracer.dir/sources/Core/Vector3.cpp.obj.provides.build: CMakeFiles/Raytracer.dir/sources/Core/Vector3.cpp.obj
 
 
-CMakeFiles/Raytracer.dir/sources/LightPhong.cpp.obj: CMakeFiles/Raytracer.dir/flags.make
-CMakeFiles/Raytracer.dir/sources/LightPhong.cpp.obj: CMakeFiles/Raytracer.dir/includes_CXX.rsp
-CMakeFiles/Raytracer.dir/sources/LightPhong.cpp.obj: ../sources/LightPhong.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\gaspar\ClionProjects\Raytracer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Raytracer.dir/sources/LightPhong.cpp.obj"
-	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Raytracer.dir\sources\LightPhong.cpp.obj -c C:\Users\gaspar\ClionProjects\Raytracer\sources\LightPhong.cpp
+CMakeFiles/Raytracer.dir/sources/Effect/LightPhong.cpp.obj: CMakeFiles/Raytracer.dir/flags.make
+CMakeFiles/Raytracer.dir/sources/Effect/LightPhong.cpp.obj: CMakeFiles/Raytracer.dir/includes_CXX.rsp
+CMakeFiles/Raytracer.dir/sources/Effect/LightPhong.cpp.obj: ../sources/Effect/LightPhong.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\gaspar\ClionProjects\Raytracer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Raytracer.dir/sources/Effect/LightPhong.cpp.obj"
+	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Raytracer.dir\sources\Effect\LightPhong.cpp.obj -c C:\Users\gaspar\ClionProjects\Raytracer\sources\Effect\LightPhong.cpp
 
-CMakeFiles/Raytracer.dir/sources/LightPhong.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Raytracer.dir/sources/LightPhong.cpp.i"
-	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\gaspar\ClionProjects\Raytracer\sources\LightPhong.cpp > CMakeFiles\Raytracer.dir\sources\LightPhong.cpp.i
+CMakeFiles/Raytracer.dir/sources/Effect/LightPhong.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Raytracer.dir/sources/Effect/LightPhong.cpp.i"
+	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\gaspar\ClionProjects\Raytracer\sources\Effect\LightPhong.cpp > CMakeFiles\Raytracer.dir\sources\Effect\LightPhong.cpp.i
 
-CMakeFiles/Raytracer.dir/sources/LightPhong.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Raytracer.dir/sources/LightPhong.cpp.s"
-	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\gaspar\ClionProjects\Raytracer\sources\LightPhong.cpp -o CMakeFiles\Raytracer.dir\sources\LightPhong.cpp.s
+CMakeFiles/Raytracer.dir/sources/Effect/LightPhong.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Raytracer.dir/sources/Effect/LightPhong.cpp.s"
+	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\gaspar\ClionProjects\Raytracer\sources\Effect\LightPhong.cpp -o CMakeFiles\Raytracer.dir\sources\Effect\LightPhong.cpp.s
 
-CMakeFiles/Raytracer.dir/sources/LightPhong.cpp.obj.requires:
+CMakeFiles/Raytracer.dir/sources/Effect/LightPhong.cpp.obj.requires:
 
-.PHONY : CMakeFiles/Raytracer.dir/sources/LightPhong.cpp.obj.requires
+.PHONY : CMakeFiles/Raytracer.dir/sources/Effect/LightPhong.cpp.obj.requires
 
-CMakeFiles/Raytracer.dir/sources/LightPhong.cpp.obj.provides: CMakeFiles/Raytracer.dir/sources/LightPhong.cpp.obj.requires
-	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/LightPhong.cpp.obj.provides.build
-.PHONY : CMakeFiles/Raytracer.dir/sources/LightPhong.cpp.obj.provides
+CMakeFiles/Raytracer.dir/sources/Effect/LightPhong.cpp.obj.provides: CMakeFiles/Raytracer.dir/sources/Effect/LightPhong.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Effect/LightPhong.cpp.obj.provides.build
+.PHONY : CMakeFiles/Raytracer.dir/sources/Effect/LightPhong.cpp.obj.provides
 
-CMakeFiles/Raytracer.dir/sources/LightPhong.cpp.obj.provides.build: CMakeFiles/Raytracer.dir/sources/LightPhong.cpp.obj
+CMakeFiles/Raytracer.dir/sources/Effect/LightPhong.cpp.obj.provides.build: CMakeFiles/Raytracer.dir/sources/Effect/LightPhong.cpp.obj
 
 
-CMakeFiles/Raytracer.dir/sources/Plan.cpp.obj: CMakeFiles/Raytracer.dir/flags.make
-CMakeFiles/Raytracer.dir/sources/Plan.cpp.obj: CMakeFiles/Raytracer.dir/includes_CXX.rsp
-CMakeFiles/Raytracer.dir/sources/Plan.cpp.obj: ../sources/Plan.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\gaspar\ClionProjects\Raytracer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Raytracer.dir/sources/Plan.cpp.obj"
-	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Raytracer.dir\sources\Plan.cpp.obj -c C:\Users\gaspar\ClionProjects\Raytracer\sources\Plan.cpp
+CMakeFiles/Raytracer.dir/sources/Graphic/AImage.cpp.obj: CMakeFiles/Raytracer.dir/flags.make
+CMakeFiles/Raytracer.dir/sources/Graphic/AImage.cpp.obj: CMakeFiles/Raytracer.dir/includes_CXX.rsp
+CMakeFiles/Raytracer.dir/sources/Graphic/AImage.cpp.obj: ../sources/Graphic/AImage.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\gaspar\ClionProjects\Raytracer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Raytracer.dir/sources/Graphic/AImage.cpp.obj"
+	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Raytracer.dir\sources\Graphic\AImage.cpp.obj -c C:\Users\gaspar\ClionProjects\Raytracer\sources\Graphic\AImage.cpp
 
-CMakeFiles/Raytracer.dir/sources/Plan.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Raytracer.dir/sources/Plan.cpp.i"
-	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\gaspar\ClionProjects\Raytracer\sources\Plan.cpp > CMakeFiles\Raytracer.dir\sources\Plan.cpp.i
+CMakeFiles/Raytracer.dir/sources/Graphic/AImage.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Raytracer.dir/sources/Graphic/AImage.cpp.i"
+	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\gaspar\ClionProjects\Raytracer\sources\Graphic\AImage.cpp > CMakeFiles\Raytracer.dir\sources\Graphic\AImage.cpp.i
 
-CMakeFiles/Raytracer.dir/sources/Plan.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Raytracer.dir/sources/Plan.cpp.s"
-	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\gaspar\ClionProjects\Raytracer\sources\Plan.cpp -o CMakeFiles\Raytracer.dir\sources\Plan.cpp.s
+CMakeFiles/Raytracer.dir/sources/Graphic/AImage.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Raytracer.dir/sources/Graphic/AImage.cpp.s"
+	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\gaspar\ClionProjects\Raytracer\sources\Graphic\AImage.cpp -o CMakeFiles\Raytracer.dir\sources\Graphic\AImage.cpp.s
 
-CMakeFiles/Raytracer.dir/sources/Plan.cpp.obj.requires:
+CMakeFiles/Raytracer.dir/sources/Graphic/AImage.cpp.obj.requires:
 
-.PHONY : CMakeFiles/Raytracer.dir/sources/Plan.cpp.obj.requires
+.PHONY : CMakeFiles/Raytracer.dir/sources/Graphic/AImage.cpp.obj.requires
 
-CMakeFiles/Raytracer.dir/sources/Plan.cpp.obj.provides: CMakeFiles/Raytracer.dir/sources/Plan.cpp.obj.requires
-	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Plan.cpp.obj.provides.build
-.PHONY : CMakeFiles/Raytracer.dir/sources/Plan.cpp.obj.provides
+CMakeFiles/Raytracer.dir/sources/Graphic/AImage.cpp.obj.provides: CMakeFiles/Raytracer.dir/sources/Graphic/AImage.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Graphic/AImage.cpp.obj.provides.build
+.PHONY : CMakeFiles/Raytracer.dir/sources/Graphic/AImage.cpp.obj.provides
 
-CMakeFiles/Raytracer.dir/sources/Plan.cpp.obj.provides.build: CMakeFiles/Raytracer.dir/sources/Plan.cpp.obj
+CMakeFiles/Raytracer.dir/sources/Graphic/AImage.cpp.obj.provides.build: CMakeFiles/Raytracer.dir/sources/Graphic/AImage.cpp.obj
 
 
-CMakeFiles/Raytracer.dir/sources/Ray.cpp.obj: CMakeFiles/Raytracer.dir/flags.make
-CMakeFiles/Raytracer.dir/sources/Ray.cpp.obj: CMakeFiles/Raytracer.dir/includes_CXX.rsp
-CMakeFiles/Raytracer.dir/sources/Ray.cpp.obj: ../sources/Ray.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\gaspar\ClionProjects\Raytracer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Raytracer.dir/sources/Ray.cpp.obj"
-	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Raytracer.dir\sources\Ray.cpp.obj -c C:\Users\gaspar\ClionProjects\Raytracer\sources\Ray.cpp
+CMakeFiles/Raytracer.dir/sources/Graphic/AWindow.cpp.obj: CMakeFiles/Raytracer.dir/flags.make
+CMakeFiles/Raytracer.dir/sources/Graphic/AWindow.cpp.obj: CMakeFiles/Raytracer.dir/includes_CXX.rsp
+CMakeFiles/Raytracer.dir/sources/Graphic/AWindow.cpp.obj: ../sources/Graphic/AWindow.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\gaspar\ClionProjects\Raytracer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Raytracer.dir/sources/Graphic/AWindow.cpp.obj"
+	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Raytracer.dir\sources\Graphic\AWindow.cpp.obj -c C:\Users\gaspar\ClionProjects\Raytracer\sources\Graphic\AWindow.cpp
 
-CMakeFiles/Raytracer.dir/sources/Ray.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Raytracer.dir/sources/Ray.cpp.i"
-	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\gaspar\ClionProjects\Raytracer\sources\Ray.cpp > CMakeFiles\Raytracer.dir\sources\Ray.cpp.i
+CMakeFiles/Raytracer.dir/sources/Graphic/AWindow.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Raytracer.dir/sources/Graphic/AWindow.cpp.i"
+	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\gaspar\ClionProjects\Raytracer\sources\Graphic\AWindow.cpp > CMakeFiles\Raytracer.dir\sources\Graphic\AWindow.cpp.i
 
-CMakeFiles/Raytracer.dir/sources/Ray.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Raytracer.dir/sources/Ray.cpp.s"
-	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\gaspar\ClionProjects\Raytracer\sources\Ray.cpp -o CMakeFiles\Raytracer.dir\sources\Ray.cpp.s
+CMakeFiles/Raytracer.dir/sources/Graphic/AWindow.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Raytracer.dir/sources/Graphic/AWindow.cpp.s"
+	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\gaspar\ClionProjects\Raytracer\sources\Graphic\AWindow.cpp -o CMakeFiles\Raytracer.dir\sources\Graphic\AWindow.cpp.s
 
-CMakeFiles/Raytracer.dir/sources/Ray.cpp.obj.requires:
+CMakeFiles/Raytracer.dir/sources/Graphic/AWindow.cpp.obj.requires:
 
-.PHONY : CMakeFiles/Raytracer.dir/sources/Ray.cpp.obj.requires
+.PHONY : CMakeFiles/Raytracer.dir/sources/Graphic/AWindow.cpp.obj.requires
 
-CMakeFiles/Raytracer.dir/sources/Ray.cpp.obj.provides: CMakeFiles/Raytracer.dir/sources/Ray.cpp.obj.requires
-	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Ray.cpp.obj.provides.build
-.PHONY : CMakeFiles/Raytracer.dir/sources/Ray.cpp.obj.provides
+CMakeFiles/Raytracer.dir/sources/Graphic/AWindow.cpp.obj.provides: CMakeFiles/Raytracer.dir/sources/Graphic/AWindow.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Graphic/AWindow.cpp.obj.provides.build
+.PHONY : CMakeFiles/Raytracer.dir/sources/Graphic/AWindow.cpp.obj.provides
 
-CMakeFiles/Raytracer.dir/sources/Ray.cpp.obj.provides.build: CMakeFiles/Raytracer.dir/sources/Ray.cpp.obj
+CMakeFiles/Raytracer.dir/sources/Graphic/AWindow.cpp.obj.provides.build: CMakeFiles/Raytracer.dir/sources/Graphic/AWindow.cpp.obj
 
 
-CMakeFiles/Raytracer.dir/sources/RayTracer.cpp.obj: CMakeFiles/Raytracer.dir/flags.make
-CMakeFiles/Raytracer.dir/sources/RayTracer.cpp.obj: CMakeFiles/Raytracer.dir/includes_CXX.rsp
-CMakeFiles/Raytracer.dir/sources/RayTracer.cpp.obj: ../sources/RayTracer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\gaspar\ClionProjects\Raytracer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/Raytracer.dir/sources/RayTracer.cpp.obj"
-	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Raytracer.dir\sources\RayTracer.cpp.obj -c C:\Users\gaspar\ClionProjects\Raytracer\sources\RayTracer.cpp
+CMakeFiles/Raytracer.dir/sources/Graphic/GraphicException.cpp.obj: CMakeFiles/Raytracer.dir/flags.make
+CMakeFiles/Raytracer.dir/sources/Graphic/GraphicException.cpp.obj: CMakeFiles/Raytracer.dir/includes_CXX.rsp
+CMakeFiles/Raytracer.dir/sources/Graphic/GraphicException.cpp.obj: ../sources/Graphic/GraphicException.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\gaspar\ClionProjects\Raytracer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/Raytracer.dir/sources/Graphic/GraphicException.cpp.obj"
+	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Raytracer.dir\sources\Graphic\GraphicException.cpp.obj -c C:\Users\gaspar\ClionProjects\Raytracer\sources\Graphic\GraphicException.cpp
 
-CMakeFiles/Raytracer.dir/sources/RayTracer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Raytracer.dir/sources/RayTracer.cpp.i"
-	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\gaspar\ClionProjects\Raytracer\sources\RayTracer.cpp > CMakeFiles\Raytracer.dir\sources\RayTracer.cpp.i
+CMakeFiles/Raytracer.dir/sources/Graphic/GraphicException.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Raytracer.dir/sources/Graphic/GraphicException.cpp.i"
+	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\gaspar\ClionProjects\Raytracer\sources\Graphic\GraphicException.cpp > CMakeFiles\Raytracer.dir\sources\Graphic\GraphicException.cpp.i
 
-CMakeFiles/Raytracer.dir/sources/RayTracer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Raytracer.dir/sources/RayTracer.cpp.s"
-	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\gaspar\ClionProjects\Raytracer\sources\RayTracer.cpp -o CMakeFiles\Raytracer.dir\sources\RayTracer.cpp.s
+CMakeFiles/Raytracer.dir/sources/Graphic/GraphicException.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Raytracer.dir/sources/Graphic/GraphicException.cpp.s"
+	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\gaspar\ClionProjects\Raytracer\sources\Graphic\GraphicException.cpp -o CMakeFiles\Raytracer.dir\sources\Graphic\GraphicException.cpp.s
 
-CMakeFiles/Raytracer.dir/sources/RayTracer.cpp.obj.requires:
+CMakeFiles/Raytracer.dir/sources/Graphic/GraphicException.cpp.obj.requires:
 
-.PHONY : CMakeFiles/Raytracer.dir/sources/RayTracer.cpp.obj.requires
+.PHONY : CMakeFiles/Raytracer.dir/sources/Graphic/GraphicException.cpp.obj.requires
 
-CMakeFiles/Raytracer.dir/sources/RayTracer.cpp.obj.provides: CMakeFiles/Raytracer.dir/sources/RayTracer.cpp.obj.requires
-	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/RayTracer.cpp.obj.provides.build
-.PHONY : CMakeFiles/Raytracer.dir/sources/RayTracer.cpp.obj.provides
+CMakeFiles/Raytracer.dir/sources/Graphic/GraphicException.cpp.obj.provides: CMakeFiles/Raytracer.dir/sources/Graphic/GraphicException.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Graphic/GraphicException.cpp.obj.provides.build
+.PHONY : CMakeFiles/Raytracer.dir/sources/Graphic/GraphicException.cpp.obj.provides
 
-CMakeFiles/Raytracer.dir/sources/RayTracer.cpp.obj.provides.build: CMakeFiles/Raytracer.dir/sources/RayTracer.cpp.obj
+CMakeFiles/Raytracer.dir/sources/Graphic/GraphicException.cpp.obj.provides.build: CMakeFiles/Raytracer.dir/sources/Graphic/GraphicException.cpp.obj
 
 
-CMakeFiles/Raytracer.dir/sources/SDLGraphic.cpp.obj: CMakeFiles/Raytracer.dir/flags.make
-CMakeFiles/Raytracer.dir/sources/SDLGraphic.cpp.obj: CMakeFiles/Raytracer.dir/includes_CXX.rsp
-CMakeFiles/Raytracer.dir/sources/SDLGraphic.cpp.obj: ../sources/SDLGraphic.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\gaspar\ClionProjects\Raytracer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/Raytracer.dir/sources/SDLGraphic.cpp.obj"
-	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Raytracer.dir\sources\SDLGraphic.cpp.obj -c C:\Users\gaspar\ClionProjects\Raytracer\sources\SDLGraphic.cpp
+CMakeFiles/Raytracer.dir/sources/Object/AObject.cpp.obj: CMakeFiles/Raytracer.dir/flags.make
+CMakeFiles/Raytracer.dir/sources/Object/AObject.cpp.obj: CMakeFiles/Raytracer.dir/includes_CXX.rsp
+CMakeFiles/Raytracer.dir/sources/Object/AObject.cpp.obj: ../sources/Object/AObject.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\gaspar\ClionProjects\Raytracer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/Raytracer.dir/sources/Object/AObject.cpp.obj"
+	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Raytracer.dir\sources\Object\AObject.cpp.obj -c C:\Users\gaspar\ClionProjects\Raytracer\sources\Object\AObject.cpp
 
-CMakeFiles/Raytracer.dir/sources/SDLGraphic.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Raytracer.dir/sources/SDLGraphic.cpp.i"
-	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\gaspar\ClionProjects\Raytracer\sources\SDLGraphic.cpp > CMakeFiles\Raytracer.dir\sources\SDLGraphic.cpp.i
+CMakeFiles/Raytracer.dir/sources/Object/AObject.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Raytracer.dir/sources/Object/AObject.cpp.i"
+	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\gaspar\ClionProjects\Raytracer\sources\Object\AObject.cpp > CMakeFiles\Raytracer.dir\sources\Object\AObject.cpp.i
 
-CMakeFiles/Raytracer.dir/sources/SDLGraphic.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Raytracer.dir/sources/SDLGraphic.cpp.s"
-	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\gaspar\ClionProjects\Raytracer\sources\SDLGraphic.cpp -o CMakeFiles\Raytracer.dir\sources\SDLGraphic.cpp.s
+CMakeFiles/Raytracer.dir/sources/Object/AObject.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Raytracer.dir/sources/Object/AObject.cpp.s"
+	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\gaspar\ClionProjects\Raytracer\sources\Object\AObject.cpp -o CMakeFiles\Raytracer.dir\sources\Object\AObject.cpp.s
 
-CMakeFiles/Raytracer.dir/sources/SDLGraphic.cpp.obj.requires:
+CMakeFiles/Raytracer.dir/sources/Object/AObject.cpp.obj.requires:
 
-.PHONY : CMakeFiles/Raytracer.dir/sources/SDLGraphic.cpp.obj.requires
+.PHONY : CMakeFiles/Raytracer.dir/sources/Object/AObject.cpp.obj.requires
 
-CMakeFiles/Raytracer.dir/sources/SDLGraphic.cpp.obj.provides: CMakeFiles/Raytracer.dir/sources/SDLGraphic.cpp.obj.requires
-	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/SDLGraphic.cpp.obj.provides.build
-.PHONY : CMakeFiles/Raytracer.dir/sources/SDLGraphic.cpp.obj.provides
+CMakeFiles/Raytracer.dir/sources/Object/AObject.cpp.obj.provides: CMakeFiles/Raytracer.dir/sources/Object/AObject.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Object/AObject.cpp.obj.provides.build
+.PHONY : CMakeFiles/Raytracer.dir/sources/Object/AObject.cpp.obj.provides
 
-CMakeFiles/Raytracer.dir/sources/SDLGraphic.cpp.obj.provides.build: CMakeFiles/Raytracer.dir/sources/SDLGraphic.cpp.obj
+CMakeFiles/Raytracer.dir/sources/Object/AObject.cpp.obj.provides.build: CMakeFiles/Raytracer.dir/sources/Object/AObject.cpp.obj
 
 
-CMakeFiles/Raytracer.dir/sources/SDLImage.cpp.obj: CMakeFiles/Raytracer.dir/flags.make
-CMakeFiles/Raytracer.dir/sources/SDLImage.cpp.obj: CMakeFiles/Raytracer.dir/includes_CXX.rsp
-CMakeFiles/Raytracer.dir/sources/SDLImage.cpp.obj: ../sources/SDLImage.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\gaspar\ClionProjects\Raytracer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/Raytracer.dir/sources/SDLImage.cpp.obj"
-	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Raytracer.dir\sources\SDLImage.cpp.obj -c C:\Users\gaspar\ClionProjects\Raytracer\sources\SDLImage.cpp
+CMakeFiles/Raytracer.dir/sources/Object/Cone.cpp.obj: CMakeFiles/Raytracer.dir/flags.make
+CMakeFiles/Raytracer.dir/sources/Object/Cone.cpp.obj: CMakeFiles/Raytracer.dir/includes_CXX.rsp
+CMakeFiles/Raytracer.dir/sources/Object/Cone.cpp.obj: ../sources/Object/Cone.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\gaspar\ClionProjects\Raytracer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/Raytracer.dir/sources/Object/Cone.cpp.obj"
+	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Raytracer.dir\sources\Object\Cone.cpp.obj -c C:\Users\gaspar\ClionProjects\Raytracer\sources\Object\Cone.cpp
 
-CMakeFiles/Raytracer.dir/sources/SDLImage.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Raytracer.dir/sources/SDLImage.cpp.i"
-	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\gaspar\ClionProjects\Raytracer\sources\SDLImage.cpp > CMakeFiles\Raytracer.dir\sources\SDLImage.cpp.i
+CMakeFiles/Raytracer.dir/sources/Object/Cone.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Raytracer.dir/sources/Object/Cone.cpp.i"
+	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\gaspar\ClionProjects\Raytracer\sources\Object\Cone.cpp > CMakeFiles\Raytracer.dir\sources\Object\Cone.cpp.i
 
-CMakeFiles/Raytracer.dir/sources/SDLImage.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Raytracer.dir/sources/SDLImage.cpp.s"
-	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\gaspar\ClionProjects\Raytracer\sources\SDLImage.cpp -o CMakeFiles\Raytracer.dir\sources\SDLImage.cpp.s
+CMakeFiles/Raytracer.dir/sources/Object/Cone.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Raytracer.dir/sources/Object/Cone.cpp.s"
+	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\gaspar\ClionProjects\Raytracer\sources\Object\Cone.cpp -o CMakeFiles\Raytracer.dir\sources\Object\Cone.cpp.s
 
-CMakeFiles/Raytracer.dir/sources/SDLImage.cpp.obj.requires:
+CMakeFiles/Raytracer.dir/sources/Object/Cone.cpp.obj.requires:
 
-.PHONY : CMakeFiles/Raytracer.dir/sources/SDLImage.cpp.obj.requires
+.PHONY : CMakeFiles/Raytracer.dir/sources/Object/Cone.cpp.obj.requires
 
-CMakeFiles/Raytracer.dir/sources/SDLImage.cpp.obj.provides: CMakeFiles/Raytracer.dir/sources/SDLImage.cpp.obj.requires
-	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/SDLImage.cpp.obj.provides.build
-.PHONY : CMakeFiles/Raytracer.dir/sources/SDLImage.cpp.obj.provides
+CMakeFiles/Raytracer.dir/sources/Object/Cone.cpp.obj.provides: CMakeFiles/Raytracer.dir/sources/Object/Cone.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Object/Cone.cpp.obj.provides.build
+.PHONY : CMakeFiles/Raytracer.dir/sources/Object/Cone.cpp.obj.provides
 
-CMakeFiles/Raytracer.dir/sources/SDLImage.cpp.obj.provides.build: CMakeFiles/Raytracer.dir/sources/SDLImage.cpp.obj
+CMakeFiles/Raytracer.dir/sources/Object/Cone.cpp.obj.provides.build: CMakeFiles/Raytracer.dir/sources/Object/Cone.cpp.obj
 
 
-CMakeFiles/Raytracer.dir/sources/SDLWindow.cpp.obj: CMakeFiles/Raytracer.dir/flags.make
-CMakeFiles/Raytracer.dir/sources/SDLWindow.cpp.obj: CMakeFiles/Raytracer.dir/includes_CXX.rsp
-CMakeFiles/Raytracer.dir/sources/SDLWindow.cpp.obj: ../sources/SDLWindow.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\gaspar\ClionProjects\Raytracer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/Raytracer.dir/sources/SDLWindow.cpp.obj"
-	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Raytracer.dir\sources\SDLWindow.cpp.obj -c C:\Users\gaspar\ClionProjects\Raytracer\sources\SDLWindow.cpp
+CMakeFiles/Raytracer.dir/sources/Object/Cylinder.cpp.obj: CMakeFiles/Raytracer.dir/flags.make
+CMakeFiles/Raytracer.dir/sources/Object/Cylinder.cpp.obj: CMakeFiles/Raytracer.dir/includes_CXX.rsp
+CMakeFiles/Raytracer.dir/sources/Object/Cylinder.cpp.obj: ../sources/Object/Cylinder.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\gaspar\ClionProjects\Raytracer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/Raytracer.dir/sources/Object/Cylinder.cpp.obj"
+	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Raytracer.dir\sources\Object\Cylinder.cpp.obj -c C:\Users\gaspar\ClionProjects\Raytracer\sources\Object\Cylinder.cpp
 
-CMakeFiles/Raytracer.dir/sources/SDLWindow.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Raytracer.dir/sources/SDLWindow.cpp.i"
-	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\gaspar\ClionProjects\Raytracer\sources\SDLWindow.cpp > CMakeFiles\Raytracer.dir\sources\SDLWindow.cpp.i
+CMakeFiles/Raytracer.dir/sources/Object/Cylinder.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Raytracer.dir/sources/Object/Cylinder.cpp.i"
+	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\gaspar\ClionProjects\Raytracer\sources\Object\Cylinder.cpp > CMakeFiles\Raytracer.dir\sources\Object\Cylinder.cpp.i
 
-CMakeFiles/Raytracer.dir/sources/SDLWindow.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Raytracer.dir/sources/SDLWindow.cpp.s"
-	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\gaspar\ClionProjects\Raytracer\sources\SDLWindow.cpp -o CMakeFiles\Raytracer.dir\sources\SDLWindow.cpp.s
+CMakeFiles/Raytracer.dir/sources/Object/Cylinder.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Raytracer.dir/sources/Object/Cylinder.cpp.s"
+	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\gaspar\ClionProjects\Raytracer\sources\Object\Cylinder.cpp -o CMakeFiles\Raytracer.dir\sources\Object\Cylinder.cpp.s
 
-CMakeFiles/Raytracer.dir/sources/SDLWindow.cpp.obj.requires:
+CMakeFiles/Raytracer.dir/sources/Object/Cylinder.cpp.obj.requires:
 
-.PHONY : CMakeFiles/Raytracer.dir/sources/SDLWindow.cpp.obj.requires
+.PHONY : CMakeFiles/Raytracer.dir/sources/Object/Cylinder.cpp.obj.requires
 
-CMakeFiles/Raytracer.dir/sources/SDLWindow.cpp.obj.provides: CMakeFiles/Raytracer.dir/sources/SDLWindow.cpp.obj.requires
-	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/SDLWindow.cpp.obj.provides.build
-.PHONY : CMakeFiles/Raytracer.dir/sources/SDLWindow.cpp.obj.provides
+CMakeFiles/Raytracer.dir/sources/Object/Cylinder.cpp.obj.provides: CMakeFiles/Raytracer.dir/sources/Object/Cylinder.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Object/Cylinder.cpp.obj.provides.build
+.PHONY : CMakeFiles/Raytracer.dir/sources/Object/Cylinder.cpp.obj.provides
 
-CMakeFiles/Raytracer.dir/sources/SDLWindow.cpp.obj.provides.build: CMakeFiles/Raytracer.dir/sources/SDLWindow.cpp.obj
+CMakeFiles/Raytracer.dir/sources/Object/Cylinder.cpp.obj.provides.build: CMakeFiles/Raytracer.dir/sources/Object/Cylinder.cpp.obj
 
 
-CMakeFiles/Raytracer.dir/sources/Scene.cpp.obj: CMakeFiles/Raytracer.dir/flags.make
-CMakeFiles/Raytracer.dir/sources/Scene.cpp.obj: CMakeFiles/Raytracer.dir/includes_CXX.rsp
-CMakeFiles/Raytracer.dir/sources/Scene.cpp.obj: ../sources/Scene.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\gaspar\ClionProjects\Raytracer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/Raytracer.dir/sources/Scene.cpp.obj"
-	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Raytracer.dir\sources\Scene.cpp.obj -c C:\Users\gaspar\ClionProjects\Raytracer\sources\Scene.cpp
+CMakeFiles/Raytracer.dir/sources/Object/Plan.cpp.obj: CMakeFiles/Raytracer.dir/flags.make
+CMakeFiles/Raytracer.dir/sources/Object/Plan.cpp.obj: CMakeFiles/Raytracer.dir/includes_CXX.rsp
+CMakeFiles/Raytracer.dir/sources/Object/Plan.cpp.obj: ../sources/Object/Plan.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\gaspar\ClionProjects\Raytracer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/Raytracer.dir/sources/Object/Plan.cpp.obj"
+	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Raytracer.dir\sources\Object\Plan.cpp.obj -c C:\Users\gaspar\ClionProjects\Raytracer\sources\Object\Plan.cpp
 
-CMakeFiles/Raytracer.dir/sources/Scene.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Raytracer.dir/sources/Scene.cpp.i"
-	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\gaspar\ClionProjects\Raytracer\sources\Scene.cpp > CMakeFiles\Raytracer.dir\sources\Scene.cpp.i
+CMakeFiles/Raytracer.dir/sources/Object/Plan.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Raytracer.dir/sources/Object/Plan.cpp.i"
+	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\gaspar\ClionProjects\Raytracer\sources\Object\Plan.cpp > CMakeFiles\Raytracer.dir\sources\Object\Plan.cpp.i
 
-CMakeFiles/Raytracer.dir/sources/Scene.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Raytracer.dir/sources/Scene.cpp.s"
-	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\gaspar\ClionProjects\Raytracer\sources\Scene.cpp -o CMakeFiles\Raytracer.dir\sources\Scene.cpp.s
+CMakeFiles/Raytracer.dir/sources/Object/Plan.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Raytracer.dir/sources/Object/Plan.cpp.s"
+	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\gaspar\ClionProjects\Raytracer\sources\Object\Plan.cpp -o CMakeFiles\Raytracer.dir\sources\Object\Plan.cpp.s
 
-CMakeFiles/Raytracer.dir/sources/Scene.cpp.obj.requires:
+CMakeFiles/Raytracer.dir/sources/Object/Plan.cpp.obj.requires:
 
-.PHONY : CMakeFiles/Raytracer.dir/sources/Scene.cpp.obj.requires
+.PHONY : CMakeFiles/Raytracer.dir/sources/Object/Plan.cpp.obj.requires
 
-CMakeFiles/Raytracer.dir/sources/Scene.cpp.obj.provides: CMakeFiles/Raytracer.dir/sources/Scene.cpp.obj.requires
-	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Scene.cpp.obj.provides.build
-.PHONY : CMakeFiles/Raytracer.dir/sources/Scene.cpp.obj.provides
+CMakeFiles/Raytracer.dir/sources/Object/Plan.cpp.obj.provides: CMakeFiles/Raytracer.dir/sources/Object/Plan.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Object/Plan.cpp.obj.provides.build
+.PHONY : CMakeFiles/Raytracer.dir/sources/Object/Plan.cpp.obj.provides
 
-CMakeFiles/Raytracer.dir/sources/Scene.cpp.obj.provides.build: CMakeFiles/Raytracer.dir/sources/Scene.cpp.obj
+CMakeFiles/Raytracer.dir/sources/Object/Plan.cpp.obj.provides.build: CMakeFiles/Raytracer.dir/sources/Object/Plan.cpp.obj
 
 
-CMakeFiles/Raytracer.dir/sources/Sphere.cpp.obj: CMakeFiles/Raytracer.dir/flags.make
-CMakeFiles/Raytracer.dir/sources/Sphere.cpp.obj: CMakeFiles/Raytracer.dir/includes_CXX.rsp
-CMakeFiles/Raytracer.dir/sources/Sphere.cpp.obj: ../sources/Sphere.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\gaspar\ClionProjects\Raytracer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/Raytracer.dir/sources/Sphere.cpp.obj"
-	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Raytracer.dir\sources\Sphere.cpp.obj -c C:\Users\gaspar\ClionProjects\Raytracer\sources\Sphere.cpp
+CMakeFiles/Raytracer.dir/sources/Object/Sphere.cpp.obj: CMakeFiles/Raytracer.dir/flags.make
+CMakeFiles/Raytracer.dir/sources/Object/Sphere.cpp.obj: CMakeFiles/Raytracer.dir/includes_CXX.rsp
+CMakeFiles/Raytracer.dir/sources/Object/Sphere.cpp.obj: ../sources/Object/Sphere.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\gaspar\ClionProjects\Raytracer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/Raytracer.dir/sources/Object/Sphere.cpp.obj"
+	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Raytracer.dir\sources\Object\Sphere.cpp.obj -c C:\Users\gaspar\ClionProjects\Raytracer\sources\Object\Sphere.cpp
 
-CMakeFiles/Raytracer.dir/sources/Sphere.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Raytracer.dir/sources/Sphere.cpp.i"
-	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\gaspar\ClionProjects\Raytracer\sources\Sphere.cpp > CMakeFiles\Raytracer.dir\sources\Sphere.cpp.i
+CMakeFiles/Raytracer.dir/sources/Object/Sphere.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Raytracer.dir/sources/Object/Sphere.cpp.i"
+	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\gaspar\ClionProjects\Raytracer\sources\Object\Sphere.cpp > CMakeFiles\Raytracer.dir\sources\Object\Sphere.cpp.i
 
-CMakeFiles/Raytracer.dir/sources/Sphere.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Raytracer.dir/sources/Sphere.cpp.s"
-	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\gaspar\ClionProjects\Raytracer\sources\Sphere.cpp -o CMakeFiles\Raytracer.dir\sources\Sphere.cpp.s
+CMakeFiles/Raytracer.dir/sources/Object/Sphere.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Raytracer.dir/sources/Object/Sphere.cpp.s"
+	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\gaspar\ClionProjects\Raytracer\sources\Object\Sphere.cpp -o CMakeFiles\Raytracer.dir\sources\Object\Sphere.cpp.s
 
-CMakeFiles/Raytracer.dir/sources/Sphere.cpp.obj.requires:
+CMakeFiles/Raytracer.dir/sources/Object/Sphere.cpp.obj.requires:
 
-.PHONY : CMakeFiles/Raytracer.dir/sources/Sphere.cpp.obj.requires
+.PHONY : CMakeFiles/Raytracer.dir/sources/Object/Sphere.cpp.obj.requires
 
-CMakeFiles/Raytracer.dir/sources/Sphere.cpp.obj.provides: CMakeFiles/Raytracer.dir/sources/Sphere.cpp.obj.requires
-	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Sphere.cpp.obj.provides.build
-.PHONY : CMakeFiles/Raytracer.dir/sources/Sphere.cpp.obj.provides
+CMakeFiles/Raytracer.dir/sources/Object/Sphere.cpp.obj.provides: CMakeFiles/Raytracer.dir/sources/Object/Sphere.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Object/Sphere.cpp.obj.provides.build
+.PHONY : CMakeFiles/Raytracer.dir/sources/Object/Sphere.cpp.obj.provides
 
-CMakeFiles/Raytracer.dir/sources/Sphere.cpp.obj.provides.build: CMakeFiles/Raytracer.dir/sources/Sphere.cpp.obj
+CMakeFiles/Raytracer.dir/sources/Object/Sphere.cpp.obj.provides.build: CMakeFiles/Raytracer.dir/sources/Object/Sphere.cpp.obj
 
 
-CMakeFiles/Raytracer.dir/sources/Spot.cpp.obj: CMakeFiles/Raytracer.dir/flags.make
-CMakeFiles/Raytracer.dir/sources/Spot.cpp.obj: CMakeFiles/Raytracer.dir/includes_CXX.rsp
-CMakeFiles/Raytracer.dir/sources/Spot.cpp.obj: ../sources/Spot.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\gaspar\ClionProjects\Raytracer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/Raytracer.dir/sources/Spot.cpp.obj"
-	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Raytracer.dir\sources\Spot.cpp.obj -c C:\Users\gaspar\ClionProjects\Raytracer\sources\Spot.cpp
+CMakeFiles/Raytracer.dir/sources/SDL2/SDLGraphic.cpp.obj: CMakeFiles/Raytracer.dir/flags.make
+CMakeFiles/Raytracer.dir/sources/SDL2/SDLGraphic.cpp.obj: CMakeFiles/Raytracer.dir/includes_CXX.rsp
+CMakeFiles/Raytracer.dir/sources/SDL2/SDLGraphic.cpp.obj: ../sources/SDL2/SDLGraphic.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\gaspar\ClionProjects\Raytracer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/Raytracer.dir/sources/SDL2/SDLGraphic.cpp.obj"
+	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Raytracer.dir\sources\SDL2\SDLGraphic.cpp.obj -c C:\Users\gaspar\ClionProjects\Raytracer\sources\SDL2\SDLGraphic.cpp
 
-CMakeFiles/Raytracer.dir/sources/Spot.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Raytracer.dir/sources/Spot.cpp.i"
-	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\gaspar\ClionProjects\Raytracer\sources\Spot.cpp > CMakeFiles\Raytracer.dir\sources\Spot.cpp.i
+CMakeFiles/Raytracer.dir/sources/SDL2/SDLGraphic.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Raytracer.dir/sources/SDL2/SDLGraphic.cpp.i"
+	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\gaspar\ClionProjects\Raytracer\sources\SDL2\SDLGraphic.cpp > CMakeFiles\Raytracer.dir\sources\SDL2\SDLGraphic.cpp.i
 
-CMakeFiles/Raytracer.dir/sources/Spot.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Raytracer.dir/sources/Spot.cpp.s"
-	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\gaspar\ClionProjects\Raytracer\sources\Spot.cpp -o CMakeFiles\Raytracer.dir\sources\Spot.cpp.s
+CMakeFiles/Raytracer.dir/sources/SDL2/SDLGraphic.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Raytracer.dir/sources/SDL2/SDLGraphic.cpp.s"
+	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\gaspar\ClionProjects\Raytracer\sources\SDL2\SDLGraphic.cpp -o CMakeFiles\Raytracer.dir\sources\SDL2\SDLGraphic.cpp.s
 
-CMakeFiles/Raytracer.dir/sources/Spot.cpp.obj.requires:
+CMakeFiles/Raytracer.dir/sources/SDL2/SDLGraphic.cpp.obj.requires:
 
-.PHONY : CMakeFiles/Raytracer.dir/sources/Spot.cpp.obj.requires
+.PHONY : CMakeFiles/Raytracer.dir/sources/SDL2/SDLGraphic.cpp.obj.requires
 
-CMakeFiles/Raytracer.dir/sources/Spot.cpp.obj.provides: CMakeFiles/Raytracer.dir/sources/Spot.cpp.obj.requires
-	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Spot.cpp.obj.provides.build
-.PHONY : CMakeFiles/Raytracer.dir/sources/Spot.cpp.obj.provides
+CMakeFiles/Raytracer.dir/sources/SDL2/SDLGraphic.cpp.obj.provides: CMakeFiles/Raytracer.dir/sources/SDL2/SDLGraphic.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/SDL2/SDLGraphic.cpp.obj.provides.build
+.PHONY : CMakeFiles/Raytracer.dir/sources/SDL2/SDLGraphic.cpp.obj.provides
 
-CMakeFiles/Raytracer.dir/sources/Spot.cpp.obj.provides.build: CMakeFiles/Raytracer.dir/sources/Spot.cpp.obj
+CMakeFiles/Raytracer.dir/sources/SDL2/SDLGraphic.cpp.obj.provides.build: CMakeFiles/Raytracer.dir/sources/SDL2/SDLGraphic.cpp.obj
 
 
-CMakeFiles/Raytracer.dir/sources/Vector2.cpp.obj: CMakeFiles/Raytracer.dir/flags.make
-CMakeFiles/Raytracer.dir/sources/Vector2.cpp.obj: CMakeFiles/Raytracer.dir/includes_CXX.rsp
-CMakeFiles/Raytracer.dir/sources/Vector2.cpp.obj: ../sources/Vector2.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\gaspar\ClionProjects\Raytracer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/Raytracer.dir/sources/Vector2.cpp.obj"
-	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Raytracer.dir\sources\Vector2.cpp.obj -c C:\Users\gaspar\ClionProjects\Raytracer\sources\Vector2.cpp
+CMakeFiles/Raytracer.dir/sources/SDL2/SDLImage.cpp.obj: CMakeFiles/Raytracer.dir/flags.make
+CMakeFiles/Raytracer.dir/sources/SDL2/SDLImage.cpp.obj: CMakeFiles/Raytracer.dir/includes_CXX.rsp
+CMakeFiles/Raytracer.dir/sources/SDL2/SDLImage.cpp.obj: ../sources/SDL2/SDLImage.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\gaspar\ClionProjects\Raytracer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/Raytracer.dir/sources/SDL2/SDLImage.cpp.obj"
+	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Raytracer.dir\sources\SDL2\SDLImage.cpp.obj -c C:\Users\gaspar\ClionProjects\Raytracer\sources\SDL2\SDLImage.cpp
 
-CMakeFiles/Raytracer.dir/sources/Vector2.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Raytracer.dir/sources/Vector2.cpp.i"
-	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\gaspar\ClionProjects\Raytracer\sources\Vector2.cpp > CMakeFiles\Raytracer.dir\sources\Vector2.cpp.i
+CMakeFiles/Raytracer.dir/sources/SDL2/SDLImage.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Raytracer.dir/sources/SDL2/SDLImage.cpp.i"
+	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\gaspar\ClionProjects\Raytracer\sources\SDL2\SDLImage.cpp > CMakeFiles\Raytracer.dir\sources\SDL2\SDLImage.cpp.i
 
-CMakeFiles/Raytracer.dir/sources/Vector2.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Raytracer.dir/sources/Vector2.cpp.s"
-	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\gaspar\ClionProjects\Raytracer\sources\Vector2.cpp -o CMakeFiles\Raytracer.dir\sources\Vector2.cpp.s
+CMakeFiles/Raytracer.dir/sources/SDL2/SDLImage.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Raytracer.dir/sources/SDL2/SDLImage.cpp.s"
+	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\gaspar\ClionProjects\Raytracer\sources\SDL2\SDLImage.cpp -o CMakeFiles\Raytracer.dir\sources\SDL2\SDLImage.cpp.s
 
-CMakeFiles/Raytracer.dir/sources/Vector2.cpp.obj.requires:
+CMakeFiles/Raytracer.dir/sources/SDL2/SDLImage.cpp.obj.requires:
 
-.PHONY : CMakeFiles/Raytracer.dir/sources/Vector2.cpp.obj.requires
+.PHONY : CMakeFiles/Raytracer.dir/sources/SDL2/SDLImage.cpp.obj.requires
 
-CMakeFiles/Raytracer.dir/sources/Vector2.cpp.obj.provides: CMakeFiles/Raytracer.dir/sources/Vector2.cpp.obj.requires
-	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Vector2.cpp.obj.provides.build
-.PHONY : CMakeFiles/Raytracer.dir/sources/Vector2.cpp.obj.provides
+CMakeFiles/Raytracer.dir/sources/SDL2/SDLImage.cpp.obj.provides: CMakeFiles/Raytracer.dir/sources/SDL2/SDLImage.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/SDL2/SDLImage.cpp.obj.provides.build
+.PHONY : CMakeFiles/Raytracer.dir/sources/SDL2/SDLImage.cpp.obj.provides
 
-CMakeFiles/Raytracer.dir/sources/Vector2.cpp.obj.provides.build: CMakeFiles/Raytracer.dir/sources/Vector2.cpp.obj
+CMakeFiles/Raytracer.dir/sources/SDL2/SDLImage.cpp.obj.provides.build: CMakeFiles/Raytracer.dir/sources/SDL2/SDLImage.cpp.obj
 
 
-CMakeFiles/Raytracer.dir/sources/Vector3.cpp.obj: CMakeFiles/Raytracer.dir/flags.make
-CMakeFiles/Raytracer.dir/sources/Vector3.cpp.obj: CMakeFiles/Raytracer.dir/includes_CXX.rsp
-CMakeFiles/Raytracer.dir/sources/Vector3.cpp.obj: ../sources/Vector3.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\gaspar\ClionProjects\Raytracer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/Raytracer.dir/sources/Vector3.cpp.obj"
-	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Raytracer.dir\sources\Vector3.cpp.obj -c C:\Users\gaspar\ClionProjects\Raytracer\sources\Vector3.cpp
+CMakeFiles/Raytracer.dir/sources/SDL2/SDLWindow.cpp.obj: CMakeFiles/Raytracer.dir/flags.make
+CMakeFiles/Raytracer.dir/sources/SDL2/SDLWindow.cpp.obj: CMakeFiles/Raytracer.dir/includes_CXX.rsp
+CMakeFiles/Raytracer.dir/sources/SDL2/SDLWindow.cpp.obj: ../sources/SDL2/SDLWindow.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\gaspar\ClionProjects\Raytracer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/Raytracer.dir/sources/SDL2/SDLWindow.cpp.obj"
+	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Raytracer.dir\sources\SDL2\SDLWindow.cpp.obj -c C:\Users\gaspar\ClionProjects\Raytracer\sources\SDL2\SDLWindow.cpp
 
-CMakeFiles/Raytracer.dir/sources/Vector3.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Raytracer.dir/sources/Vector3.cpp.i"
-	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\gaspar\ClionProjects\Raytracer\sources\Vector3.cpp > CMakeFiles\Raytracer.dir\sources\Vector3.cpp.i
+CMakeFiles/Raytracer.dir/sources/SDL2/SDLWindow.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Raytracer.dir/sources/SDL2/SDLWindow.cpp.i"
+	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\gaspar\ClionProjects\Raytracer\sources\SDL2\SDLWindow.cpp > CMakeFiles\Raytracer.dir\sources\SDL2\SDLWindow.cpp.i
 
-CMakeFiles/Raytracer.dir/sources/Vector3.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Raytracer.dir/sources/Vector3.cpp.s"
-	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\gaspar\ClionProjects\Raytracer\sources\Vector3.cpp -o CMakeFiles\Raytracer.dir\sources\Vector3.cpp.s
+CMakeFiles/Raytracer.dir/sources/SDL2/SDLWindow.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Raytracer.dir/sources/SDL2/SDLWindow.cpp.s"
+	C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\gaspar\ClionProjects\Raytracer\sources\SDL2\SDLWindow.cpp -o CMakeFiles\Raytracer.dir\sources\SDL2\SDLWindow.cpp.s
 
-CMakeFiles/Raytracer.dir/sources/Vector3.cpp.obj.requires:
+CMakeFiles/Raytracer.dir/sources/SDL2/SDLWindow.cpp.obj.requires:
 
-.PHONY : CMakeFiles/Raytracer.dir/sources/Vector3.cpp.obj.requires
+.PHONY : CMakeFiles/Raytracer.dir/sources/SDL2/SDLWindow.cpp.obj.requires
 
-CMakeFiles/Raytracer.dir/sources/Vector3.cpp.obj.provides: CMakeFiles/Raytracer.dir/sources/Vector3.cpp.obj.requires
-	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Vector3.cpp.obj.provides.build
-.PHONY : CMakeFiles/Raytracer.dir/sources/Vector3.cpp.obj.provides
+CMakeFiles/Raytracer.dir/sources/SDL2/SDLWindow.cpp.obj.provides: CMakeFiles/Raytracer.dir/sources/SDL2/SDLWindow.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/SDL2/SDLWindow.cpp.obj.provides.build
+.PHONY : CMakeFiles/Raytracer.dir/sources/SDL2/SDLWindow.cpp.obj.provides
 
-CMakeFiles/Raytracer.dir/sources/Vector3.cpp.obj.provides.build: CMakeFiles/Raytracer.dir/sources/Vector3.cpp.obj
+CMakeFiles/Raytracer.dir/sources/SDL2/SDLWindow.cpp.obj.provides.build: CMakeFiles/Raytracer.dir/sources/SDL2/SDLWindow.cpp.obj
 
 
 CMakeFiles/Raytracer.dir/sources/main.cpp.obj: CMakeFiles/Raytracer.dir/flags.make
@@ -608,87 +608,87 @@ CMakeFiles/Raytracer.dir/sources/main.cpp.obj.provides.build: CMakeFiles/Raytrac
 
 # Object files for target Raytracer
 Raytracer_OBJECTS = \
-"CMakeFiles/Raytracer.dir/sources/AImage.cpp.obj" \
-"CMakeFiles/Raytracer.dir/sources/AObject.cpp.obj" \
-"CMakeFiles/Raytracer.dir/sources/AWindow.cpp.obj" \
-"CMakeFiles/Raytracer.dir/sources/CalculUnit.cpp.obj" \
-"CMakeFiles/Raytracer.dir/sources/Color.cpp.obj" \
-"CMakeFiles/Raytracer.dir/sources/Cone.cpp.obj" \
-"CMakeFiles/Raytracer.dir/sources/Cylinder.cpp.obj" \
-"CMakeFiles/Raytracer.dir/sources/Eye.cpp.obj" \
-"CMakeFiles/Raytracer.dir/sources/GraphicException.cpp.obj" \
-"CMakeFiles/Raytracer.dir/sources/LightPhong.cpp.obj" \
-"CMakeFiles/Raytracer.dir/sources/Plan.cpp.obj" \
-"CMakeFiles/Raytracer.dir/sources/Ray.cpp.obj" \
-"CMakeFiles/Raytracer.dir/sources/RayTracer.cpp.obj" \
-"CMakeFiles/Raytracer.dir/sources/SDLGraphic.cpp.obj" \
-"CMakeFiles/Raytracer.dir/sources/SDLImage.cpp.obj" \
-"CMakeFiles/Raytracer.dir/sources/SDLWindow.cpp.obj" \
-"CMakeFiles/Raytracer.dir/sources/Scene.cpp.obj" \
-"CMakeFiles/Raytracer.dir/sources/Sphere.cpp.obj" \
-"CMakeFiles/Raytracer.dir/sources/Spot.cpp.obj" \
-"CMakeFiles/Raytracer.dir/sources/Vector2.cpp.obj" \
-"CMakeFiles/Raytracer.dir/sources/Vector3.cpp.obj" \
+"CMakeFiles/Raytracer.dir/sources/Core/CalculUnit.cpp.obj" \
+"CMakeFiles/Raytracer.dir/sources/Core/Color.cpp.obj" \
+"CMakeFiles/Raytracer.dir/sources/Core/Eye.cpp.obj" \
+"CMakeFiles/Raytracer.dir/sources/Core/Ray.cpp.obj" \
+"CMakeFiles/Raytracer.dir/sources/Core/RayTracer.cpp.obj" \
+"CMakeFiles/Raytracer.dir/sources/Core/Scene.cpp.obj" \
+"CMakeFiles/Raytracer.dir/sources/Core/Spot.cpp.obj" \
+"CMakeFiles/Raytracer.dir/sources/Core/Vector2.cpp.obj" \
+"CMakeFiles/Raytracer.dir/sources/Core/Vector3.cpp.obj" \
+"CMakeFiles/Raytracer.dir/sources/Effect/LightPhong.cpp.obj" \
+"CMakeFiles/Raytracer.dir/sources/Graphic/AImage.cpp.obj" \
+"CMakeFiles/Raytracer.dir/sources/Graphic/AWindow.cpp.obj" \
+"CMakeFiles/Raytracer.dir/sources/Graphic/GraphicException.cpp.obj" \
+"CMakeFiles/Raytracer.dir/sources/Object/AObject.cpp.obj" \
+"CMakeFiles/Raytracer.dir/sources/Object/Cone.cpp.obj" \
+"CMakeFiles/Raytracer.dir/sources/Object/Cylinder.cpp.obj" \
+"CMakeFiles/Raytracer.dir/sources/Object/Plan.cpp.obj" \
+"CMakeFiles/Raytracer.dir/sources/Object/Sphere.cpp.obj" \
+"CMakeFiles/Raytracer.dir/sources/SDL2/SDLGraphic.cpp.obj" \
+"CMakeFiles/Raytracer.dir/sources/SDL2/SDLImage.cpp.obj" \
+"CMakeFiles/Raytracer.dir/sources/SDL2/SDLWindow.cpp.obj" \
 "CMakeFiles/Raytracer.dir/sources/main.cpp.obj"
 
 # External object files for target Raytracer
 Raytracer_EXTERNAL_OBJECTS =
 
-Raytracer.exe: CMakeFiles/Raytracer.dir/sources/AImage.cpp.obj
-Raytracer.exe: CMakeFiles/Raytracer.dir/sources/AObject.cpp.obj
-Raytracer.exe: CMakeFiles/Raytracer.dir/sources/AWindow.cpp.obj
-Raytracer.exe: CMakeFiles/Raytracer.dir/sources/CalculUnit.cpp.obj
-Raytracer.exe: CMakeFiles/Raytracer.dir/sources/Color.cpp.obj
-Raytracer.exe: CMakeFiles/Raytracer.dir/sources/Cone.cpp.obj
-Raytracer.exe: CMakeFiles/Raytracer.dir/sources/Cylinder.cpp.obj
-Raytracer.exe: CMakeFiles/Raytracer.dir/sources/Eye.cpp.obj
-Raytracer.exe: CMakeFiles/Raytracer.dir/sources/GraphicException.cpp.obj
-Raytracer.exe: CMakeFiles/Raytracer.dir/sources/LightPhong.cpp.obj
-Raytracer.exe: CMakeFiles/Raytracer.dir/sources/Plan.cpp.obj
-Raytracer.exe: CMakeFiles/Raytracer.dir/sources/Ray.cpp.obj
-Raytracer.exe: CMakeFiles/Raytracer.dir/sources/RayTracer.cpp.obj
-Raytracer.exe: CMakeFiles/Raytracer.dir/sources/SDLGraphic.cpp.obj
-Raytracer.exe: CMakeFiles/Raytracer.dir/sources/SDLImage.cpp.obj
-Raytracer.exe: CMakeFiles/Raytracer.dir/sources/SDLWindow.cpp.obj
-Raytracer.exe: CMakeFiles/Raytracer.dir/sources/Scene.cpp.obj
-Raytracer.exe: CMakeFiles/Raytracer.dir/sources/Sphere.cpp.obj
-Raytracer.exe: CMakeFiles/Raytracer.dir/sources/Spot.cpp.obj
-Raytracer.exe: CMakeFiles/Raytracer.dir/sources/Vector2.cpp.obj
-Raytracer.exe: CMakeFiles/Raytracer.dir/sources/Vector3.cpp.obj
-Raytracer.exe: CMakeFiles/Raytracer.dir/sources/main.cpp.obj
-Raytracer.exe: CMakeFiles/Raytracer.dir/build.make
-Raytracer.exe: CMakeFiles/Raytracer.dir/linklibs.rsp
-Raytracer.exe: CMakeFiles/Raytracer.dir/objects1.rsp
-Raytracer.exe: CMakeFiles/Raytracer.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\gaspar\ClionProjects\Raytracer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Linking CXX executable Raytracer.exe"
+../Raytracer.exe: CMakeFiles/Raytracer.dir/sources/Core/CalculUnit.cpp.obj
+../Raytracer.exe: CMakeFiles/Raytracer.dir/sources/Core/Color.cpp.obj
+../Raytracer.exe: CMakeFiles/Raytracer.dir/sources/Core/Eye.cpp.obj
+../Raytracer.exe: CMakeFiles/Raytracer.dir/sources/Core/Ray.cpp.obj
+../Raytracer.exe: CMakeFiles/Raytracer.dir/sources/Core/RayTracer.cpp.obj
+../Raytracer.exe: CMakeFiles/Raytracer.dir/sources/Core/Scene.cpp.obj
+../Raytracer.exe: CMakeFiles/Raytracer.dir/sources/Core/Spot.cpp.obj
+../Raytracer.exe: CMakeFiles/Raytracer.dir/sources/Core/Vector2.cpp.obj
+../Raytracer.exe: CMakeFiles/Raytracer.dir/sources/Core/Vector3.cpp.obj
+../Raytracer.exe: CMakeFiles/Raytracer.dir/sources/Effect/LightPhong.cpp.obj
+../Raytracer.exe: CMakeFiles/Raytracer.dir/sources/Graphic/AImage.cpp.obj
+../Raytracer.exe: CMakeFiles/Raytracer.dir/sources/Graphic/AWindow.cpp.obj
+../Raytracer.exe: CMakeFiles/Raytracer.dir/sources/Graphic/GraphicException.cpp.obj
+../Raytracer.exe: CMakeFiles/Raytracer.dir/sources/Object/AObject.cpp.obj
+../Raytracer.exe: CMakeFiles/Raytracer.dir/sources/Object/Cone.cpp.obj
+../Raytracer.exe: CMakeFiles/Raytracer.dir/sources/Object/Cylinder.cpp.obj
+../Raytracer.exe: CMakeFiles/Raytracer.dir/sources/Object/Plan.cpp.obj
+../Raytracer.exe: CMakeFiles/Raytracer.dir/sources/Object/Sphere.cpp.obj
+../Raytracer.exe: CMakeFiles/Raytracer.dir/sources/SDL2/SDLGraphic.cpp.obj
+../Raytracer.exe: CMakeFiles/Raytracer.dir/sources/SDL2/SDLImage.cpp.obj
+../Raytracer.exe: CMakeFiles/Raytracer.dir/sources/SDL2/SDLWindow.cpp.obj
+../Raytracer.exe: CMakeFiles/Raytracer.dir/sources/main.cpp.obj
+../Raytracer.exe: CMakeFiles/Raytracer.dir/build.make
+../Raytracer.exe: CMakeFiles/Raytracer.dir/linklibs.rsp
+../Raytracer.exe: CMakeFiles/Raytracer.dir/objects1.rsp
+../Raytracer.exe: CMakeFiles/Raytracer.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\gaspar\ClionProjects\Raytracer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Linking CXX executable ..\Raytracer.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Raytracer.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/Raytracer.dir/build: Raytracer.exe
+CMakeFiles/Raytracer.dir/build: ../Raytracer.exe
 
 .PHONY : CMakeFiles/Raytracer.dir/build
 
-CMakeFiles/Raytracer.dir/requires: CMakeFiles/Raytracer.dir/sources/AImage.cpp.obj.requires
-CMakeFiles/Raytracer.dir/requires: CMakeFiles/Raytracer.dir/sources/AObject.cpp.obj.requires
-CMakeFiles/Raytracer.dir/requires: CMakeFiles/Raytracer.dir/sources/AWindow.cpp.obj.requires
-CMakeFiles/Raytracer.dir/requires: CMakeFiles/Raytracer.dir/sources/CalculUnit.cpp.obj.requires
-CMakeFiles/Raytracer.dir/requires: CMakeFiles/Raytracer.dir/sources/Color.cpp.obj.requires
-CMakeFiles/Raytracer.dir/requires: CMakeFiles/Raytracer.dir/sources/Cone.cpp.obj.requires
-CMakeFiles/Raytracer.dir/requires: CMakeFiles/Raytracer.dir/sources/Cylinder.cpp.obj.requires
-CMakeFiles/Raytracer.dir/requires: CMakeFiles/Raytracer.dir/sources/Eye.cpp.obj.requires
-CMakeFiles/Raytracer.dir/requires: CMakeFiles/Raytracer.dir/sources/GraphicException.cpp.obj.requires
-CMakeFiles/Raytracer.dir/requires: CMakeFiles/Raytracer.dir/sources/LightPhong.cpp.obj.requires
-CMakeFiles/Raytracer.dir/requires: CMakeFiles/Raytracer.dir/sources/Plan.cpp.obj.requires
-CMakeFiles/Raytracer.dir/requires: CMakeFiles/Raytracer.dir/sources/Ray.cpp.obj.requires
-CMakeFiles/Raytracer.dir/requires: CMakeFiles/Raytracer.dir/sources/RayTracer.cpp.obj.requires
-CMakeFiles/Raytracer.dir/requires: CMakeFiles/Raytracer.dir/sources/SDLGraphic.cpp.obj.requires
-CMakeFiles/Raytracer.dir/requires: CMakeFiles/Raytracer.dir/sources/SDLImage.cpp.obj.requires
-CMakeFiles/Raytracer.dir/requires: CMakeFiles/Raytracer.dir/sources/SDLWindow.cpp.obj.requires
-CMakeFiles/Raytracer.dir/requires: CMakeFiles/Raytracer.dir/sources/Scene.cpp.obj.requires
-CMakeFiles/Raytracer.dir/requires: CMakeFiles/Raytracer.dir/sources/Sphere.cpp.obj.requires
-CMakeFiles/Raytracer.dir/requires: CMakeFiles/Raytracer.dir/sources/Spot.cpp.obj.requires
-CMakeFiles/Raytracer.dir/requires: CMakeFiles/Raytracer.dir/sources/Vector2.cpp.obj.requires
-CMakeFiles/Raytracer.dir/requires: CMakeFiles/Raytracer.dir/sources/Vector3.cpp.obj.requires
+CMakeFiles/Raytracer.dir/requires: CMakeFiles/Raytracer.dir/sources/Core/CalculUnit.cpp.obj.requires
+CMakeFiles/Raytracer.dir/requires: CMakeFiles/Raytracer.dir/sources/Core/Color.cpp.obj.requires
+CMakeFiles/Raytracer.dir/requires: CMakeFiles/Raytracer.dir/sources/Core/Eye.cpp.obj.requires
+CMakeFiles/Raytracer.dir/requires: CMakeFiles/Raytracer.dir/sources/Core/Ray.cpp.obj.requires
+CMakeFiles/Raytracer.dir/requires: CMakeFiles/Raytracer.dir/sources/Core/RayTracer.cpp.obj.requires
+CMakeFiles/Raytracer.dir/requires: CMakeFiles/Raytracer.dir/sources/Core/Scene.cpp.obj.requires
+CMakeFiles/Raytracer.dir/requires: CMakeFiles/Raytracer.dir/sources/Core/Spot.cpp.obj.requires
+CMakeFiles/Raytracer.dir/requires: CMakeFiles/Raytracer.dir/sources/Core/Vector2.cpp.obj.requires
+CMakeFiles/Raytracer.dir/requires: CMakeFiles/Raytracer.dir/sources/Core/Vector3.cpp.obj.requires
+CMakeFiles/Raytracer.dir/requires: CMakeFiles/Raytracer.dir/sources/Effect/LightPhong.cpp.obj.requires
+CMakeFiles/Raytracer.dir/requires: CMakeFiles/Raytracer.dir/sources/Graphic/AImage.cpp.obj.requires
+CMakeFiles/Raytracer.dir/requires: CMakeFiles/Raytracer.dir/sources/Graphic/AWindow.cpp.obj.requires
+CMakeFiles/Raytracer.dir/requires: CMakeFiles/Raytracer.dir/sources/Graphic/GraphicException.cpp.obj.requires
+CMakeFiles/Raytracer.dir/requires: CMakeFiles/Raytracer.dir/sources/Object/AObject.cpp.obj.requires
+CMakeFiles/Raytracer.dir/requires: CMakeFiles/Raytracer.dir/sources/Object/Cone.cpp.obj.requires
+CMakeFiles/Raytracer.dir/requires: CMakeFiles/Raytracer.dir/sources/Object/Cylinder.cpp.obj.requires
+CMakeFiles/Raytracer.dir/requires: CMakeFiles/Raytracer.dir/sources/Object/Plan.cpp.obj.requires
+CMakeFiles/Raytracer.dir/requires: CMakeFiles/Raytracer.dir/sources/Object/Sphere.cpp.obj.requires
+CMakeFiles/Raytracer.dir/requires: CMakeFiles/Raytracer.dir/sources/SDL2/SDLGraphic.cpp.obj.requires
+CMakeFiles/Raytracer.dir/requires: CMakeFiles/Raytracer.dir/sources/SDL2/SDLImage.cpp.obj.requires
+CMakeFiles/Raytracer.dir/requires: CMakeFiles/Raytracer.dir/sources/SDL2/SDLWindow.cpp.obj.requires
 CMakeFiles/Raytracer.dir/requires: CMakeFiles/Raytracer.dir/sources/main.cpp.obj.requires
 
 .PHONY : CMakeFiles/Raytracer.dir/requires

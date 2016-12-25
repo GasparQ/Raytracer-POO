@@ -55,17 +55,6 @@ CMAKE_BINARY_DIR = C:\Users\gaspar\ClionProjects\Raytracer\cmake-build-debug
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	"C:\Program Files (x86)\JetBrains\CLion 2016.3\bin\cmake\bin\cmake.exe" -E echo "No interactive CMake dialog available."
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -76,6 +65,17 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	"C:\Program Files (x86)\JetBrains\CLion 2016.3\bin\cmake\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -122,572 +122,612 @@ Raytracer/fast:
 	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/build
 .PHONY : Raytracer/fast
 
-sources/AImage.obj: sources/AImage.cpp.obj
+#=============================================================================
+# Target rules for targets named test_unit_vec
 
-.PHONY : sources/AImage.obj
+# Build rule for target.
+test_unit_vec: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 test_unit_vec
+.PHONY : test_unit_vec
 
-# target to build an object file
-sources/AImage.cpp.obj:
-	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/AImage.cpp.obj
-.PHONY : sources/AImage.cpp.obj
+# fast build rule for target.
+test_unit_vec/fast:
+	$(MAKE) -f CMakeFiles\test_unit_vec.dir\build.make CMakeFiles/test_unit_vec.dir/build
+.PHONY : test_unit_vec/fast
 
-sources/AImage.i: sources/AImage.cpp.i
+sources/Core/CalculUnit.obj: sources/Core/CalculUnit.cpp.obj
 
-.PHONY : sources/AImage.i
-
-# target to preprocess a source file
-sources/AImage.cpp.i:
-	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/AImage.cpp.i
-.PHONY : sources/AImage.cpp.i
-
-sources/AImage.s: sources/AImage.cpp.s
-
-.PHONY : sources/AImage.s
-
-# target to generate assembly for a file
-sources/AImage.cpp.s:
-	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/AImage.cpp.s
-.PHONY : sources/AImage.cpp.s
-
-sources/AObject.obj: sources/AObject.cpp.obj
-
-.PHONY : sources/AObject.obj
+.PHONY : sources/Core/CalculUnit.obj
 
 # target to build an object file
-sources/AObject.cpp.obj:
-	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/AObject.cpp.obj
-.PHONY : sources/AObject.cpp.obj
+sources/Core/CalculUnit.cpp.obj:
+	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Core/CalculUnit.cpp.obj
+	$(MAKE) -f CMakeFiles\test_unit_vec.dir\build.make CMakeFiles/test_unit_vec.dir/sources/Core/CalculUnit.cpp.obj
+.PHONY : sources/Core/CalculUnit.cpp.obj
 
-sources/AObject.i: sources/AObject.cpp.i
+sources/Core/CalculUnit.i: sources/Core/CalculUnit.cpp.i
 
-.PHONY : sources/AObject.i
+.PHONY : sources/Core/CalculUnit.i
 
 # target to preprocess a source file
-sources/AObject.cpp.i:
-	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/AObject.cpp.i
-.PHONY : sources/AObject.cpp.i
+sources/Core/CalculUnit.cpp.i:
+	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Core/CalculUnit.cpp.i
+	$(MAKE) -f CMakeFiles\test_unit_vec.dir\build.make CMakeFiles/test_unit_vec.dir/sources/Core/CalculUnit.cpp.i
+.PHONY : sources/Core/CalculUnit.cpp.i
 
-sources/AObject.s: sources/AObject.cpp.s
+sources/Core/CalculUnit.s: sources/Core/CalculUnit.cpp.s
 
-.PHONY : sources/AObject.s
+.PHONY : sources/Core/CalculUnit.s
 
 # target to generate assembly for a file
-sources/AObject.cpp.s:
-	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/AObject.cpp.s
-.PHONY : sources/AObject.cpp.s
+sources/Core/CalculUnit.cpp.s:
+	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Core/CalculUnit.cpp.s
+	$(MAKE) -f CMakeFiles\test_unit_vec.dir\build.make CMakeFiles/test_unit_vec.dir/sources/Core/CalculUnit.cpp.s
+.PHONY : sources/Core/CalculUnit.cpp.s
 
-sources/AWindow.obj: sources/AWindow.cpp.obj
+sources/Core/Color.obj: sources/Core/Color.cpp.obj
 
-.PHONY : sources/AWindow.obj
+.PHONY : sources/Core/Color.obj
 
 # target to build an object file
-sources/AWindow.cpp.obj:
-	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/AWindow.cpp.obj
-.PHONY : sources/AWindow.cpp.obj
+sources/Core/Color.cpp.obj:
+	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Core/Color.cpp.obj
+	$(MAKE) -f CMakeFiles\test_unit_vec.dir\build.make CMakeFiles/test_unit_vec.dir/sources/Core/Color.cpp.obj
+.PHONY : sources/Core/Color.cpp.obj
 
-sources/AWindow.i: sources/AWindow.cpp.i
+sources/Core/Color.i: sources/Core/Color.cpp.i
 
-.PHONY : sources/AWindow.i
+.PHONY : sources/Core/Color.i
 
 # target to preprocess a source file
-sources/AWindow.cpp.i:
-	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/AWindow.cpp.i
-.PHONY : sources/AWindow.cpp.i
+sources/Core/Color.cpp.i:
+	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Core/Color.cpp.i
+	$(MAKE) -f CMakeFiles\test_unit_vec.dir\build.make CMakeFiles/test_unit_vec.dir/sources/Core/Color.cpp.i
+.PHONY : sources/Core/Color.cpp.i
 
-sources/AWindow.s: sources/AWindow.cpp.s
+sources/Core/Color.s: sources/Core/Color.cpp.s
 
-.PHONY : sources/AWindow.s
+.PHONY : sources/Core/Color.s
 
 # target to generate assembly for a file
-sources/AWindow.cpp.s:
-	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/AWindow.cpp.s
-.PHONY : sources/AWindow.cpp.s
+sources/Core/Color.cpp.s:
+	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Core/Color.cpp.s
+	$(MAKE) -f CMakeFiles\test_unit_vec.dir\build.make CMakeFiles/test_unit_vec.dir/sources/Core/Color.cpp.s
+.PHONY : sources/Core/Color.cpp.s
 
-sources/CalculUnit.obj: sources/CalculUnit.cpp.obj
+sources/Core/Eye.obj: sources/Core/Eye.cpp.obj
 
-.PHONY : sources/CalculUnit.obj
+.PHONY : sources/Core/Eye.obj
 
 # target to build an object file
-sources/CalculUnit.cpp.obj:
-	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/CalculUnit.cpp.obj
-.PHONY : sources/CalculUnit.cpp.obj
+sources/Core/Eye.cpp.obj:
+	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Core/Eye.cpp.obj
+	$(MAKE) -f CMakeFiles\test_unit_vec.dir\build.make CMakeFiles/test_unit_vec.dir/sources/Core/Eye.cpp.obj
+.PHONY : sources/Core/Eye.cpp.obj
 
-sources/CalculUnit.i: sources/CalculUnit.cpp.i
+sources/Core/Eye.i: sources/Core/Eye.cpp.i
 
-.PHONY : sources/CalculUnit.i
+.PHONY : sources/Core/Eye.i
 
 # target to preprocess a source file
-sources/CalculUnit.cpp.i:
-	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/CalculUnit.cpp.i
-.PHONY : sources/CalculUnit.cpp.i
+sources/Core/Eye.cpp.i:
+	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Core/Eye.cpp.i
+	$(MAKE) -f CMakeFiles\test_unit_vec.dir\build.make CMakeFiles/test_unit_vec.dir/sources/Core/Eye.cpp.i
+.PHONY : sources/Core/Eye.cpp.i
 
-sources/CalculUnit.s: sources/CalculUnit.cpp.s
+sources/Core/Eye.s: sources/Core/Eye.cpp.s
 
-.PHONY : sources/CalculUnit.s
+.PHONY : sources/Core/Eye.s
 
 # target to generate assembly for a file
-sources/CalculUnit.cpp.s:
-	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/CalculUnit.cpp.s
-.PHONY : sources/CalculUnit.cpp.s
+sources/Core/Eye.cpp.s:
+	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Core/Eye.cpp.s
+	$(MAKE) -f CMakeFiles\test_unit_vec.dir\build.make CMakeFiles/test_unit_vec.dir/sources/Core/Eye.cpp.s
+.PHONY : sources/Core/Eye.cpp.s
 
-sources/Color.obj: sources/Color.cpp.obj
+sources/Core/Ray.obj: sources/Core/Ray.cpp.obj
 
-.PHONY : sources/Color.obj
+.PHONY : sources/Core/Ray.obj
 
 # target to build an object file
-sources/Color.cpp.obj:
-	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Color.cpp.obj
-.PHONY : sources/Color.cpp.obj
+sources/Core/Ray.cpp.obj:
+	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Core/Ray.cpp.obj
+	$(MAKE) -f CMakeFiles\test_unit_vec.dir\build.make CMakeFiles/test_unit_vec.dir/sources/Core/Ray.cpp.obj
+.PHONY : sources/Core/Ray.cpp.obj
 
-sources/Color.i: sources/Color.cpp.i
+sources/Core/Ray.i: sources/Core/Ray.cpp.i
 
-.PHONY : sources/Color.i
+.PHONY : sources/Core/Ray.i
 
 # target to preprocess a source file
-sources/Color.cpp.i:
-	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Color.cpp.i
-.PHONY : sources/Color.cpp.i
+sources/Core/Ray.cpp.i:
+	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Core/Ray.cpp.i
+	$(MAKE) -f CMakeFiles\test_unit_vec.dir\build.make CMakeFiles/test_unit_vec.dir/sources/Core/Ray.cpp.i
+.PHONY : sources/Core/Ray.cpp.i
 
-sources/Color.s: sources/Color.cpp.s
+sources/Core/Ray.s: sources/Core/Ray.cpp.s
 
-.PHONY : sources/Color.s
+.PHONY : sources/Core/Ray.s
 
 # target to generate assembly for a file
-sources/Color.cpp.s:
-	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Color.cpp.s
-.PHONY : sources/Color.cpp.s
+sources/Core/Ray.cpp.s:
+	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Core/Ray.cpp.s
+	$(MAKE) -f CMakeFiles\test_unit_vec.dir\build.make CMakeFiles/test_unit_vec.dir/sources/Core/Ray.cpp.s
+.PHONY : sources/Core/Ray.cpp.s
 
-sources/Cone.obj: sources/Cone.cpp.obj
+sources/Core/RayTracer.obj: sources/Core/RayTracer.cpp.obj
 
-.PHONY : sources/Cone.obj
+.PHONY : sources/Core/RayTracer.obj
 
 # target to build an object file
-sources/Cone.cpp.obj:
-	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Cone.cpp.obj
-.PHONY : sources/Cone.cpp.obj
+sources/Core/RayTracer.cpp.obj:
+	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Core/RayTracer.cpp.obj
+	$(MAKE) -f CMakeFiles\test_unit_vec.dir\build.make CMakeFiles/test_unit_vec.dir/sources/Core/RayTracer.cpp.obj
+.PHONY : sources/Core/RayTracer.cpp.obj
 
-sources/Cone.i: sources/Cone.cpp.i
+sources/Core/RayTracer.i: sources/Core/RayTracer.cpp.i
 
-.PHONY : sources/Cone.i
+.PHONY : sources/Core/RayTracer.i
 
 # target to preprocess a source file
-sources/Cone.cpp.i:
-	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Cone.cpp.i
-.PHONY : sources/Cone.cpp.i
+sources/Core/RayTracer.cpp.i:
+	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Core/RayTracer.cpp.i
+	$(MAKE) -f CMakeFiles\test_unit_vec.dir\build.make CMakeFiles/test_unit_vec.dir/sources/Core/RayTracer.cpp.i
+.PHONY : sources/Core/RayTracer.cpp.i
 
-sources/Cone.s: sources/Cone.cpp.s
+sources/Core/RayTracer.s: sources/Core/RayTracer.cpp.s
 
-.PHONY : sources/Cone.s
+.PHONY : sources/Core/RayTracer.s
 
 # target to generate assembly for a file
-sources/Cone.cpp.s:
-	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Cone.cpp.s
-.PHONY : sources/Cone.cpp.s
+sources/Core/RayTracer.cpp.s:
+	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Core/RayTracer.cpp.s
+	$(MAKE) -f CMakeFiles\test_unit_vec.dir\build.make CMakeFiles/test_unit_vec.dir/sources/Core/RayTracer.cpp.s
+.PHONY : sources/Core/RayTracer.cpp.s
 
-sources/Cylinder.obj: sources/Cylinder.cpp.obj
+sources/Core/Scene.obj: sources/Core/Scene.cpp.obj
 
-.PHONY : sources/Cylinder.obj
+.PHONY : sources/Core/Scene.obj
 
 # target to build an object file
-sources/Cylinder.cpp.obj:
-	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Cylinder.cpp.obj
-.PHONY : sources/Cylinder.cpp.obj
+sources/Core/Scene.cpp.obj:
+	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Core/Scene.cpp.obj
+	$(MAKE) -f CMakeFiles\test_unit_vec.dir\build.make CMakeFiles/test_unit_vec.dir/sources/Core/Scene.cpp.obj
+.PHONY : sources/Core/Scene.cpp.obj
 
-sources/Cylinder.i: sources/Cylinder.cpp.i
+sources/Core/Scene.i: sources/Core/Scene.cpp.i
 
-.PHONY : sources/Cylinder.i
+.PHONY : sources/Core/Scene.i
 
 # target to preprocess a source file
-sources/Cylinder.cpp.i:
-	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Cylinder.cpp.i
-.PHONY : sources/Cylinder.cpp.i
+sources/Core/Scene.cpp.i:
+	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Core/Scene.cpp.i
+	$(MAKE) -f CMakeFiles\test_unit_vec.dir\build.make CMakeFiles/test_unit_vec.dir/sources/Core/Scene.cpp.i
+.PHONY : sources/Core/Scene.cpp.i
 
-sources/Cylinder.s: sources/Cylinder.cpp.s
+sources/Core/Scene.s: sources/Core/Scene.cpp.s
 
-.PHONY : sources/Cylinder.s
+.PHONY : sources/Core/Scene.s
 
 # target to generate assembly for a file
-sources/Cylinder.cpp.s:
-	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Cylinder.cpp.s
-.PHONY : sources/Cylinder.cpp.s
+sources/Core/Scene.cpp.s:
+	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Core/Scene.cpp.s
+	$(MAKE) -f CMakeFiles\test_unit_vec.dir\build.make CMakeFiles/test_unit_vec.dir/sources/Core/Scene.cpp.s
+.PHONY : sources/Core/Scene.cpp.s
 
-sources/Eye.obj: sources/Eye.cpp.obj
+sources/Core/Spot.obj: sources/Core/Spot.cpp.obj
 
-.PHONY : sources/Eye.obj
+.PHONY : sources/Core/Spot.obj
 
 # target to build an object file
-sources/Eye.cpp.obj:
-	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Eye.cpp.obj
-.PHONY : sources/Eye.cpp.obj
+sources/Core/Spot.cpp.obj:
+	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Core/Spot.cpp.obj
+	$(MAKE) -f CMakeFiles\test_unit_vec.dir\build.make CMakeFiles/test_unit_vec.dir/sources/Core/Spot.cpp.obj
+.PHONY : sources/Core/Spot.cpp.obj
 
-sources/Eye.i: sources/Eye.cpp.i
+sources/Core/Spot.i: sources/Core/Spot.cpp.i
 
-.PHONY : sources/Eye.i
+.PHONY : sources/Core/Spot.i
 
 # target to preprocess a source file
-sources/Eye.cpp.i:
-	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Eye.cpp.i
-.PHONY : sources/Eye.cpp.i
+sources/Core/Spot.cpp.i:
+	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Core/Spot.cpp.i
+	$(MAKE) -f CMakeFiles\test_unit_vec.dir\build.make CMakeFiles/test_unit_vec.dir/sources/Core/Spot.cpp.i
+.PHONY : sources/Core/Spot.cpp.i
 
-sources/Eye.s: sources/Eye.cpp.s
+sources/Core/Spot.s: sources/Core/Spot.cpp.s
 
-.PHONY : sources/Eye.s
+.PHONY : sources/Core/Spot.s
 
 # target to generate assembly for a file
-sources/Eye.cpp.s:
-	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Eye.cpp.s
-.PHONY : sources/Eye.cpp.s
+sources/Core/Spot.cpp.s:
+	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Core/Spot.cpp.s
+	$(MAKE) -f CMakeFiles\test_unit_vec.dir\build.make CMakeFiles/test_unit_vec.dir/sources/Core/Spot.cpp.s
+.PHONY : sources/Core/Spot.cpp.s
 
-sources/GraphicException.obj: sources/GraphicException.cpp.obj
+sources/Core/Vector2.obj: sources/Core/Vector2.cpp.obj
 
-.PHONY : sources/GraphicException.obj
+.PHONY : sources/Core/Vector2.obj
 
 # target to build an object file
-sources/GraphicException.cpp.obj:
-	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/GraphicException.cpp.obj
-.PHONY : sources/GraphicException.cpp.obj
+sources/Core/Vector2.cpp.obj:
+	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Core/Vector2.cpp.obj
+	$(MAKE) -f CMakeFiles\test_unit_vec.dir\build.make CMakeFiles/test_unit_vec.dir/sources/Core/Vector2.cpp.obj
+.PHONY : sources/Core/Vector2.cpp.obj
 
-sources/GraphicException.i: sources/GraphicException.cpp.i
+sources/Core/Vector2.i: sources/Core/Vector2.cpp.i
 
-.PHONY : sources/GraphicException.i
+.PHONY : sources/Core/Vector2.i
 
 # target to preprocess a source file
-sources/GraphicException.cpp.i:
-	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/GraphicException.cpp.i
-.PHONY : sources/GraphicException.cpp.i
+sources/Core/Vector2.cpp.i:
+	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Core/Vector2.cpp.i
+	$(MAKE) -f CMakeFiles\test_unit_vec.dir\build.make CMakeFiles/test_unit_vec.dir/sources/Core/Vector2.cpp.i
+.PHONY : sources/Core/Vector2.cpp.i
 
-sources/GraphicException.s: sources/GraphicException.cpp.s
+sources/Core/Vector2.s: sources/Core/Vector2.cpp.s
 
-.PHONY : sources/GraphicException.s
+.PHONY : sources/Core/Vector2.s
 
 # target to generate assembly for a file
-sources/GraphicException.cpp.s:
-	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/GraphicException.cpp.s
-.PHONY : sources/GraphicException.cpp.s
+sources/Core/Vector2.cpp.s:
+	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Core/Vector2.cpp.s
+	$(MAKE) -f CMakeFiles\test_unit_vec.dir\build.make CMakeFiles/test_unit_vec.dir/sources/Core/Vector2.cpp.s
+.PHONY : sources/Core/Vector2.cpp.s
 
-sources/LightPhong.obj: sources/LightPhong.cpp.obj
+sources/Core/Vector3.obj: sources/Core/Vector3.cpp.obj
 
-.PHONY : sources/LightPhong.obj
+.PHONY : sources/Core/Vector3.obj
 
 # target to build an object file
-sources/LightPhong.cpp.obj:
-	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/LightPhong.cpp.obj
-.PHONY : sources/LightPhong.cpp.obj
+sources/Core/Vector3.cpp.obj:
+	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Core/Vector3.cpp.obj
+	$(MAKE) -f CMakeFiles\test_unit_vec.dir\build.make CMakeFiles/test_unit_vec.dir/sources/Core/Vector3.cpp.obj
+.PHONY : sources/Core/Vector3.cpp.obj
 
-sources/LightPhong.i: sources/LightPhong.cpp.i
+sources/Core/Vector3.i: sources/Core/Vector3.cpp.i
 
-.PHONY : sources/LightPhong.i
+.PHONY : sources/Core/Vector3.i
 
 # target to preprocess a source file
-sources/LightPhong.cpp.i:
-	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/LightPhong.cpp.i
-.PHONY : sources/LightPhong.cpp.i
+sources/Core/Vector3.cpp.i:
+	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Core/Vector3.cpp.i
+	$(MAKE) -f CMakeFiles\test_unit_vec.dir\build.make CMakeFiles/test_unit_vec.dir/sources/Core/Vector3.cpp.i
+.PHONY : sources/Core/Vector3.cpp.i
 
-sources/LightPhong.s: sources/LightPhong.cpp.s
+sources/Core/Vector3.s: sources/Core/Vector3.cpp.s
 
-.PHONY : sources/LightPhong.s
+.PHONY : sources/Core/Vector3.s
 
 # target to generate assembly for a file
-sources/LightPhong.cpp.s:
-	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/LightPhong.cpp.s
-.PHONY : sources/LightPhong.cpp.s
+sources/Core/Vector3.cpp.s:
+	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Core/Vector3.cpp.s
+	$(MAKE) -f CMakeFiles\test_unit_vec.dir\build.make CMakeFiles/test_unit_vec.dir/sources/Core/Vector3.cpp.s
+.PHONY : sources/Core/Vector3.cpp.s
 
-sources/Plan.obj: sources/Plan.cpp.obj
+sources/Effect/LightPhong.obj: sources/Effect/LightPhong.cpp.obj
 
-.PHONY : sources/Plan.obj
+.PHONY : sources/Effect/LightPhong.obj
 
 # target to build an object file
-sources/Plan.cpp.obj:
-	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Plan.cpp.obj
-.PHONY : sources/Plan.cpp.obj
+sources/Effect/LightPhong.cpp.obj:
+	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Effect/LightPhong.cpp.obj
+.PHONY : sources/Effect/LightPhong.cpp.obj
 
-sources/Plan.i: sources/Plan.cpp.i
+sources/Effect/LightPhong.i: sources/Effect/LightPhong.cpp.i
 
-.PHONY : sources/Plan.i
+.PHONY : sources/Effect/LightPhong.i
 
 # target to preprocess a source file
-sources/Plan.cpp.i:
-	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Plan.cpp.i
-.PHONY : sources/Plan.cpp.i
+sources/Effect/LightPhong.cpp.i:
+	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Effect/LightPhong.cpp.i
+.PHONY : sources/Effect/LightPhong.cpp.i
 
-sources/Plan.s: sources/Plan.cpp.s
+sources/Effect/LightPhong.s: sources/Effect/LightPhong.cpp.s
 
-.PHONY : sources/Plan.s
+.PHONY : sources/Effect/LightPhong.s
 
 # target to generate assembly for a file
-sources/Plan.cpp.s:
-	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Plan.cpp.s
-.PHONY : sources/Plan.cpp.s
+sources/Effect/LightPhong.cpp.s:
+	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Effect/LightPhong.cpp.s
+.PHONY : sources/Effect/LightPhong.cpp.s
 
-sources/Ray.obj: sources/Ray.cpp.obj
+sources/Graphic/AImage.obj: sources/Graphic/AImage.cpp.obj
 
-.PHONY : sources/Ray.obj
+.PHONY : sources/Graphic/AImage.obj
 
 # target to build an object file
-sources/Ray.cpp.obj:
-	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Ray.cpp.obj
-.PHONY : sources/Ray.cpp.obj
+sources/Graphic/AImage.cpp.obj:
+	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Graphic/AImage.cpp.obj
+.PHONY : sources/Graphic/AImage.cpp.obj
 
-sources/Ray.i: sources/Ray.cpp.i
+sources/Graphic/AImage.i: sources/Graphic/AImage.cpp.i
 
-.PHONY : sources/Ray.i
+.PHONY : sources/Graphic/AImage.i
 
 # target to preprocess a source file
-sources/Ray.cpp.i:
-	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Ray.cpp.i
-.PHONY : sources/Ray.cpp.i
+sources/Graphic/AImage.cpp.i:
+	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Graphic/AImage.cpp.i
+.PHONY : sources/Graphic/AImage.cpp.i
 
-sources/Ray.s: sources/Ray.cpp.s
+sources/Graphic/AImage.s: sources/Graphic/AImage.cpp.s
 
-.PHONY : sources/Ray.s
+.PHONY : sources/Graphic/AImage.s
 
 # target to generate assembly for a file
-sources/Ray.cpp.s:
-	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Ray.cpp.s
-.PHONY : sources/Ray.cpp.s
+sources/Graphic/AImage.cpp.s:
+	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Graphic/AImage.cpp.s
+.PHONY : sources/Graphic/AImage.cpp.s
 
-sources/RayTracer.obj: sources/RayTracer.cpp.obj
+sources/Graphic/AWindow.obj: sources/Graphic/AWindow.cpp.obj
 
-.PHONY : sources/RayTracer.obj
+.PHONY : sources/Graphic/AWindow.obj
 
 # target to build an object file
-sources/RayTracer.cpp.obj:
-	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/RayTracer.cpp.obj
-.PHONY : sources/RayTracer.cpp.obj
+sources/Graphic/AWindow.cpp.obj:
+	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Graphic/AWindow.cpp.obj
+.PHONY : sources/Graphic/AWindow.cpp.obj
 
-sources/RayTracer.i: sources/RayTracer.cpp.i
+sources/Graphic/AWindow.i: sources/Graphic/AWindow.cpp.i
 
-.PHONY : sources/RayTracer.i
+.PHONY : sources/Graphic/AWindow.i
 
 # target to preprocess a source file
-sources/RayTracer.cpp.i:
-	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/RayTracer.cpp.i
-.PHONY : sources/RayTracer.cpp.i
+sources/Graphic/AWindow.cpp.i:
+	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Graphic/AWindow.cpp.i
+.PHONY : sources/Graphic/AWindow.cpp.i
 
-sources/RayTracer.s: sources/RayTracer.cpp.s
+sources/Graphic/AWindow.s: sources/Graphic/AWindow.cpp.s
 
-.PHONY : sources/RayTracer.s
+.PHONY : sources/Graphic/AWindow.s
 
 # target to generate assembly for a file
-sources/RayTracer.cpp.s:
-	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/RayTracer.cpp.s
-.PHONY : sources/RayTracer.cpp.s
+sources/Graphic/AWindow.cpp.s:
+	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Graphic/AWindow.cpp.s
+.PHONY : sources/Graphic/AWindow.cpp.s
 
-sources/SDLGraphic.obj: sources/SDLGraphic.cpp.obj
+sources/Graphic/GraphicException.obj: sources/Graphic/GraphicException.cpp.obj
 
-.PHONY : sources/SDLGraphic.obj
+.PHONY : sources/Graphic/GraphicException.obj
 
 # target to build an object file
-sources/SDLGraphic.cpp.obj:
-	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/SDLGraphic.cpp.obj
-.PHONY : sources/SDLGraphic.cpp.obj
+sources/Graphic/GraphicException.cpp.obj:
+	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Graphic/GraphicException.cpp.obj
+.PHONY : sources/Graphic/GraphicException.cpp.obj
 
-sources/SDLGraphic.i: sources/SDLGraphic.cpp.i
+sources/Graphic/GraphicException.i: sources/Graphic/GraphicException.cpp.i
 
-.PHONY : sources/SDLGraphic.i
+.PHONY : sources/Graphic/GraphicException.i
 
 # target to preprocess a source file
-sources/SDLGraphic.cpp.i:
-	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/SDLGraphic.cpp.i
-.PHONY : sources/SDLGraphic.cpp.i
+sources/Graphic/GraphicException.cpp.i:
+	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Graphic/GraphicException.cpp.i
+.PHONY : sources/Graphic/GraphicException.cpp.i
 
-sources/SDLGraphic.s: sources/SDLGraphic.cpp.s
+sources/Graphic/GraphicException.s: sources/Graphic/GraphicException.cpp.s
 
-.PHONY : sources/SDLGraphic.s
+.PHONY : sources/Graphic/GraphicException.s
 
 # target to generate assembly for a file
-sources/SDLGraphic.cpp.s:
-	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/SDLGraphic.cpp.s
-.PHONY : sources/SDLGraphic.cpp.s
+sources/Graphic/GraphicException.cpp.s:
+	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Graphic/GraphicException.cpp.s
+.PHONY : sources/Graphic/GraphicException.cpp.s
 
-sources/SDLImage.obj: sources/SDLImage.cpp.obj
+sources/Object/AObject.obj: sources/Object/AObject.cpp.obj
 
-.PHONY : sources/SDLImage.obj
+.PHONY : sources/Object/AObject.obj
 
 # target to build an object file
-sources/SDLImage.cpp.obj:
-	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/SDLImage.cpp.obj
-.PHONY : sources/SDLImage.cpp.obj
+sources/Object/AObject.cpp.obj:
+	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Object/AObject.cpp.obj
+.PHONY : sources/Object/AObject.cpp.obj
 
-sources/SDLImage.i: sources/SDLImage.cpp.i
+sources/Object/AObject.i: sources/Object/AObject.cpp.i
 
-.PHONY : sources/SDLImage.i
+.PHONY : sources/Object/AObject.i
 
 # target to preprocess a source file
-sources/SDLImage.cpp.i:
-	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/SDLImage.cpp.i
-.PHONY : sources/SDLImage.cpp.i
+sources/Object/AObject.cpp.i:
+	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Object/AObject.cpp.i
+.PHONY : sources/Object/AObject.cpp.i
 
-sources/SDLImage.s: sources/SDLImage.cpp.s
+sources/Object/AObject.s: sources/Object/AObject.cpp.s
 
-.PHONY : sources/SDLImage.s
+.PHONY : sources/Object/AObject.s
 
 # target to generate assembly for a file
-sources/SDLImage.cpp.s:
-	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/SDLImage.cpp.s
-.PHONY : sources/SDLImage.cpp.s
+sources/Object/AObject.cpp.s:
+	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Object/AObject.cpp.s
+.PHONY : sources/Object/AObject.cpp.s
 
-sources/SDLWindow.obj: sources/SDLWindow.cpp.obj
+sources/Object/Cone.obj: sources/Object/Cone.cpp.obj
 
-.PHONY : sources/SDLWindow.obj
+.PHONY : sources/Object/Cone.obj
 
 # target to build an object file
-sources/SDLWindow.cpp.obj:
-	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/SDLWindow.cpp.obj
-.PHONY : sources/SDLWindow.cpp.obj
+sources/Object/Cone.cpp.obj:
+	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Object/Cone.cpp.obj
+.PHONY : sources/Object/Cone.cpp.obj
 
-sources/SDLWindow.i: sources/SDLWindow.cpp.i
+sources/Object/Cone.i: sources/Object/Cone.cpp.i
 
-.PHONY : sources/SDLWindow.i
+.PHONY : sources/Object/Cone.i
 
 # target to preprocess a source file
-sources/SDLWindow.cpp.i:
-	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/SDLWindow.cpp.i
-.PHONY : sources/SDLWindow.cpp.i
+sources/Object/Cone.cpp.i:
+	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Object/Cone.cpp.i
+.PHONY : sources/Object/Cone.cpp.i
 
-sources/SDLWindow.s: sources/SDLWindow.cpp.s
+sources/Object/Cone.s: sources/Object/Cone.cpp.s
 
-.PHONY : sources/SDLWindow.s
+.PHONY : sources/Object/Cone.s
 
 # target to generate assembly for a file
-sources/SDLWindow.cpp.s:
-	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/SDLWindow.cpp.s
-.PHONY : sources/SDLWindow.cpp.s
+sources/Object/Cone.cpp.s:
+	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Object/Cone.cpp.s
+.PHONY : sources/Object/Cone.cpp.s
 
-sources/Scene.obj: sources/Scene.cpp.obj
+sources/Object/Cylinder.obj: sources/Object/Cylinder.cpp.obj
 
-.PHONY : sources/Scene.obj
+.PHONY : sources/Object/Cylinder.obj
 
 # target to build an object file
-sources/Scene.cpp.obj:
-	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Scene.cpp.obj
-.PHONY : sources/Scene.cpp.obj
+sources/Object/Cylinder.cpp.obj:
+	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Object/Cylinder.cpp.obj
+.PHONY : sources/Object/Cylinder.cpp.obj
 
-sources/Scene.i: sources/Scene.cpp.i
+sources/Object/Cylinder.i: sources/Object/Cylinder.cpp.i
 
-.PHONY : sources/Scene.i
+.PHONY : sources/Object/Cylinder.i
 
 # target to preprocess a source file
-sources/Scene.cpp.i:
-	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Scene.cpp.i
-.PHONY : sources/Scene.cpp.i
+sources/Object/Cylinder.cpp.i:
+	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Object/Cylinder.cpp.i
+.PHONY : sources/Object/Cylinder.cpp.i
 
-sources/Scene.s: sources/Scene.cpp.s
+sources/Object/Cylinder.s: sources/Object/Cylinder.cpp.s
 
-.PHONY : sources/Scene.s
+.PHONY : sources/Object/Cylinder.s
 
 # target to generate assembly for a file
-sources/Scene.cpp.s:
-	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Scene.cpp.s
-.PHONY : sources/Scene.cpp.s
+sources/Object/Cylinder.cpp.s:
+	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Object/Cylinder.cpp.s
+.PHONY : sources/Object/Cylinder.cpp.s
 
-sources/Sphere.obj: sources/Sphere.cpp.obj
+sources/Object/Plan.obj: sources/Object/Plan.cpp.obj
 
-.PHONY : sources/Sphere.obj
+.PHONY : sources/Object/Plan.obj
 
 # target to build an object file
-sources/Sphere.cpp.obj:
-	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Sphere.cpp.obj
-.PHONY : sources/Sphere.cpp.obj
+sources/Object/Plan.cpp.obj:
+	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Object/Plan.cpp.obj
+.PHONY : sources/Object/Plan.cpp.obj
 
-sources/Sphere.i: sources/Sphere.cpp.i
+sources/Object/Plan.i: sources/Object/Plan.cpp.i
 
-.PHONY : sources/Sphere.i
+.PHONY : sources/Object/Plan.i
 
 # target to preprocess a source file
-sources/Sphere.cpp.i:
-	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Sphere.cpp.i
-.PHONY : sources/Sphere.cpp.i
+sources/Object/Plan.cpp.i:
+	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Object/Plan.cpp.i
+.PHONY : sources/Object/Plan.cpp.i
 
-sources/Sphere.s: sources/Sphere.cpp.s
+sources/Object/Plan.s: sources/Object/Plan.cpp.s
 
-.PHONY : sources/Sphere.s
+.PHONY : sources/Object/Plan.s
 
 # target to generate assembly for a file
-sources/Sphere.cpp.s:
-	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Sphere.cpp.s
-.PHONY : sources/Sphere.cpp.s
+sources/Object/Plan.cpp.s:
+	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Object/Plan.cpp.s
+.PHONY : sources/Object/Plan.cpp.s
 
-sources/Spot.obj: sources/Spot.cpp.obj
+sources/Object/Sphere.obj: sources/Object/Sphere.cpp.obj
 
-.PHONY : sources/Spot.obj
+.PHONY : sources/Object/Sphere.obj
 
 # target to build an object file
-sources/Spot.cpp.obj:
-	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Spot.cpp.obj
-.PHONY : sources/Spot.cpp.obj
+sources/Object/Sphere.cpp.obj:
+	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Object/Sphere.cpp.obj
+.PHONY : sources/Object/Sphere.cpp.obj
 
-sources/Spot.i: sources/Spot.cpp.i
+sources/Object/Sphere.i: sources/Object/Sphere.cpp.i
 
-.PHONY : sources/Spot.i
+.PHONY : sources/Object/Sphere.i
 
 # target to preprocess a source file
-sources/Spot.cpp.i:
-	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Spot.cpp.i
-.PHONY : sources/Spot.cpp.i
+sources/Object/Sphere.cpp.i:
+	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Object/Sphere.cpp.i
+.PHONY : sources/Object/Sphere.cpp.i
 
-sources/Spot.s: sources/Spot.cpp.s
+sources/Object/Sphere.s: sources/Object/Sphere.cpp.s
 
-.PHONY : sources/Spot.s
+.PHONY : sources/Object/Sphere.s
 
 # target to generate assembly for a file
-sources/Spot.cpp.s:
-	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Spot.cpp.s
-.PHONY : sources/Spot.cpp.s
+sources/Object/Sphere.cpp.s:
+	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Object/Sphere.cpp.s
+.PHONY : sources/Object/Sphere.cpp.s
 
-sources/Vector2.obj: sources/Vector2.cpp.obj
+sources/SDL2/SDLGraphic.obj: sources/SDL2/SDLGraphic.cpp.obj
 
-.PHONY : sources/Vector2.obj
+.PHONY : sources/SDL2/SDLGraphic.obj
 
 # target to build an object file
-sources/Vector2.cpp.obj:
-	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Vector2.cpp.obj
-.PHONY : sources/Vector2.cpp.obj
+sources/SDL2/SDLGraphic.cpp.obj:
+	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/SDL2/SDLGraphic.cpp.obj
+.PHONY : sources/SDL2/SDLGraphic.cpp.obj
 
-sources/Vector2.i: sources/Vector2.cpp.i
+sources/SDL2/SDLGraphic.i: sources/SDL2/SDLGraphic.cpp.i
 
-.PHONY : sources/Vector2.i
+.PHONY : sources/SDL2/SDLGraphic.i
 
 # target to preprocess a source file
-sources/Vector2.cpp.i:
-	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Vector2.cpp.i
-.PHONY : sources/Vector2.cpp.i
+sources/SDL2/SDLGraphic.cpp.i:
+	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/SDL2/SDLGraphic.cpp.i
+.PHONY : sources/SDL2/SDLGraphic.cpp.i
 
-sources/Vector2.s: sources/Vector2.cpp.s
+sources/SDL2/SDLGraphic.s: sources/SDL2/SDLGraphic.cpp.s
 
-.PHONY : sources/Vector2.s
+.PHONY : sources/SDL2/SDLGraphic.s
 
 # target to generate assembly for a file
-sources/Vector2.cpp.s:
-	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Vector2.cpp.s
-.PHONY : sources/Vector2.cpp.s
+sources/SDL2/SDLGraphic.cpp.s:
+	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/SDL2/SDLGraphic.cpp.s
+.PHONY : sources/SDL2/SDLGraphic.cpp.s
 
-sources/Vector3.obj: sources/Vector3.cpp.obj
+sources/SDL2/SDLImage.obj: sources/SDL2/SDLImage.cpp.obj
 
-.PHONY : sources/Vector3.obj
+.PHONY : sources/SDL2/SDLImage.obj
 
 # target to build an object file
-sources/Vector3.cpp.obj:
-	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Vector3.cpp.obj
-.PHONY : sources/Vector3.cpp.obj
+sources/SDL2/SDLImage.cpp.obj:
+	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/SDL2/SDLImage.cpp.obj
+.PHONY : sources/SDL2/SDLImage.cpp.obj
 
-sources/Vector3.i: sources/Vector3.cpp.i
+sources/SDL2/SDLImage.i: sources/SDL2/SDLImage.cpp.i
 
-.PHONY : sources/Vector3.i
+.PHONY : sources/SDL2/SDLImage.i
 
 # target to preprocess a source file
-sources/Vector3.cpp.i:
-	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Vector3.cpp.i
-.PHONY : sources/Vector3.cpp.i
+sources/SDL2/SDLImage.cpp.i:
+	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/SDL2/SDLImage.cpp.i
+.PHONY : sources/SDL2/SDLImage.cpp.i
 
-sources/Vector3.s: sources/Vector3.cpp.s
+sources/SDL2/SDLImage.s: sources/SDL2/SDLImage.cpp.s
 
-.PHONY : sources/Vector3.s
+.PHONY : sources/SDL2/SDLImage.s
 
 # target to generate assembly for a file
-sources/Vector3.cpp.s:
-	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/Vector3.cpp.s
-.PHONY : sources/Vector3.cpp.s
+sources/SDL2/SDLImage.cpp.s:
+	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/SDL2/SDLImage.cpp.s
+.PHONY : sources/SDL2/SDLImage.cpp.s
+
+sources/SDL2/SDLWindow.obj: sources/SDL2/SDLWindow.cpp.obj
+
+.PHONY : sources/SDL2/SDLWindow.obj
+
+# target to build an object file
+sources/SDL2/SDLWindow.cpp.obj:
+	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/SDL2/SDLWindow.cpp.obj
+.PHONY : sources/SDL2/SDLWindow.cpp.obj
+
+sources/SDL2/SDLWindow.i: sources/SDL2/SDLWindow.cpp.i
+
+.PHONY : sources/SDL2/SDLWindow.i
+
+# target to preprocess a source file
+sources/SDL2/SDLWindow.cpp.i:
+	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/SDL2/SDLWindow.cpp.i
+.PHONY : sources/SDL2/SDLWindow.cpp.i
+
+sources/SDL2/SDLWindow.s: sources/SDL2/SDLWindow.cpp.s
+
+.PHONY : sources/SDL2/SDLWindow.s
+
+# target to generate assembly for a file
+sources/SDL2/SDLWindow.cpp.s:
+	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/SDL2/SDLWindow.cpp.s
+.PHONY : sources/SDL2/SDLWindow.cpp.s
 
 sources/main.obj: sources/main.cpp.obj
 
@@ -716,6 +756,33 @@ sources/main.cpp.s:
 	$(MAKE) -f CMakeFiles\Raytracer.dir\build.make CMakeFiles/Raytracer.dir/sources/main.cpp.s
 .PHONY : sources/main.cpp.s
 
+test/test_unit_vector.obj: test/test_unit_vector.cpp.obj
+
+.PHONY : test/test_unit_vector.obj
+
+# target to build an object file
+test/test_unit_vector.cpp.obj:
+	$(MAKE) -f CMakeFiles\test_unit_vec.dir\build.make CMakeFiles/test_unit_vec.dir/test/test_unit_vector.cpp.obj
+.PHONY : test/test_unit_vector.cpp.obj
+
+test/test_unit_vector.i: test/test_unit_vector.cpp.i
+
+.PHONY : test/test_unit_vector.i
+
+# target to preprocess a source file
+test/test_unit_vector.cpp.i:
+	$(MAKE) -f CMakeFiles\test_unit_vec.dir\build.make CMakeFiles/test_unit_vec.dir/test/test_unit_vector.cpp.i
+.PHONY : test/test_unit_vector.cpp.i
+
+test/test_unit_vector.s: test/test_unit_vector.cpp.s
+
+.PHONY : test/test_unit_vector.s
+
+# target to generate assembly for a file
+test/test_unit_vector.cpp.s:
+	$(MAKE) -f CMakeFiles\test_unit_vec.dir\build.make CMakeFiles/test_unit_vec.dir/test/test_unit_vector.cpp.s
+.PHONY : test/test_unit_vector.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -723,74 +790,78 @@ help:
 	@echo ... clean
 	@echo ... depend
 	@echo ... Raytracer
-	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... sources/AImage.obj
-	@echo ... sources/AImage.i
-	@echo ... sources/AImage.s
-	@echo ... sources/AObject.obj
-	@echo ... sources/AObject.i
-	@echo ... sources/AObject.s
-	@echo ... sources/AWindow.obj
-	@echo ... sources/AWindow.i
-	@echo ... sources/AWindow.s
-	@echo ... sources/CalculUnit.obj
-	@echo ... sources/CalculUnit.i
-	@echo ... sources/CalculUnit.s
-	@echo ... sources/Color.obj
-	@echo ... sources/Color.i
-	@echo ... sources/Color.s
-	@echo ... sources/Cone.obj
-	@echo ... sources/Cone.i
-	@echo ... sources/Cone.s
-	@echo ... sources/Cylinder.obj
-	@echo ... sources/Cylinder.i
-	@echo ... sources/Cylinder.s
-	@echo ... sources/Eye.obj
-	@echo ... sources/Eye.i
-	@echo ... sources/Eye.s
-	@echo ... sources/GraphicException.obj
-	@echo ... sources/GraphicException.i
-	@echo ... sources/GraphicException.s
-	@echo ... sources/LightPhong.obj
-	@echo ... sources/LightPhong.i
-	@echo ... sources/LightPhong.s
-	@echo ... sources/Plan.obj
-	@echo ... sources/Plan.i
-	@echo ... sources/Plan.s
-	@echo ... sources/Ray.obj
-	@echo ... sources/Ray.i
-	@echo ... sources/Ray.s
-	@echo ... sources/RayTracer.obj
-	@echo ... sources/RayTracer.i
-	@echo ... sources/RayTracer.s
-	@echo ... sources/SDLGraphic.obj
-	@echo ... sources/SDLGraphic.i
-	@echo ... sources/SDLGraphic.s
-	@echo ... sources/SDLImage.obj
-	@echo ... sources/SDLImage.i
-	@echo ... sources/SDLImage.s
-	@echo ... sources/SDLWindow.obj
-	@echo ... sources/SDLWindow.i
-	@echo ... sources/SDLWindow.s
-	@echo ... sources/Scene.obj
-	@echo ... sources/Scene.i
-	@echo ... sources/Scene.s
-	@echo ... sources/Sphere.obj
-	@echo ... sources/Sphere.i
-	@echo ... sources/Sphere.s
-	@echo ... sources/Spot.obj
-	@echo ... sources/Spot.i
-	@echo ... sources/Spot.s
-	@echo ... sources/Vector2.obj
-	@echo ... sources/Vector2.i
-	@echo ... sources/Vector2.s
-	@echo ... sources/Vector3.obj
-	@echo ... sources/Vector3.i
-	@echo ... sources/Vector3.s
+	@echo ... test_unit_vec
+	@echo ... edit_cache
+	@echo ... sources/Core/CalculUnit.obj
+	@echo ... sources/Core/CalculUnit.i
+	@echo ... sources/Core/CalculUnit.s
+	@echo ... sources/Core/Color.obj
+	@echo ... sources/Core/Color.i
+	@echo ... sources/Core/Color.s
+	@echo ... sources/Core/Eye.obj
+	@echo ... sources/Core/Eye.i
+	@echo ... sources/Core/Eye.s
+	@echo ... sources/Core/Ray.obj
+	@echo ... sources/Core/Ray.i
+	@echo ... sources/Core/Ray.s
+	@echo ... sources/Core/RayTracer.obj
+	@echo ... sources/Core/RayTracer.i
+	@echo ... sources/Core/RayTracer.s
+	@echo ... sources/Core/Scene.obj
+	@echo ... sources/Core/Scene.i
+	@echo ... sources/Core/Scene.s
+	@echo ... sources/Core/Spot.obj
+	@echo ... sources/Core/Spot.i
+	@echo ... sources/Core/Spot.s
+	@echo ... sources/Core/Vector2.obj
+	@echo ... sources/Core/Vector2.i
+	@echo ... sources/Core/Vector2.s
+	@echo ... sources/Core/Vector3.obj
+	@echo ... sources/Core/Vector3.i
+	@echo ... sources/Core/Vector3.s
+	@echo ... sources/Effect/LightPhong.obj
+	@echo ... sources/Effect/LightPhong.i
+	@echo ... sources/Effect/LightPhong.s
+	@echo ... sources/Graphic/AImage.obj
+	@echo ... sources/Graphic/AImage.i
+	@echo ... sources/Graphic/AImage.s
+	@echo ... sources/Graphic/AWindow.obj
+	@echo ... sources/Graphic/AWindow.i
+	@echo ... sources/Graphic/AWindow.s
+	@echo ... sources/Graphic/GraphicException.obj
+	@echo ... sources/Graphic/GraphicException.i
+	@echo ... sources/Graphic/GraphicException.s
+	@echo ... sources/Object/AObject.obj
+	@echo ... sources/Object/AObject.i
+	@echo ... sources/Object/AObject.s
+	@echo ... sources/Object/Cone.obj
+	@echo ... sources/Object/Cone.i
+	@echo ... sources/Object/Cone.s
+	@echo ... sources/Object/Cylinder.obj
+	@echo ... sources/Object/Cylinder.i
+	@echo ... sources/Object/Cylinder.s
+	@echo ... sources/Object/Plan.obj
+	@echo ... sources/Object/Plan.i
+	@echo ... sources/Object/Plan.s
+	@echo ... sources/Object/Sphere.obj
+	@echo ... sources/Object/Sphere.i
+	@echo ... sources/Object/Sphere.s
+	@echo ... sources/SDL2/SDLGraphic.obj
+	@echo ... sources/SDL2/SDLGraphic.i
+	@echo ... sources/SDL2/SDLGraphic.s
+	@echo ... sources/SDL2/SDLImage.obj
+	@echo ... sources/SDL2/SDLImage.i
+	@echo ... sources/SDL2/SDLImage.s
+	@echo ... sources/SDL2/SDLWindow.obj
+	@echo ... sources/SDL2/SDLWindow.i
+	@echo ... sources/SDL2/SDLWindow.s
 	@echo ... sources/main.obj
 	@echo ... sources/main.i
 	@echo ... sources/main.s
+	@echo ... test/test_unit_vector.obj
+	@echo ... test/test_unit_vector.i
+	@echo ... test/test_unit_vector.s
 .PHONY : help
 
 
