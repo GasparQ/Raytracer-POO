@@ -1,3 +1,0 @@
-"C:\Program Files (x86)\JetBrains\CLion 2016.3\bin\cmake\bin\cmake.exe" -E remove -f CMakeFiles\test_unit_vec.dir/objects.a
-C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\ar.exe cr CMakeFiles\test_unit_vec.dir/objects.a @CMakeFiles\test_unit_vec.dir\objects1.rsp
-C:\Users\gaspar\mingw-w64\i686-5.3.0-posix-dwarf-rt_v4-rev0\mingw32\bin\g++.exe   -std=c++11 -g   -Wl,--whole-archive CMakeFiles\test_unit_vec.dir/objects.a -Wl,--no-whole-archive  -o ..\test_unit_vec.exe -Wl,--out-implib,..\libtest_unit_vec.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\test_unit_vec.dir\linklibs.rsp
