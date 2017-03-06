@@ -66,6 +66,23 @@ public:
         return effects;
     }
 
+public:
+    const Color &getEnligthedColor(RaycastHit const &hit, Scene const &scene, Color &toret)
+    {
+        for (IEffect *effect : effects)
+        {
+            effect->ResolveEffectAt(hit, scene, toret);
+        }
+        return toret;
+    }
+
+    const Color getEnligthedColor(RaycastHit const &hit, Scene const &scene)
+    {
+        Color   toret = color;
+
+        return getEnligthedColor(hit, scene, toret);
+    }
+
 private:
     Vector3<double>             intersection;
 

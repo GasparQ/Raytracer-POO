@@ -14,7 +14,7 @@
  */
 Ray::Ray(const Vector3<double> &point, const Vector3<double> &direction, double norm) :
     point{point},
-    direction{direction},
+    direction{CalculUnit::unit.GetUnitVector(direction)},
     focus{Vector3<double>::Zero},
     norm{norm}
 {
@@ -36,6 +36,14 @@ Ray::Ray(Ray const &ref) :
 Ray::~Ray()
 {
 
+}
+
+Ray &Ray::operator=(Ray const &ref)
+{
+    setPoint(ref.point);
+    setDirection(ref.direction);
+    setNorm(ref.norm);
+    return *this;
 }
 
 /**
@@ -62,7 +70,7 @@ void Ray::setPoint(const Vector3<double> &point)
  */
 void Ray::setDirection(const Vector3<double> &direction)
 {
-    Ray::direction = direction;
+    Ray::direction = CalculUnit::unit.GetUnitVector(direction);
 }
 
 /**
@@ -128,4 +136,15 @@ Vector3<double> const &Ray::getFocusedPoint() const
 Vector3<double> &Ray::Point()
 {
     return point;
+}
+
+std::ostream &Ray::Print(std::ostream &output) const
+{
+    output << "{point: " << point << ", dir: " << direction << "}";
+    return output;
+}
+
+std::ostream    &operator<<(std::ostream &output, Ray const &ref)
+{
+    return ref.Print(output);
 }

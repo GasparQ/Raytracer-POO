@@ -26,30 +26,61 @@ LightPhong::~LightPhong()
 
 }
 
-void LightPhong::ResolveEffectAt(Ray const &incidentRay, AObject *touched, Scene const &scene, Color &toModify)
+extern bool print_debug;
+
+void LightPhong::ResolveEffectAt(RaycastHit const &hit, Scene const &scene, Color &toModify)
 {
     double intensity = 0, diffuseFactor = 0, specularFactor = 0;
     std::vector<Spot *> applyiedSpots;
-    Vector3<double> normal = touched->getNormalAt(incidentRay.getFocusedPoint());
-    Vector3<double> unitedNormal = CalculUnit::unit.GetUnitVector(normal);
 
+    if (print_debug)
+    {
+        std::cout << "Hit: " << hit << std::endl;
+    }
     for (Spot *currSpot : scene.getSpots())
     {
-        Ray lightRay(incidentRay.getFocusedPoint(), currSpot->getPosition() - incidentRay.getFocusedPoint());
+        //Vector AB where A is the intersection point and B is the spot position. Vector AB means B - A
+        Ray lightRay(hit.getIsec_point(), currSpot->getPosition() - hit.getIsec_point());
 
-        if (scene.RayCast(lightRay) == NULL || lightRay.getNorm() < CalculUnit::floatZero || lightRay.getNorm() > 1.0)
-        {
-            applyiedSpots.push_back(currSpot);
+//        RaycastHit lightHit = scene.RayCast(lightRay);
+//
+//        if (print_debug)
+//        {
+//            std::cout << "LightHit: " << lightHit << std::endl;
+//        }
+
+//        if (lightHit.getTouched() == NULL || lightRay.getNorm() < CalculUnit::floatZero || lightRay.getNorm() > 1.0)
+//        {
+//            applyiedSpots.push_back(currSpot);
             intensity = currSpot->getIntensity();
-            diffuseFactor += intensity * CalculUnit::unit.GetVectorCosinus(normal, lightRay.getDirection());
-            specularFactor += intensity * pow(
-                    CalculUnit::unit.GetVectorCosinus(
-                            CalculUnit::unit.GetReflectedRay(lightRay, unitedNormal).getDirection(),
-                            incidentRay.getDirection()
-                    ),
-                    specularRadius
+
+            double cosd = CalculUnit::unit.GetVectorCosinus(hit.getNormal(), lightRay.getDirection());
+
+            if (print_debug)
+                std::cout << "Cosd: " << cosd << std::endl;
+
+            diffuseFactor += intensity * cosd;
+
+            Ray reflect = CalculUnit::unit.GetReflectedRay(lightRay, hit.getNormal());
+
+            if (print_debug)
+                std::cout << "Reflect: " << reflect << std::endl;
+
+            double cosi = CalculUnit::unit.GetVectorCosinus(
+                    reflect.getDirection(),
+                    hit.getIncident_ray().getDirection()
             );
-        }
+
+            if (print_debug)
+                std::cout << "cosinus: " << cosi << std::endl;
+
+            if (cosi >= CalculUnit::floatZero)
+                specularFactor += intensity * pow(cosi, specularRadius);
+//        }
     }
-    toModify *= (ambiant + diffuse * diffuseFactor + specular * specularFactor);
+    double final_i  = (ambiant + diffuse * diffuseFactor + specular * specularFactor);
+
+    if (print_debug)
+        std::cout << "Final intensity: " << final_i << std::endl;
+    toModify *= final_i;
 }

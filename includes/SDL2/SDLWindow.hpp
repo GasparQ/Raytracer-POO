@@ -5,7 +5,7 @@
 #ifndef RAYTRACER_SDLWINDOW_HPP
 #define RAYTRACER_SDLWINDOW_HPP
 
-#include <SDL/SDL.h>
+#include <SDL2/SDL.h>
 #include "Graphic/AWindow.hpp"
 
 class SDLWindow : public AWindow

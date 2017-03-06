@@ -117,7 +117,7 @@ public:
      */
     Vector3 &operator+=(Vector3<T> const &toadd)
     {
-        Vector2<T>::operator+(toadd);
+        Vector2<T>::operator+=(toadd);
         z += toadd.z;
         return *this;
     }

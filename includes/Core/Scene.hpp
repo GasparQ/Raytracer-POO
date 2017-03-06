@@ -8,6 +8,7 @@
 #include <vector>
 #include "Graphic/AImage.hpp"
 #include "Ray.hpp"
+#include "RaycastHit.hpp"
 
 class Eye;
 class Spot;
@@ -27,7 +28,7 @@ public:
     void AddObject(AObject *obj);
 
 public:
-    AObject *RayCast(Ray &ray) const;
+    RaycastHit  RayCast(Ray &ray) const;
 
 public:
     const std::vector<Eye *> & getEyes() const;

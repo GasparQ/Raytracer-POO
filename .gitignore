@@ -27,7 +27,16 @@
 *.out
 *.app
 
-.idea/
+.idea
 .vs/Raytracer/v15/ipch/
-cmake-build-debug/CMakeFiles/CMakeTmp/
-cmake-build-debug/CMakeFiles/Raytracer.dir/sources/
+cmake-build-debug
+x64
+Debug
+Raytracer.aps
+Raytracer.rc
+Raytracer.sln
+Raytracer.VC.db
+Raytracer.vcxproj
+Raytracer.vcxproj.user
+Raytracer.vcxproj.filters
+resource.h

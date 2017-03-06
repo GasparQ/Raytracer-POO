@@ -3,6 +3,8 @@
 //
 
 #include <Core/Ray.hpp>
+#include <iostream>
+#include <Core/CalculUnit.hpp>
 #include "Core/Eye.hpp"
 #include "Core/Scene.hpp"
 #include "Object/AObject.hpp"
@@ -102,10 +104,13 @@ Eye &Eye::operator=(Eye const &ref)
     return *this;
 }
 
+extern bool print_debug;
+
 void Eye::Render(Scene const &scene, AImage *image) const
 {
     Ray                 ray(position);
     Vector3<double>     &dir = ray.Direction();
+    RaycastHit          hit;
     AObject             *touched;
 
     Vector2<int> const  &imgSize = image->getSize();
@@ -115,21 +120,34 @@ void Eye::Render(Scene const &scene, AImage *image) const
     dir.x = screenDistance;
     for (int i = 0, max = imgSize.x * imgSize.y; i < max; ++i)
     {
-        dir.y = startX - (i % imgSize.x);
-        dir.z = startY - (i / imgSize.x);
-        touched = scene.RayCast(ray);
-        if (touched != NULL)
-        {
-            Color toAdd = touched->getColor();
+        int x = i % imgSize.x, y = i / imgSize.x;
 
-            for (IEffect *effect : touched->getEffects())
-            {
-                effect->ResolveEffectAt(ray, touched, scene, toAdd);
-            }
-            image->PutColorAt(toAdd, {i % imgSize.x, i / imgSize.x});
+        if (x > 100 && x < 200 && y > 100 && y < 200)
+        {
+//            std::cout << "Pixel (" << x << ", " << y << ")" << std::endl;
+//            print_debug = true;
         }
         else
         {
+            print_debug = false;
+        }
+        dir.y = startX - x;
+        dir.z = startY - y;
+        hit = scene.RayCast(ray);
+        touched = hit.getTouched();
+        if (touched != NULL)
+        {
+//            ray.Point() -= touched->getPosition();
+//            Vector3<double> normal = touched->getNormalAt(ray.getPoint());
+
+//            CalculUnit::unit.rotate(normal, touched->getRotation());
+//            CalculUnit::unit.rotate(ray.Point(), touched->getRotation());
+//            CalculUnit::unit.GetUnitVector(normal);
+            image->PutColorAt(touched->getEnligthedColor(hit, scene), {i % imgSize.x, i / imgSize.x});
+        }
+        else
+        {
+//            std::cout << "Nop" << std::endl;
             image->PutColorAt(Color::black, {i % imgSize.x, i / imgSize.x});
         }
     }

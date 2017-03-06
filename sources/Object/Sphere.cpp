@@ -21,7 +21,7 @@ Sphere::Sphere(Sphere const &ref) :
 
 Vector3<double> Sphere::getNormalAt(Vector3<double> const &pos) const
 {
-    return Vector3<double>(pos.x - position.x, pos.y - position.y, pos.z - position.z);
+    return Vector3<double>(pos.x, pos.y, pos.z);
 }
 
 double Sphere::getObjectDistance(Ray ray) const

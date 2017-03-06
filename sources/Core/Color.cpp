@@ -47,9 +47,25 @@ Color &Color::operator*=(double i)
     return *this;
 }
 
-Color const &Color::operator*(double i) const
+Color Color::operator*(double i) const
 {
     Color cpy(*this);
 
     return (cpy *= i);
+}
+
+Color Color::operator+(Color const &ref) const
+{
+    Color cpy(*this);
+
+    return cpy += ref;
+}
+
+Color &Color::operator+=(Color const &ref)
+{
+    composants[0] = ref.composants[0];
+    composants[1] = ref.composants[1];
+    composants[2] = ref.composants[2];
+    composants[3] = ref.composants[3];
+    return *this;
 }

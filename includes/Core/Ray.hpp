@@ -18,6 +18,9 @@ public:
     ~Ray();
 
 public:
+    Ray &operator=(Ray const &ref);
+
+public:
     const Vector3<double> &getPoint() const;
 
     const Vector3<double> &getDirection() const;
@@ -41,11 +44,16 @@ public:
     Vector3<double> &Direction();
     Vector3<double> &Point();
 
+public:
+    std::ostream    &Print(std::ostream &output) const;
+
 private:
     Vector3<double> point;
     Vector3<double> direction;
     Vector3<double> focus;
     double norm;
 };
+
+std::ostream    &operator<<(std::ostream &output, Ray const &);
 
 #endif //RAYTRACER_RAY_HPP

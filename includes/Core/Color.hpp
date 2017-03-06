@@ -27,7 +27,9 @@ public:
 
 public:
     Color &operator*=(double i);
-    Color const &operator*(double i) const;
+    Color operator*(double i) const;
+    Color operator+(Color const &ref) const;
+    Color &operator+=(Color const &ref);
 };
 
 #endif //RAYTRACER_COLOR_HPP

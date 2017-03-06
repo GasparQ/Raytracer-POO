@@ -5,7 +5,7 @@
 #ifndef RAYTRACER_SDLGRAPHIC_HPP
 #define RAYTRACER_SDLGRAPHIC_HPP
 
-#include <SDL/SDL.h>
+#include <SDL2/SDL.h>
 #include "Graphic/IGraphic.hpp"
 
 class SDLGraphic : public IGraphic

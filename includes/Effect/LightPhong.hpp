@@ -6,6 +6,7 @@
 #define RAYTRACER_LIGHTPHONG_HPP
 
 #include "Effect/IEffect.hpp"
+#include "Core/RaycastHit.hpp"
 
 class LightPhong : public IEffect
 {
@@ -14,7 +15,7 @@ public:
     virtual ~LightPhong();
 
 public:
-    virtual void ResolveEffectAt(Ray const &incidentRay, AObject *touched, Scene const &scene, Color &toModify);
+    virtual void ResolveEffectAt(RaycastHit const &hit, Scene const &scene, Color &toModify);
 
 private:
     double ambiant;

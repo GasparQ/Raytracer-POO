@@ -3,7 +3,7 @@
 //
 
 #include <cmath>
-#include <SDL/SDL_stdinc.h>
+#include <SDL2/SDL.h>
 #include <limits>
 #include "Core/CalculUnit.hpp"
 
@@ -29,33 +29,36 @@ void CalculUnit::rotate(Vector3<double> &torotate, Vector3<double> const &rotati
 
 void CalculUnit::invertRotate(Vector3<double> &torotate, Vector3<double> const &rotation)
 {
-    rotateAroundZ(torotate, rotation.z * M_PI / 180.0);
-    rotateAroundY(torotate, rotation.y * M_PI / 180.0);
-    rotateAroundX(torotate, rotation.x * M_PI / 180.0);
+    rotateAroundZ(torotate, -rotation.z * M_PI / 180.0);
+    rotateAroundY(torotate, -rotation.y * M_PI / 180.0);
+    rotateAroundX(torotate, -rotation.x * M_PI / 180.0);
 }
 
 void CalculUnit::rotateAroundX(Vector3<double> &torotate, double angle)
 {
     double cosinus = CosOf(angle), sinus = SinOf(angle);
+    double y = torotate.y, z = torotate.z;
 
-    torotate.y = torotate.y * cosinus - torotate.z * sinus;
-    torotate.z = torotate.y * sinus + torotate.z * cosinus;
+    torotate.y = y * cosinus - z * sinus;
+    torotate.z = y * sinus + z * cosinus;
 }
 
 void CalculUnit::rotateAroundY(Vector3<double> &torotate, double angle)
 {
     double cosinus = CosOf(angle), sinus = SinOf(angle);
+    double x = torotate.x, z = torotate.z;
 
-    torotate.x = torotate.x * cosinus + torotate.z * sinus;
-    torotate.z = -torotate.x * sinus + torotate.z * cosinus;
+    torotate.x = x * cosinus + z * sinus;
+    torotate.z = -x * sinus + z * cosinus;
 }
 
 void CalculUnit::rotateAroundZ(Vector3<double> &torotate, double angle)
 {
     double cosinus = CosOf(angle), sinus = SinOf(angle);
+    double x = torotate.x, y = torotate.y;
 
-    torotate.x = torotate.x * cosinus - torotate.y * sinus;
-    torotate.y = torotate.x * sinus + torotate.y * cosinus;
+    torotate.x = x * cosinus - y * sinus;
+    torotate.y = x * sinus + y * cosinus;
 }
 
 double CalculUnit::CosOf(double angle)

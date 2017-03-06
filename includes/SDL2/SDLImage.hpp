@@ -5,7 +5,7 @@
 #ifndef RAYTRACER_SDLIMAGE_HPP
 #define RAYTRACER_SDLIMAGE_HPP
 
-#include <SDL/SDL.h>
+#include <SDL2/SDL.h>
 #include "Graphic/AImage.hpp"
 
 class SDLImage : public AImage

@@ -9,12 +9,13 @@
 
 class Scene;
 class AObject;
+class RaycastHit;
 
 class IEffect
 {
 public:
     //todo finish
-    virtual void ResolveEffectAt(Ray const &incidentRay, AObject *touched, Scene const &scene, Color &toModify) = 0;
+    virtual void ResolveEffectAt(RaycastHit const &incidentRay, Scene const &scene, Color &toModify) = 0;
     virtual ~IEffect() { }
 };
 

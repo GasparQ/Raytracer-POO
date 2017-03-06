@@ -4,6 +4,7 @@
 
 #include <limits>
 #include <Core/CalculUnit.hpp>
+#include <iostream>
 #include "Core/Scene.hpp"
 #include "Core/Eye.hpp"
 #include "Core/Spot.hpp"
@@ -90,27 +91,71 @@ const std::vector<Eye *> &Scene::getEyes() const
     return eyes;
 }
 
-AObject *Scene::RayCast(Ray &ray) const
+extern bool print_debug;
+
+RaycastHit Scene::RayCast(Ray &ray) const
 {
-    Ray tosend;
-    double lambda = std::numeric_limits<double>::max(), k;
-    AObject *touched = NULL;
+    Ray tocast;
+    double k = 0, lambda = 0;
+    RaycastHit toret;
+
+//    std::cout << "Casting ray: " << ray << std::endl;
 
     for (AObject *currObject : objects)
     {
-        tosend = ray;
-        tosend.Point() -= currObject->getPosition();
-        CalculUnit::unit.invertRotate(tosend.Point(), currObject->getRotation());
-        k = currObject->getObjectDistance(tosend);
-        if (k >= CalculUnit::floatZero && k < lambda)
+        tocast = ray;
+
+//        std::cout << "Copy: " << tocast << std::endl;
+
+//        std::cout << "Object position: " << currObject->getPosition() << std::endl;
+
+        //cf objects.c from C raytracer
+        tocast.Point() -= currObject->getPosition(); //invert translate the point from object origin
+        CalculUnit::unit.invertRotate(tocast.Point(), currObject->getRotation()); //invert rotate the point from object rotation
+        CalculUnit::unit.invertRotate(tocast.Direction(), currObject->getRotation()); //invert rotate the direction from the object rotation
+
+//        std::cout << "After bullshit: " << tocast << std::endl;
+//        std::cout << "Object position: " << currObject->getPosition() << std::endl;
+
+        k = currObject->getObjectDistance(tocast);
+
+//        std::cout << "Distance: " << k << std::endl;
+
+        if (k >= CalculUnit::floatZero && (toret.getTouched() == nullptr || k < lambda))
         {
             lambda = k;
-            touched = currObject;
+            tocast.setNorm(lambda);
+
+            //Object avec intersection et normales pour une position une rotation en (0, 0, 0)
+            toret.setTouched(currObject);
+            toret.setNormal(currObject->getNormalAt(tocast.getFocusedPoint()));
+            toret.setIsec_point(tocast.getFocusedPoint());
+
+//            std::cout << "Object position: " << toret.getTouched()->getPosition() << std::endl;
+//            std::cout << "Hit inside loop: " << toret << std::endl;
         }
     }
-    if (lambda >= CalculUnit::floatZero)
+    if (toret.getTouched() != nullptr)
+    {
         ray.setNorm(lambda);
-    return touched;
+        if (print_debug)
+            std::cout << "Distance: " << lambda << std::endl;
+
+//        std::cout << "Hit before bullshit: " << toret << std::endl;
+        //Remise des valeurs de normales et des points d'intersection en position réelle
+        //cf resolve_light.c in C raytracer
+//        std::cout << "Normal before: " << toret.Normal() << std::endl;
+        CalculUnit::unit.rotate(toret.Normal(), toret.getTouched()->getRotation());
+//        std::cout << "Normal after: " << toret.Normal() << std::endl;
+        CalculUnit::unit.rotate(toret.IsecPoint(), toret.getTouched()->getRotation());
+        toret.IsecPoint() += toret.getTouched()->getPosition();
+//        toret.setIsec_point(ray.getFocusedPoint());
+
+//        std::cout << "Hit after bullshit: " << toret << std::endl;
+//        std::cout << "Object position: " << toret.getTouched()->getPosition() << std::endl;
+    }
+    toret.setIncident_ray(ray);
+    return toret;
 }
 
 const std::vector<Spot *> &Scene::getSpots() const

@@ -9,6 +9,8 @@
 
 #undef main
 
+bool print_debug = false;
+
 int main(int ac, char **av)
 {
     RayTracer   *raytracer;
