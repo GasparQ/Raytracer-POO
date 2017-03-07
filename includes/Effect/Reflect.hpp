@@ -12,12 +12,19 @@
 
 class Reflect : public IEffect
 {
+private:
+    static int current_recursion;
+    static int max_recursion;
+
 public:
     Reflect(double value = 0);
     virtual ~Reflect();
 
 public:
     virtual void ResolveEffectAt(RaycastHit const &hit, Scene const &scene, Color &toModify);
+
+public:
+    static void setRecursionLimit(const int limit);
 
 private:
     double coeff;

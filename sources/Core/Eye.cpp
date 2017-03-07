@@ -122,7 +122,7 @@ void Eye::Render(Scene const &scene, AImage *image) const
     {
         int x = i % imgSize.x, y = i / imgSize.x;
 
-        if (x > 100 && x < 200 && y > 100 && y < 200)
+        if (x > 100 && x < 200 && y > 150 && y < 250)
         {
 //            std::cout << "Pixel (" << x << ", " << y << ")" << std::endl;
 //            print_debug = true;

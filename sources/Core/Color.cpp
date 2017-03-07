@@ -35,14 +35,9 @@ Color &Color::operator*=(double i)
 {
     for (int j = 0; j < 4; ++j)
     {
-        double comp = static_cast<double>(composants[j]) * i;
-
-        if (comp >= 255)
-            composants[j] = 0xFF;
-        else if (comp <= 0)
-            composants[j] = 0x00;
-        else
-            composants[j] = static_cast<unsigned char>(comp);
+        SafeOperation<double>(composants[j], [i](double tomul){
+                return i * tomul;
+            });
     }
     return *this;
 }
@@ -63,9 +58,16 @@ Color Color::operator+(Color const &ref) const
 
 Color &Color::operator+=(Color const &ref)
 {
-    composants[0] = ref.composants[0];
-    composants[1] = ref.composants[1];
-    composants[2] = ref.composants[2];
-    composants[3] = ref.composants[3];
+    for (int i = 0; i < 4; ++i)
+    {
+        int op = static_cast<int>(ref.composants[i]);
+        SafeOperation<int>(composants[i], [op](int toadd){
+                return toadd + op;
+            });
+    }
+//    composants[0] = ref.composants[0];
+//    composants[1] = ref.composants[1];
+//    composants[2] = ref.composants[2];
+//    composants[3] = ref.composants[3];
     return *this;
 }

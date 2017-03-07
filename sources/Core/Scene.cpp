@@ -121,7 +121,7 @@ RaycastHit Scene::RayCast(Ray &ray) const
 
 //        std::cout << "Distance: " << k << std::endl;
 
-        if (k >= CalculUnit::floatZero && (toret.getTouched() == nullptr || k < lambda))
+        if (k > CalculUnit::floatZero && (toret.getTouched() == nullptr || k < lambda))
         {
             lambda = k;
             tocast.setNorm(lambda);

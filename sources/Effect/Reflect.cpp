@@ -3,8 +3,12 @@
 //
 
 #include <Core/CalculUnit.hpp>
+#include <iostream>
 #include "Object/AObject.hpp"
 #include "Effect/Reflect.hpp"
+
+int Reflect::current_recursion = 0;
+int Reflect::max_recursion = 10;
 
 Reflect::Reflect(double value) :
     coeff(value)
@@ -19,7 +23,12 @@ Reflect::~Reflect()
 
 void Reflect::ResolveEffectAt(RaycastHit const &hit, Scene const &scene, Color &toModify)
 {
-    Ray reflect = CalculUnit::unit.GetReflectedRay(hit.getIncident_ray(), hit.getNormal());
+    if (Reflect::current_recursion >= Reflect::max_recursion)
+        return;
+
+    ++Reflect::current_recursion;
+    Ray reflect = CalculUnit::unit.GetReflectedRay(hit.getIncident_ray(), hit.getNormal(), true, hit.getIsec_point());
+
     RaycastHit refHit = scene.RayCast(reflect);
 
     if (refHit.getTouched() != NULL)
@@ -29,4 +38,10 @@ void Reflect::ResolveEffectAt(RaycastHit const &hit, Scene const &scene, Color &
     }
     else
         toModify = toModify * (1 - coeff);
+    --Reflect::current_recursion;
+}
+
+void Reflect::setRecursionLimit(int limit)
+{
+    Reflect::max_recursion = limit;
 }

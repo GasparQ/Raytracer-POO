@@ -6,6 +6,7 @@
 #define RAYTRACER_COLOR_HPP
 
 #include <stdint.h>
+#include <functional>
 
 union Color
 {
@@ -30,6 +31,20 @@ public:
     Color operator*(double i) const;
     Color operator+(Color const &ref) const;
     Color &operator+=(Color const &ref);
+
+private:
+    template <typename T = int>
+    void SafeOperation(unsigned char &opd, std::function<T(T)> const &opt)
+    {
+        T res = opt(static_cast<T>(opd));
+
+        if (res >= 255)
+            opd = 0xFF;
+        else if (res <= 0)
+            opd = 0x00;
+        else
+            opd = static_cast<unsigned char>(res);
+    }
 };
 
 #endif //RAYTRACER_COLOR_HPP

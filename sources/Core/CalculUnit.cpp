@@ -117,19 +117,19 @@ double CalculUnit::NormOf(Vector3<double> const &vector)
     return norm;
 }
 
-Ray CalculUnit::GetReflectedRay(Ray const &incidentRay, Vector3<double> const &normal, double isUnit)
+Ray CalculUnit::GetReflectedRay(Ray const &incidentRay, Vector3<double> const &normal, double isUnit, Vector3<double> const &point)
 {
     if (isUnit)
     {
         double scalaire = ScalarOf(normal, incidentRay.getDirection());
 
-        return (Ray(incidentRay.getPoint(), normal * (scalaire * -2.0) + incidentRay.getDirection()));
+        return (Ray(point, normal * (scalaire * -2.0) + incidentRay.getDirection()));
     }
 
     Vector3<double> unitedNormal = GetUnitVector(normal);
     double scalaire = ScalarOf(unitedNormal, incidentRay.getDirection());
 
-    return (Ray(incidentRay.getPoint(), unitedNormal * (scalaire * -2.0) + incidentRay.getDirection()));
+    return (Ray(point, unitedNormal * (scalaire * -2.0) + incidentRay.getDirection()));
 }
 
 Vector3<double> CalculUnit::GetUnitVector(const Vector3<double> &vector)
