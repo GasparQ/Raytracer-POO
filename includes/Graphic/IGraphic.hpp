@@ -13,7 +13,7 @@ class IGraphic
 {
 public:
     virtual ~IGraphic() throw() { }
-    virtual AWindow *CreateWindow(Vector2<int> const &size, Vector2<int> const &pos, std::string const &title) throw(GraphicException) = 0;
+    virtual IWindow *CreateWindow(Vector2<int> const &size, Vector2<int> const &pos, std::string const &title) throw(GraphicException) = 0;
     virtual void InitDisplay(Vector2<int> const &winsize = {600, 600}, Vector2<int> const &winpos = {0, 0}, const std::string &wintitle = "Raytracer") throw(GraphicException) = 0;
     virtual void ShutDownDisplay(void) = 0;
 };

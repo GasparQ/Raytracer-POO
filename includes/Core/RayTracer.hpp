@@ -23,8 +23,8 @@ public:
 
 private:
     IGraphic                *graphic;
-    AWindow                 *window;
-    std::vector<AImage *>   images;
+    IWindow                 *window;
+    std::vector<IImage *>   images;
     std::vector<Scene>      scenes;
 };
 

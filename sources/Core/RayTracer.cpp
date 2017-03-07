@@ -23,7 +23,7 @@ RayTracer::RayTracer(IGraphic *graphic) :
 
 RayTracer::~RayTracer()
 {
-    for (AImage *img : images)
+    for (IImage *img : images)
     {
         delete(img);
     }

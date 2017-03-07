@@ -106,7 +106,7 @@ Eye &Eye::operator=(Eye const &ref)
 
 extern bool print_debug;
 
-void Eye::Render(Scene const &scene, AImage *image) const
+void Eye::Render(Scene const &scene, IImage *image) const
 {
     Ray                 ray(position);
     Vector3<double>     &dir = ray.Direction();

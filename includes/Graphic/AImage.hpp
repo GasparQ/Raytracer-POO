@@ -2,22 +2,19 @@
 // Created by gaspar on 07/08/2016.
 //
 
-#ifndef RAYTRACER_IIMAGE_HPP
-#define RAYTRACER_IIMAGE_HPP
+#ifndef RAYTRACER_AIMAGE_HPP
+#define RAYTRACER_AIMAGE_HPP
 
-#include <stdexcept>
-#include "Core/Vector3.hpp"
-#include "Core/Color.hpp"
-#include "GraphicException.hpp"
+#include "IImage.hpp"
 
-class AImage
+class AImage : public IImage
 {
 public:
     explicit AImage(Vector2<int> const &imgsize, Vector2<int> const &imgpos);
     virtual ~AImage();
-    void PutColorAt(Color color, Vector2<int> const &pix) throw(std::out_of_range);
 
-    virtual void *ConvertPixels(void) throw(GraphicException) = 0;
+public:
+    void PutColorAt(Color color, Vector2<int> const &pix) throw(std::out_of_range);
 
 public:
     const Vector2<int> & getSize() const;
@@ -36,4 +33,4 @@ protected:
     Color   *pixels;
 };
 
-#endif //RAYTRACER_IIMAGE_HPP
+#endif //RAYTRACER_AIMAGE_HPP

@@ -15,8 +15,8 @@ public:
     virtual ~SDLWindow();
 
 public:
-    virtual void DisplayImage(AImage *todisplay) throw(GraphicException);
-    virtual AImage *CreateImage(Vector2<int> const &size, Vector2<int> const &pos) throw(GraphicException);
+    virtual void DisplayImage(IImage *todisplay) throw(GraphicException);
+    virtual IImage *CreateImage(Vector2<int> const &size, Vector2<int> const &pos) throw(GraphicException);
 
 private:
     SDL_Window  *win;

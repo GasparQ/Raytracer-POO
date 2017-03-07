@@ -16,7 +16,7 @@ SDLGraphic::~SDLGraphic() throw()
 
 }
 
-AWindow *SDLGraphic::CreateWindow(Vector2<int> const &size, Vector2<int> const &pos, std::string const &title) throw(GraphicException)
+IWindow *SDLGraphic::CreateWindow(Vector2<int> const &size, Vector2<int> const &pos, std::string const &title) throw(GraphicException)
 {
     return new SDLWindow(size, pos, title);
 }

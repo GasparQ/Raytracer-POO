@@ -15,7 +15,7 @@ public:
     ~SDLGraphic() throw();
 
 public:
-    virtual AWindow *CreateWindow(Vector2<int> const &size, Vector2<int> const &pos, std::string const &title) throw(GraphicException);
+    virtual IWindow *CreateWindow(Vector2<int> const &size, Vector2<int> const &pos, std::string const &title) throw(GraphicException);
     virtual void InitDisplay(Vector2<int> const &winsize, Vector2<int> const &winpos, std::string const &wintitle) throw(GraphicException);
     virtual void ShutDownDisplay(void);
 };

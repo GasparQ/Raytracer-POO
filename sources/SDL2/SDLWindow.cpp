@@ -22,7 +22,7 @@ SDLWindow::~SDLWindow()
     SDL_DestroyWindow(win);
 }
 
-void SDLWindow::DisplayImage(AImage *todisplay) throw(GraphicException)
+void SDLWindow::DisplayImage(IImage *todisplay) throw(GraphicException)
 {
     SDL_Texture *texture = (SDL_Texture *)todisplay->ConvertPixels();
     SDL_Rect    dest = {todisplay->getPos().x, todisplay->getPos().y, todisplay->getSize().x, todisplay->getSize().y};
@@ -32,7 +32,7 @@ void SDLWindow::DisplayImage(AImage *todisplay) throw(GraphicException)
     SDL_RenderPresent(renderer);
 }
 
-AImage *SDLWindow::CreateImage(Vector2<int> const &size, Vector2<int> const &pos) throw(GraphicException)
+IImage *SDLWindow::CreateImage(Vector2<int> const &size, Vector2<int> const &pos) throw(GraphicException)
 {
     return new SDLImage(size, pos, renderer);
 }

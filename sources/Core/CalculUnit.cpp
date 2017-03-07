@@ -2,9 +2,8 @@
 // Created by gaspar on 15/08/2016.
 //
 
-#include <cmath>
-#include <SDL2/SDL.h>
 #include <limits>
+#include <cmath>
 #include "Core/CalculUnit.hpp"
 
 CalculUnit      CalculUnit::unit;

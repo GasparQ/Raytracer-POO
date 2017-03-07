@@ -35,6 +35,8 @@ add_executable(Raytracer
         ${sdl2src} ${sdl2inc}
         sources/main.cpp)
 
+add_definitions(-D_USE_MATH_DEFINES)
+
 add_executable(test_unit_vec ${coresrc} ${coreinc} test/test_unit_vector.cpp)
 
 target_link_libraries(Raytracer SDL2)

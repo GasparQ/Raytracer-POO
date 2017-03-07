@@ -32,7 +32,7 @@ public:
     void setScreenDistance(double screenDistance);
 
 public:
-    void Render(Scene const &scene, AImage *image) const;
+    void Render(Scene const &scene, IImage *image) const;
 
 private:
     Vector3<double> position;
