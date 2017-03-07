@@ -2,10 +2,9 @@
 // Created by GasparQ on 04/03/2017.
 //
 
-#include <Core/CalculUnit.hpp>
-#include <iostream>
-#include "Object/AObject.hpp"
 #include "Effect/Reflect.hpp"
+#include <Core/CalculUnit.hpp>
+#include "Core/Scene.hpp"
 
 int Reflect::current_recursion = 0;
 int Reflect::max_recursion = 10;

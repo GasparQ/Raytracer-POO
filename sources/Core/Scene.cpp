@@ -3,12 +3,14 @@
 //
 
 #include <limits>
-#include <Core/CalculUnit.hpp>
 #include <iostream>
+
 #include "Core/Scene.hpp"
+#include <Core/CalculUnit.hpp>
 #include "Core/Eye.hpp"
 #include "Core/Spot.hpp"
-#include "Object/AObject.hpp"
+#include "Object/IObject.hpp"
+#include "Core/RaycastHit.hpp"
 
 /**
  * \brief Default constructor
@@ -56,7 +58,7 @@ Scene::~Scene()
     {
         delete(torm);
     }
-    for (AObject *torm : objects)
+    for (IObject *torm : objects)
     {
         delete(torm);
     }
@@ -81,7 +83,7 @@ void Scene::AddSpot(Spot *spot)
 /**
  * \brief Add an object to the scene
  */
-void Scene::AddObject(AObject *obj)
+void Scene::AddObject(IObject *obj)
 {
     objects.push_back(obj);
 }
@@ -101,7 +103,7 @@ RaycastHit Scene::RayCast(Ray &ray) const
 
 //    std::cout << "Casting ray: " << ray << std::endl;
 
-    for (AObject *currObject : objects)
+    for (IObject *currObject : objects)
     {
         tocast = ray;
 

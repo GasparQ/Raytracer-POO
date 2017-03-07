@@ -5,14 +5,11 @@
 #ifndef RAYTRACER_AOBJECT_HPP
 #define RAYTRACER_AOBJECT_HPP
 
-#include <vector>
-#include "Core/Vector3.hpp"
-#include "Core/Color.hpp"
-#include "Effect/IEffect.hpp"
 #include "Core/Ray.hpp"
 #include "Core/Scene.hpp"
+#include "IObject.hpp"
 
-class AObject
+class AObject : public IObject
 {
 public:
     AObject(Vector3<double> const &position = Vector3<double>::Zero,
@@ -24,6 +21,7 @@ public:
 
 public:
     void            AddEffect(IEffect *effect);
+    const std::vector<IEffect *> &getEffects() const;
     Color           ApplyEffectsAt(Vector3<double> const &point, Scene const &scene);
 
 public:
@@ -31,57 +29,23 @@ public:
     virtual double getObjectDistance(Ray ray) const = 0;
 
 public:
-    const Vector3<double> &getPosition() const
-    {
-        return position;
-    }
+    const Vector3<double> &getPosition() const;
 
-    void setPosition(const Vector3<double> &position)
-    {
-        AObject::position = position;
-    }
+    void setPosition(const Vector3<double> &position);
 
-    const Vector3<double> &getRotation() const
-    {
-        return rotation;
-    }
+    const Vector3<double> &getRotation() const;
 
-    void setRotation(const Vector3<double> &rotation)
-    {
-        AObject::rotation = rotation;
-    }
-
-    const Color &getColor() const
-    {
-        return color;
-    }
-
-    void setColor(const Color &color)
-    {
-        AObject::color = color;
-    }
-
-    const std::vector<IEffect *> &getEffects() const
-    {
-        return effects;
-    }
+    void setRotation(const Vector3<double> &rotation);
 
 public:
-    const Color &getEnligthedColor(RaycastHit const &hit, Scene const &scene, Color &toret)
-    {
-        for (IEffect *effect : effects)
-        {
-            effect->ResolveEffectAt(hit, scene, toret);
-        }
-        return toret;
-    }
+    const Color &getColor() const;
 
-    const Color getEnligthedColor(RaycastHit const &hit, Scene const &scene)
-    {
-        Color   toret = color;
+    void setColor(const Color &color);
 
-        return getEnligthedColor(hit, scene, toret);
-    }
+public:
+    const Color &getEnligthedColor(RaycastHit const &hit, Scene const &scene, Color &toret);
+
+    const Color getEnligthedColor(RaycastHit const &hit, Scene const &scene);
 
 private:
     Vector3<double>             intersection;
@@ -91,9 +55,9 @@ protected:
     Vector3<double>             rotation;
     Color                       color;
     std::vector<IEffect *>      effects;
-//    std::vector<AObject *>      added;
-//    std::vector<AObject *>      subed;
-//    std::vector<AObject *>      intersected;
+//    std::vector<IObject *>      added;
+//    std::vector<IObject *>      subed;
+//    std::vector<IObject *>      intersected;
 };
 
 #endif //RAYTRACER_AOBJECT_HPP

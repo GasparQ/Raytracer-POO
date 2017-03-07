@@ -2,16 +2,14 @@
 // Created by gaspar on 15/08/2016.
 //
 
+#include <iostream>
+
 #include <Object/Sphere.hpp>
 #include <Effect/LightPhong.hpp>
-#include <Object/Cylinder.hpp>
 #include <Object/Plan.hpp>
-#include <Object/Cone.hpp>
 #include <Effect/Reflect.hpp>
-#include <iostream>
 #include "Core/RayTracer.hpp"
 #include "Core/Eye.hpp"
-#include "Object/AObject.hpp"
 #include "Core/Spot.hpp"
 
 RayTracer::RayTracer(IGraphic *graphic) :
@@ -37,7 +35,7 @@ void RayTracer::LoadScenes(int ac, char **av)
     scenes.push_back(Scene());
 
     Scene   &toLoad = scenes.back();
-    AObject *object;
+    IObject *object;
 
     toLoad.AddEye(new Eye({-500, 0, 50}));
 

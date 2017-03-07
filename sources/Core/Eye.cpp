@@ -3,11 +3,10 @@
 //
 
 #include <Core/Ray.hpp>
-#include <iostream>
-#include <Core/CalculUnit.hpp>
 #include "Core/Eye.hpp"
 #include "Core/Scene.hpp"
-#include "Object/AObject.hpp"
+#include "Object/IObject.hpp"
+#include "Core/RaycastHit.hpp"
 
 /**
  * \brief Full and default constructor for an eye
@@ -111,7 +110,7 @@ void Eye::Render(Scene const &scene, IImage *image) const
     Ray                 ray(position);
     Vector3<double>     &dir = ray.Direction();
     RaycastHit          hit;
-    AObject             *touched;
+    IObject             *touched;
 
     Vector2<int> const  &imgSize = image->getSize();
     double              startX = imgSize.x / 2;
@@ -137,17 +136,10 @@ void Eye::Render(Scene const &scene, IImage *image) const
         touched = hit.getTouched();
         if (touched != NULL)
         {
-//            ray.Point() -= touched->getPosition();
-//            Vector3<double> normal = touched->getNormalAt(ray.getPoint());
-
-//            CalculUnit::unit.rotate(normal, touched->getRotation());
-//            CalculUnit::unit.rotate(ray.Point(), touched->getRotation());
-//            CalculUnit::unit.GetUnitVector(normal);
             image->PutColorAt(touched->getEnligthedColor(hit, scene), {i % imgSize.x, i / imgSize.x});
         }
         else
         {
-//            std::cout << "Nop" << std::endl;
             image->PutColorAt(Color::black, {i % imgSize.x, i / imgSize.x});
         }
     }

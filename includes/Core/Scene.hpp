@@ -8,11 +8,11 @@
 #include <vector>
 #include "Graphic/AImage.hpp"
 #include "Ray.hpp"
-#include "RaycastHit.hpp"
 
 class Eye;
 class Spot;
-class AObject;
+class IObject;
+class RaycastHit;
 
 class Scene
 {
@@ -25,7 +25,7 @@ public:
 public:
     void AddEye(Eye *eye);
     void AddSpot(Spot *spot);
-    void AddObject(AObject *obj);
+    void AddObject(IObject *obj);
 
 public:
     RaycastHit  RayCast(Ray &ray) const;
@@ -38,7 +38,7 @@ public:
 private:
     std::vector<Eye *>  eyes;
     std::vector<Spot *> spots;
-    std::vector<AObject *>  objects;
+    std::vector<IObject *>  objects;
 };
 
 #endif //RAYTRACER_SCENE_HPP

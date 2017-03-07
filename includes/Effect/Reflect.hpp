@@ -5,7 +5,6 @@
 #ifndef RAYTRACER_REFLECT_HPP
 #define RAYTRACER_REFLECT_HPP
 
-
 #include <Core/Color.hpp>
 #include "IEffect.hpp"
 #include "Core/RaycastHit.hpp"

@@ -2,8 +2,8 @@
 // Created by gaspar on 07/08/2016.
 //
 
-#include <Core/CalculUnit.hpp>
 #include "Object/AObject.hpp"
+#include <Core/CalculUnit.hpp>
 
 /**
  * \brief Full and default constructor for AObject
@@ -56,4 +56,55 @@ void AObject::AddEffect(IEffect *effect)
 Color AObject::ApplyEffectsAt(Vector3<double> const &point, Scene const &scene)
 {
     return Color::white;
+}
+
+const Vector3<double> &AObject::getPosition() const
+{
+    return position;
+}
+
+void AObject::setPosition(const Vector3<double> &position)
+{
+    AObject::position = position;
+}
+
+const Vector3<double> &AObject::getRotation() const
+{
+    return rotation;
+}
+
+void AObject::setRotation(const Vector3<double> &rotation)
+{
+    AObject::rotation = rotation;
+}
+
+const Color &AObject::getColor() const
+{
+    return color;
+}
+
+void AObject::setColor(const Color &color)
+{
+    AObject::color = color;
+}
+
+const std::vector<IEffect *> &AObject::getEffects() const
+{
+    return effects;
+}
+
+const Color &AObject::getEnligthedColor(RaycastHit const &hit, Scene const &scene, Color &toret)
+{
+    for (IEffect *effect : effects)
+    {
+        effect->ResolveEffectAt(hit, scene, toret);
+    }
+    return toret;
+}
+
+const Color AObject::getEnligthedColor(RaycastHit const &hit, Scene const &scene)
+{
+    Color   toret = color;
+
+    return getEnligthedColor(hit, scene, toret);
 }

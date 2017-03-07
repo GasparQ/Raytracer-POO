@@ -6,9 +6,9 @@
 #define RAYTRACER_IEFFECT_HPP
 
 #include "Core/Ray.hpp"
+#include <Core/Color.hpp>
 
 class Scene;
-class AObject;
 class RaycastHit;
 
 class IEffect

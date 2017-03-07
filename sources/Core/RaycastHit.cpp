@@ -5,7 +5,7 @@
 #include <Core/CalculUnit.hpp>
 #include "Core/RaycastHit.hpp"
 
-RaycastHit::RaycastHit(AObject *obj, Vector3<double> isec_point, Vector3<double> normal, Ray incident_ray) :
+RaycastHit::RaycastHit(IObject *obj, Vector3<double> isec_point, Vector3<double> normal, Ray incident_ray) :
     touched(obj),
     isec_point(isec_point),
     normal(CalculUnit::unit.GetUnitVector(normal)),
@@ -25,12 +25,12 @@ RaycastHit::~RaycastHit()
 
 }
 
-AObject *RaycastHit::getTouched() const
+IObject *RaycastHit::getTouched() const
 {
     return touched;
 }
 
-void RaycastHit::setTouched(AObject *touched)
+void RaycastHit::setTouched(IObject *touched)
 {
     RaycastHit::touched = touched;
 }

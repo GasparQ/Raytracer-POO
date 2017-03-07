@@ -5,11 +5,11 @@
 #include <vector>
 #include <cmath>
 #include <iostream>
-#include "Core/CalculUnit.hpp"
-#include "Core/Spot.hpp"
+
 #include "Effect/LightPhong.hpp"
 #include "Core/Scene.hpp"
-#include "Object/AObject.hpp"
+#include "Core/CalculUnit.hpp"
+#include "Core/Spot.hpp"
 
 LightPhong::LightPhong(double ambiant, double diffuse, double specular, double specularRadius, double brightness) :
     ambiant{ambiant},

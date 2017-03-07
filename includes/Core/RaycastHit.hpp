@@ -6,19 +6,19 @@
 #define RAYTRACER_RAYCASTHIT_HPP
 
 
-#include <Object/AObject.hpp>
+#include <Object/IObject.hpp>
 
 class RaycastHit
 {
 public:
-    RaycastHit(AObject *obj = nullptr, Vector3<double> isec_point = Vector3<double>::Zero, Vector3<double> normal = Vector3<double>::Zero, Ray incident_ray = Ray());
+    RaycastHit(IObject *obj = nullptr, Vector3<double> isec_point = Vector3<double>::Zero, Vector3<double> normal = Vector3<double>::Zero, Ray incident_ray = Ray());
     RaycastHit(RaycastHit const &ref);
     ~RaycastHit();
 
 public:
-    AObject *getTouched() const;
+    IObject *getTouched() const;
 
-    void setTouched(AObject *touched);
+    void setTouched(IObject *touched);
 
     const Vector3<double> &getIsec_point() const;
 
@@ -40,7 +40,7 @@ public:
     std::ostream    &Print(std::ostream &output) const;
 
 private:
-    AObject *touched;
+    IObject *touched;
     Vector3<double> isec_point;
     Vector3<double> normal;
     Ray incident_ray;
