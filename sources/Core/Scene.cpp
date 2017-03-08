@@ -140,8 +140,8 @@ RaycastHit Scene::RayCast(Ray &ray) const
     if (toret.getTouched() != nullptr)
     {
         ray.setNorm(lambda);
-        if (print_debug)
-            std::cout << "Distance: " << lambda << std::endl;
+//        if (print_debug)
+//            std::cout << "Distance: " << lambda << std::endl;
 
 //        std::cout << "Hit before bullshit: " << toret << std::endl;
         //Remise des valeurs de normales et des points d'intersection en position réelle

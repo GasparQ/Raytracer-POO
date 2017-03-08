@@ -29,6 +29,7 @@ public:
 public:
     double GetVectorCosinus(Vector3<double> const &first, Vector3<double> const &second);
     Ray GetReflectedRay(Ray const &incidentRay, Vector3<double> const &normal, double isUnit = true, Vector3<double> const &point = Vector3<double>::Zero);
+    Ray GetRefractedRay(double coeff1, double coeff2, Ray const &incidentRay, Vector3<double> const &normal, Vector3<double> const &point = Vector3<double>::Zero);
     Vector3<double> GetUnitVector(Vector3<double> const &vector);
 
 private:

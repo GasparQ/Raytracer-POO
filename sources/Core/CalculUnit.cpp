@@ -4,6 +4,7 @@
 
 #include <limits>
 #include <cmath>
+#include <iostream>
 #include "Core/CalculUnit.hpp"
 
 CalculUnit      CalculUnit::unit;
@@ -129,6 +130,55 @@ Ray CalculUnit::GetReflectedRay(Ray const &incidentRay, Vector3<double> const &n
     double scalaire = ScalarOf(unitedNormal, incidentRay.getDirection());
 
     return (Ray(point, unitedNormal * (scalaire * -2.0) + incidentRay.getDirection()));
+}
+
+extern bool print_debug;
+
+/**
+ * @brief Calculate the refracted ray of <incidentRay> with the <normal>
+ * @param coeff1 The refraction coefficient of the last environment
+ * @param coeff2 The refraction coefficient of the new environment
+ * @param incidentRay The incident ray, the direction is from the application point to the intersection point
+ * @param normal The normal at the intersection point
+ * @param point The intersection point in order to give an application point to the refracted ray
+ * @return The refracted ray with the right direction from <point> application point
+ */
+Ray CalculUnit::GetRefractedRay(double coeff1, double coeff2, Ray const &incidentRay, Vector3<double> const &normal,
+                                const Vector3<double> &point)
+{
+    /*
+     * C raytracer
+     *
+     * Normal : unitaire
+     * Rayon incident : unitaire
+     * Point d'intersection
+     * Coefficient de réfraction de l'objet touché
+     *
+     * def:
+     *      scalaire = ScalarOf(Normal, Rayon incident);
+     *      if (scalaire < 0)
+     *          scalaire = -scalaire
+     *      Si récursion paire:
+     *          Indice de réfraction = Coefficient de réfraction de l'objet touché / 1 (air)
+     *      Sinon:
+     *          Indice de réfraction = 1 (air) / Coefficient de réfraction de l'objet touché
+     *      Incrémentation de la récursion
+     *      Rayon réfracté.x = Indice de réfraction * Rayon incident.x + (Indice de réfraction * scalaire - sqrt(1 + Indice de réfraction² * (scalaire² - 1))) * Normal.x
+     *      Rayon réfracté.y = Indice de réfraction * Rayon incident.y + (Indice de réfraction * scalaire - sqrt(1 + Indice de réfraction² * (scalaire² - 1))) * Normal.y
+     *      Rayon réfracté.z = Indice de réfraction * Rayon incident.z + (Indice de réfraction * scalaire - sqrt(1 + Indice de réfraction² * (scalaire² - 1))) * Normal.z
+     *
+     *      Rayon réfracté.application = Point d'intersection
+     */
+
+    Vector3<double> incidentDir = GetUnitVector(incidentRay.getDirection());
+    double scalaire = std::abs(ScalarOf(normal, incidentDir));
+    double indic = coeff1 / coeff2;
+    double toRoot = 1 + indic * indic * (scalaire * scalaire - 1);
+
+    if (toRoot < CalculUnit::floatZero)
+        return Ray(point, Vector3<double>::Zero);
+
+    return Ray(point, incidentDir * indic + normal * (indic * scalaire - sqrt(toRoot)));
 }
 
 Vector3<double> CalculUnit::GetUnitVector(const Vector3<double> &vector)

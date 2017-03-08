@@ -3,6 +3,7 @@
 //
 
 #include <Core/Ray.hpp>
+#include <iostream>
 #include "Core/Eye.hpp"
 #include "Core/Scene.hpp"
 #include "Object/IObject.hpp"
@@ -121,7 +122,7 @@ void Eye::Render(Scene const &scene, IImage *image) const
     {
         int x = i % imgSize.x, y = i / imgSize.x;
 
-        if (x > 100 && x < 200 && y > 150 && y < 250)
+        if (x > 80 && x < 120 && y > 80 && y < 120)
         {
 //            std::cout << "Pixel (" << x << ", " << y << ")" << std::endl;
 //            print_debug = true;

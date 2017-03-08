@@ -14,9 +14,11 @@ class RaycastHit;
 class IEffect
 {
 public:
-    //todo finish
-    virtual void ResolveEffectAt(RaycastHit const &incidentRay, Scene const &scene, Color &toModify) = 0;
     virtual ~IEffect() { }
+
+public:
+    //todo finish
+    virtual void ResolveEffectAt(RaycastHit const &hit, Scene const &scene, Color &toModify) = 0;
 };
 
 #endif //RAYTRACER_IEFFECT_HPP

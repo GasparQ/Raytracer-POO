@@ -20,7 +20,7 @@ Color::Color(int32_t full) :
 }
 
 Color::Color(unsigned char a, unsigned char r, unsigned char g, unsigned char b) :
-        Color::Color((a << 24) | (b << 8) | (g << 8) | r)
+        Color::Color((a << 24) | (b << 16) | (g << 8) | r)
 {
 
 }

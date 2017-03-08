@@ -9,15 +9,15 @@
 #include "IEffect.hpp"
 #include "Core/RaycastHit.hpp"
 
-class Reflect : public IEffect
+class Reflection : public IEffect
 {
 private:
     static int current_recursion;
     static int max_recursion;
 
 public:
-    Reflect(double value = 0);
-    virtual ~Reflect();
+    Reflection(double value = 0);
+    virtual ~Reflection();
 
 public:
     virtual void ResolveEffectAt(RaycastHit const &hit, Scene const &scene, Color &toModify);

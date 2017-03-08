@@ -28,6 +28,21 @@ public:
 public:
     virtual const Color &getEnligthedColor(RaycastHit const &hit, Scene const &scene, Color &toret) = 0;
     virtual const Color getEnligthedColor(RaycastHit const &hit, Scene const &scene) = 0;
+
+public:
+    template <typename EffectType>
+    EffectType   *getEffect()
+    {
+        EffectType  *toret;
+
+        for (IEffect    *curr : getEffects())
+        {
+            toret = dynamic_cast<EffectType *>(curr);
+            if (toret != nullptr)
+                return toret;
+        }
+        return nullptr;
+    }
 };
 
 #endif //RAYTRACER_IOBJECT_HPP

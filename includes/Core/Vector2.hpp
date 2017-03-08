@@ -38,7 +38,7 @@ public:
      * \brief Copy constructor
      * \param ref The vector to copy
      */
-    Vector2(Vector2 const &ref) :
+    Vector2(Vector2 const &ref = Vector2<T>::Zero) :
             Vector2(ref.x, ref.y)
     {
 

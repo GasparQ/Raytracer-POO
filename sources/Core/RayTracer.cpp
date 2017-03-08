@@ -7,7 +7,9 @@
 #include <Object/Sphere.hpp>
 #include <Effect/LightPhong.hpp>
 #include <Object/Plan.hpp>
-#include <Effect/Reflect.hpp>
+#include <Effect/Reflection.hpp>
+#include <Effect/Refraction.hpp>
+#include <Object/Cylinder.hpp>
 #include "Core/RayTracer.hpp"
 #include "Core/Eye.hpp"
 #include "Core/Spot.hpp"
@@ -37,55 +39,57 @@ void RayTracer::LoadScenes(int ac, char **av)
     Scene   &toLoad = scenes.back();
     IObject *object;
 
-    toLoad.AddEye(new Eye({-500, 0, 50}));
+    toLoad.AddEye(new Eye({-800, 0, 0}));
 
 //    object = new Sphere(Vector3<double>::Zero, Vector3<double>::Zero, Color(0, 200, 100, 50), {});
 //    object->AddEffect(new LightPhong(0, 1, 30, 50, 0));
 //    toLoad.AddObject(object);
 
-    Reflect::setRecursionLimit(30);
+    Reflection::setRecursionLimit(30);
 
-    object = new Sphere({0, 0, 150}, {0, 0, 90}, Color(0, 200, 100, 50), {});
+    object = new Sphere({0, 0, 0}, {0, 0, 90}, Color::white, {}, 300);
+    object->AddEffect(new Refraction(0.5, 1.309));
+    object->AddEffect(new LightPhong(0.3, 1, 1, 320, 0));
+    //    object->AddEffect(new Reflection(0.8));
     toLoad.AddObject(object);
-    object->AddEffect(new Reflect(0.8));
-    object->AddEffect(new LightPhong(0, 1, 1, 320, 0));
-//    object = new Cylinder({0, 0, 0}, {0, 0, 0}, Color(0, 200, 100, 50), {});
-//    object->AddEffect(new LightPhong(0, 1, 1, 320, 0));
-//    toLoad.AddObject(object);
+
+    object = new Cylinder({0, 0, 0}, {90, 0, 0}, Color(0, 200, 100, 50), {}, 100);
+    object->AddEffect(new LightPhong(0, 1, 0, 0, 0));
+    toLoad.AddObject(object);
 
 //    object = new Cylinder({0, 0, 0}, {90, 0, 90}, Color(0, 200, 100, 50), {});
 //    object->AddEffect(new LightPhong(0, 1, 0, 0, 0));
 //    toLoad.AddObject(object);
 
-    object = new Plan();
-    object->AddEffect(new LightPhong(0, 1, 0, 0, 0));
-    object->AddEffect(new Reflect(0.3));
-    toLoad.AddObject(object);
-
-    object = new Plan({0, 0, 300}, Vector3<double>::Zero, Color::white, {}, {0, 0, -1});
-    object->AddEffect(new LightPhong(0, 1, 0, 0, 0));
-    object->AddEffect(new Reflect(0.3));
-    toLoad.AddObject(object);
-
-    object = new Plan({0, 150, 0}, {90, 0, 0});
-    object->AddEffect(new LightPhong(0, 1, 0, 0, 0));
-    object->AddEffect(new Reflect(0.3));
-    toLoad.AddObject(object);
-
-    object = new Plan({0, -150, 0}, {-90, 0, 0});
-    object->AddEffect(new LightPhong(0, 1, 0, 0, 0));
-    object->AddEffect(new Reflect(0.3));
-    toLoad.AddObject(object);
-
-    object = new Plan({150, 0, 0}, {0, -90, 0});
-    object->AddEffect(new LightPhong(0, 1, 0, 0, 0));
-    object->AddEffect(new Reflect(0.3));
-    toLoad.AddObject(object);
-
-    object = new Plan({-550, 0, 0}, {0, 90, 0});
-    object->AddEffect(new LightPhong(0, 1, 0, 0, 0));
-    object->AddEffect(new Reflect(0.3));
-    toLoad.AddObject(object);
+//    object = new Plan();
+//    object->AddEffect(new LightPhong(0, 1, 0, 0, 0));
+//    object->AddEffect(new Reflection(0.3));
+//    toLoad.AddObject(object);
+//
+//    object = new Plan({0, 0, 300}, Vector3<double>::Zero, Color::white, {}, {0, 0, -1});
+//    object->AddEffect(new LightPhong(0, 1, 0, 0, 0));
+//    object->AddEffect(new Reflection(0.3));
+//    toLoad.AddObject(object);
+//
+//    object = new Plan({0, 150, 0}, {90, 0, 0});
+//    object->AddEffect(new LightPhong(0, 1, 0, 0, 0));
+//    object->AddEffect(new Reflection(0.3));
+//    toLoad.AddObject(object);
+//
+//    object = new Plan({0, -150, 0}, {-90, 0, 0});
+//    object->AddEffect(new LightPhong(0, 1, 0, 0, 0));
+//    object->AddEffect(new Reflection(0.3));
+//    toLoad.AddObject(object);
+//
+//    object = new Plan({150, 0, 0}, {0, -90, 0});
+//    object->AddEffect(new LightPhong(0, 1, 0, 0, 0));
+//    object->AddEffect(new Reflection(0.3));
+//    toLoad.AddObject(object);
+//
+//    object = new Plan({-550, 0, 0}, {0, 90, 0});
+//    object->AddEffect(new LightPhong(0, 1, 0, 0, 0));
+//    object->AddEffect(new Reflection(0.3));
+//    toLoad.AddObject(object);
 
 //    object = new Cone({0, 50, 0});
 //    object->AddEffect(new LightPhong(0, 1, 30, 50, 0));

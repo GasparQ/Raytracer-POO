@@ -33,10 +33,6 @@ void LightPhong::ResolveEffectAt(RaycastHit const &hit, Scene const &scene, Colo
     double intensity = 0, diffuseFactor = 0, specularFactor = 0;
     std::vector<Spot *> applyiedSpots;
 
-    if (print_debug)
-    {
-        std::cout << "Hit: " << hit << std::endl;
-    }
     for (Spot *currSpot : scene.getSpots())
     {
         //Vector AB where A is the intersection point and B is the spot position. Vector AB means B - A
@@ -56,23 +52,14 @@ void LightPhong::ResolveEffectAt(RaycastHit const &hit, Scene const &scene, Colo
 
             double cosd = CalculUnit::unit.GetVectorCosinus(hit.getNormal(), lightRay.getDirection());
 
-            if (print_debug)
-                std::cout << "Cosd: " << cosd << std::endl;
-
             diffuseFactor += intensity * cosd;
 
             Ray reflect = CalculUnit::unit.GetReflectedRay(lightRay, hit.getNormal());
-
-            if (print_debug)
-                std::cout << "Reflect: " << reflect << std::endl;
 
             double cosi = CalculUnit::unit.GetVectorCosinus(
                     reflect.getDirection(),
                     hit.getIncident_ray().getDirection()
             );
-
-            if (print_debug)
-                std::cout << "cosinus: " << cosi << std::endl;
 
             if (cosi >= CalculUnit::floatZero)
                 specularFactor += intensity * pow(cosi, specularRadius);
@@ -80,7 +67,5 @@ void LightPhong::ResolveEffectAt(RaycastHit const &hit, Scene const &scene, Colo
     }
     double final_i  = (ambiant + diffuse * diffuseFactor + specular * specularFactor);
 
-    if (print_debug)
-        std::cout << "Final intensity: " << final_i << std::endl;
     toModify *= final_i;
 }

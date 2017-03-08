@@ -54,7 +54,7 @@ public:
      * \brief Copy constructor
      * \param ref The vector to copy
      */
-    Vector3(const Vector3<T> &ref) :
+    Vector3(const Vector3<T> &ref = Vector3<T>::Zero) :
             Vector3(ref.x, ref.y, ref.z)
     {
 
@@ -97,6 +97,12 @@ public:
     Vector3 operator*(T fact) const
     {
         return Vector3(this->x * fact, this->y * fact, this->z * fact);
+    }
+
+    Vector3 operator*(Vector3<T> const &fact) const
+    {
+        Vector3<T>  cpy(*this);
+        return cpy *= fact;
     }
 
     /**
@@ -143,6 +149,19 @@ public:
     {
         Vector2<T>::operator*=(fact);
         z *= fact;
+        return *this;
+    }
+
+    Vector3 &operator*=(Vector3<T> const &fact)
+    {
+        double x, y, z;
+
+        x = this->y * fact.z - this->z * fact.y;
+        y = this->z * fact.x - this->x * fact.z;
+        z = this->x * fact.y - this->y * fact.x;
+        this->x = x;
+        this->y = y;
+        this->z = z;
         return *this;
     }
 

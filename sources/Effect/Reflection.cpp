@@ -2,30 +2,30 @@
 // Created by GasparQ on 04/03/2017.
 //
 
-#include "Effect/Reflect.hpp"
+#include "Effect/Reflection.hpp"
 #include <Core/CalculUnit.hpp>
 #include "Core/Scene.hpp"
 
-int Reflect::current_recursion = 0;
-int Reflect::max_recursion = 10;
+int Reflection::current_recursion = 0;
+int Reflection::max_recursion = 10;
 
-Reflect::Reflect(double value) :
+Reflection::Reflection(double value) :
     coeff(value)
 {
 
 }
 
-Reflect::~Reflect()
+Reflection::~Reflection()
 {
 
 }
 
-void Reflect::ResolveEffectAt(RaycastHit const &hit, Scene const &scene, Color &toModify)
+void Reflection::ResolveEffectAt(RaycastHit const &hit, Scene const &scene, Color &toModify)
 {
-    if (Reflect::current_recursion >= Reflect::max_recursion)
+    if (Reflection::current_recursion >= Reflection::max_recursion)
         return;
 
-    ++Reflect::current_recursion;
+    ++Reflection::current_recursion;
     Ray reflect = CalculUnit::unit.GetReflectedRay(hit.getIncident_ray(), hit.getNormal(), true, hit.getIsec_point());
 
     RaycastHit refHit = scene.RayCast(reflect);
@@ -37,10 +37,10 @@ void Reflect::ResolveEffectAt(RaycastHit const &hit, Scene const &scene, Color &
     }
     else
         toModify = toModify * (1 - coeff);
-    --Reflect::current_recursion;
+    --Reflection::current_recursion;
 }
 
-void Reflect::setRecursionLimit(int limit)
+void Reflection::setRecursionLimit(int limit)
 {
-    Reflect::max_recursion = limit;
+    Reflection::max_recursion = limit;
 }
