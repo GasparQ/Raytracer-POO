@@ -20,6 +20,9 @@ public:
 
     virtual double          getObjectDistance(Ray ray) const;
 
+public:
+    virtual Vector2<int>    get2DProjection(Vector3<double> const &isecPoint, Vector2<int> const &projectionDimmensions) const;
+
 private:
     double radius;
 };

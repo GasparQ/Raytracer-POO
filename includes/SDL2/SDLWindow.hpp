@@ -17,6 +17,7 @@ public:
 public:
     virtual void DisplayImage(IImage *todisplay) throw(GraphicException);
     virtual IImage *CreateImage(Vector2<int> const &size, Vector2<int> const &pos) throw(GraphicException);
+    virtual IImage *CreateImageFromFile(std::string const &path) throw(GraphicException);
 
 private:
     SDL_Window  *win;

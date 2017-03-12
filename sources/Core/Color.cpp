@@ -6,7 +6,7 @@
 
 const Color Color::white = 0x00FFFFFF;
 const Color Color::black = 0x00000000;
-const Color Color::red = 0x000000FF;
+const Color Color::red = 0x00FF0000;
 const Color Color::green = 0x0000FF00;
 const Color Color::blue = 0x000000FF;
 const Color Color::cyan = 0x0000FFFF;
@@ -20,7 +20,7 @@ Color::Color(int32_t full) :
 }
 
 Color::Color(unsigned char a, unsigned char r, unsigned char g, unsigned char b) :
-        Color::Color((a << 24) | (b << 16) | (g << 8) | r)
+        Color::Color((a << 24) | (r << 16) | (g << 8) | b)
 {
 
 }

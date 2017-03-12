@@ -16,6 +16,7 @@ public:
 
 public:
     virtual IImage *CreateImage(Vector2<int> const &size, Vector2<int> const &pos) throw(GraphicException) = 0;
+    virtual IImage *CreateImageFromFile(std::string const &path) throw(GraphicException) = 0;
     virtual void DisplayImage(IImage *toDisplay) throw(GraphicException) = 0;
 
 public:

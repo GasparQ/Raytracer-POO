@@ -3,6 +3,8 @@
 //
 
 #include <SDL2/SDLImage.hpp>
+#include <SDL2/SDLLoadableImage.hpp>
+#include <iostream>
 #include "SDL2/SDLWindow.hpp"
 
 SDLWindow::SDLWindow(Vector2<int> const &winSize, Vector2<int> const &winPos, const std::string &title) :
@@ -35,4 +37,19 @@ void SDLWindow::DisplayImage(IImage *todisplay) throw(GraphicException)
 IImage *SDLWindow::CreateImage(Vector2<int> const &size, Vector2<int> const &pos) throw(GraphicException)
 {
     return new SDLImage(size, pos, renderer);
+}
+
+IImage *SDLWindow::CreateImageFromFile(std::string const &path) throw(GraphicException)
+{
+    SDLLoadableImage    *image = nullptr;
+
+    try
+    {
+        image = new SDLLoadableImage(path, renderer);
+    }
+    catch (std::runtime_error const &err)
+    {
+        throw GraphicException(err.what());
+    }
+    return image;
 }

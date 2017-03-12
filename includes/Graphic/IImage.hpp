@@ -18,6 +18,8 @@ public:
 
     virtual void PutColorAt(Color color, Vector2<int> const &pix) throw(std::out_of_range) = 0;
 
+    virtual Color const &GetColorAt(Vector2<int> const &pos) throw(std::out_of_range) = 0;
+
     virtual void *ConvertPixels(void) throw(GraphicException) = 0;
 };
 

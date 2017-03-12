@@ -44,3 +44,10 @@ void AImage::PutColorAt(Color color, Vector2<int> const &pix) throw(std::out_of_
         throw new std::out_of_range("Pixel is out of image range");
     pixels[pix.y * getSize().x + pix.x] = color;
 }
+
+Color const &AImage::GetColorAt(Vector2<int> const &pos) throw(std::out_of_range)
+{
+    if (pos.x > getSize().x || pos.y > getSize().y || pos.x < 0 || pos.y < 0)
+        throw new std::out_of_range("Pixel is out of image range");
+    return pixels[pos.y * getSize().x + pos.x];
+}

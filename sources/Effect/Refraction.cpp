@@ -3,7 +3,6 @@
 //
 
 #include <Core/CalculUnit.hpp>
-#include <iostream>
 #include "Effect/Refraction.hpp"
 #include "Core/RaycastHit.hpp"
 #include "Core/Scene.hpp"
@@ -46,13 +45,6 @@ void Refraction::ResolveEffectAt(RaycastHit const &hit, Scene const &scene, Colo
     Ray refrac = CalculUnit::unit.GetRefractedRay(save_coeff, Refraction::current_coeff, hit.getIncident_ray(), hit.getNormal(), hit.getIsec_point());
 
     RaycastHit refracHit = scene.RayCast(refrac);
-
-    if (print_debug)
-    {
-        std::cout << "Incident: " << hit.getIncident_ray() << std::endl;
-        std::cout << "Refracted: " << refrac << std::endl;
-        std::cout << "Hit: " << refracHit << std::endl;
-    }
 
     //Calculate resulting color
     toModify *= (1.0 - opacity);

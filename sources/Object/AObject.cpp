@@ -4,6 +4,7 @@
 
 #include "Object/AObject.hpp"
 #include <Core/CalculUnit.hpp>
+#include <cmath>
 
 /**
  * \brief Full and default constructor for AObject
@@ -107,4 +108,12 @@ const Color AObject::getEnligthedColor(RaycastHit const &hit, Scene const &scene
     Color   toret = color;
 
     return getEnligthedColor(hit, scene, toret);
+}
+
+Vector2<int> AObject::get2DProjection(Vector3<double> const &isecPoint, Vector2<int> const &projectionDimmensions) const
+{
+    return Vector2<int>(
+            static_cast<int>(std::abs(isecPoint.x / isecPoint.z)) % projectionDimmensions.x,
+            static_cast<int>(std::abs(isecPoint.y / isecPoint.z)) % projectionDimmensions.y
+    );
 }

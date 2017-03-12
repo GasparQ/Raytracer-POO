@@ -8,7 +8,7 @@
 SDLImage::SDLImage(Vector2<int> const &size, Vector2<int> const &pos, SDL_Renderer *context) :
     AImage(size, pos)
 {
-    texture = SDL_CreateTexture(context, SDL_PIXELFORMAT_ABGR8888, SDL_TEXTUREACCESS_STATIC, size.x, size.y);
+    texture = SDL_CreateTexture(context, SDL_PIXELFORMAT_ARGB8888, SDL_TEXTUREACCESS_STATIC, size.x, size.y);
     if (texture == NULL)
         throw GraphicException(SDL_GetError());
 }

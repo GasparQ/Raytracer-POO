@@ -30,6 +30,9 @@ public:
     virtual const Color getEnligthedColor(RaycastHit const &hit, Scene const &scene) = 0;
 
 public:
+    virtual Vector2<int>    get2DProjection(Vector3<double> const &isecPoint, Vector2<int> const &projectionDimmensions) const = 0;
+
+public:
     template <typename EffectType>
     EffectType   *getEffect()
     {

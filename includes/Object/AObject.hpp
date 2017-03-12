@@ -29,6 +29,9 @@ public:
     virtual double getObjectDistance(Ray ray) const = 0;
 
 public:
+    virtual Vector2<int>    get2DProjection(Vector3<double> const &isecPoint, Vector2<int> const &projectionDimmensions) const;
+
+public:
     const Vector3<double> &getPosition() const;
 
     void setPosition(const Vector3<double> &position);

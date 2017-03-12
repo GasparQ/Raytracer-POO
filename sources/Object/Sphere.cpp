@@ -3,6 +3,7 @@
 //
 
 #include <Core/CalculUnit.hpp>
+#include <cmath>
 #include "Object/Sphere.hpp"
 
 Sphere::Sphere(const Vector3<double> &pos, const Vector3<double> &rotation, const Color &color,
@@ -53,5 +54,37 @@ double Sphere::getObjectDistance(Ray ray) const
     );
     CalculUnit::unit.ResolvePolynomDegree2(param, results);
     return (results[0]);
+}
+
+Vector2<int> Sphere::get2DProjection(Vector3<double> const &isecPoint, Vector2<int> const &projectionDimmensions) const
+{
+    /*
+     * C raytracer Sphere mapping
+     *
+     * t_vector2	text_pos;
+     *
+     * isec_point = unit_vec(isec_point);
+     * text_pos.x = atan2(isec_point.y, isec_point.x);
+     * if (text_pos.x < 0)
+     *      text_pos.x += (2 * M_PI);
+     * text_pos.x /= (2 * M_PI);
+     * text_pos.y = acos(isec_point.z) / M_PI;
+     * text_pos.x *= texture->wdth / 4;
+     * text_pos.y *= texture->hght;
+     *
+     */
+
+    Vector3<double> unitIsec = CalculUnit::unit.GetUnitVector(isecPoint);
+    double  x, y;
+
+    x = atan2(unitIsec.y, unitIsec.x);
+    if (x < CalculUnit::floatZero)
+        x += (2 * M_PI);
+    x /= (2 * M_PI);
+    y = acos(unitIsec.z) / M_PI;
+    x *= projectionDimmensions.x / 4.0;
+    y *= projectionDimmensions.y;
+
+    return Vector2<int>(static_cast<int>(x), static_cast<int>(y));
 }
 
